@@ -7,36 +7,8 @@ from collections import defaultdict as dd
 import subprocess
 import os
 
-from utils import show_graph, parse_kissat_output
+from utils import show_graph, parse_kissat_output, Dsu
 import pdb # debugger
-
-class Dsu:
-    def __init__(self, n):
-        # If p[u] < 0: u is a root, and |p[u]| = size of the tree
-        # If p[u] >= 0: p[u] is the parent of u
-        self.p = [-1] * (n+1)
-        self.c = n # number of components
-
-    def find(self, u):
-        if self.p[u] < 0: return u
-
-        self.p[u] = self.find(self.p[u])
-        return self.p[u]
-
-    def union(self, u, v):
-        root_u = self.find(u)
-        root_v = self.find(v)
-        if root_u == root_v: return False
-
-        if self.p[root_u] > self.p[root_v]:  # root_v has larger tree
-            self.p[root_v] += self.p[root_u]
-            self.p[root_u] = root_v
-        else:
-            self.p[root_u] += self.p[root_v]
-            self.p[root_v] = root_u
-        self.c -= 1
-        return True
-
 
 class KWildSAT:
     """
@@ -277,10 +249,10 @@ if __name__ == "__main__":
         (4, 5, {'color': 'D'}),
     ])
 
-    show_graph(G)
-    KWildSAT(G)
-    # ans_k, ans_w = KWildSAT(G).find_min_k()
+    ans_k, ans_w = KWildSAT(G).find_min_k()
+    # ans_k, ans_w = KWildSAT(G).find_min_k(use_external=True)
 
-    # print(ans_k)
-    # show_graph(G, ans_w)
+    print(ans_k)
+    show_graph(G, ans_w)
+
 

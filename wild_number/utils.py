@@ -209,3 +209,31 @@ def parse_kissat_output(output: str):
                     model.add(lit)
 
     return is_sat, model
+
+
+class Dsu:
+    def __init__(self, n):
+        # If p[u] < 0: u is a root, and |p[u]| = size of the tree
+        # If p[u] >= 0: p[u] is the parent of u
+        self.p = [-1] * (n+1)
+        self.c = n # number of components
+
+    def find(self, u):
+        if self.p[u] < 0: return u
+
+        self.p[u] = self.find(self.p[u])
+        return self.p[u]
+
+    def union(self, u, v):
+        root_u = self.find(u)
+        root_v = self.find(v)
+        if root_u == root_v: return False
+
+        if self.p[root_u] > self.p[root_v]:  # root_v has larger tree
+            self.p[root_v] += self.p[root_u]
+            self.p[root_u] = root_v
+        else:
+            self.p[root_u] += self.p[root_v]
+            self.p[root_v] = root_u
+        self.c -= 1
+        return True

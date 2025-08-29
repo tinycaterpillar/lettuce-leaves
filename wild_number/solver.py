@@ -1,10 +1,39 @@
 import networkx as nx
 from pysat.formula import CNF, IDPool
 from pysat.card import CardEnc
-from pysat.solvers import Glucose4  # replace with Kissat/CaDiCaL, etc. if desired
+from pysat.solvers import Cadical195  # replace with Kissat/CaDiCaL, etc. if desired
+from collections import defaultdict as dd
 
 from utils import show_graph
 import pdb # debugger
+
+class Dsu:
+    def __init__(self, n):
+        # If p[u] < 0: u is a root, and |p[u]| = size of the tree
+        # If p[u] >= 0: p[u] is the parent of u
+        self.p = [-1] * (n+1)
+        self.c = n # number of components
+
+    def find(self, u):
+        if self.p[u] < 0: return u
+
+        self.p[u] = self.find(self.p[u])
+        return self.p[u]
+
+    def union(self, u, v):
+        root_u = self.find(u)
+        root_v = self.find(v)
+        if root_u == root_v: return False
+
+        if self.p[root_u] > self.p[root_v]:  # root_v has larger tree
+            self.p[root_v] += self.p[root_u]
+            self.p[root_u] = root_v
+        else:
+            self.p[root_u] += self.p[root_v]
+            self.p[root_v] = root_u
+        self.c -= 1
+        return True
+
 
 class KWildSAT:
     """
@@ -14,7 +43,7 @@ class KWildSAT:
             for every color c, the subgraph induced by W ∪ {edges of color c}  
             contains a spanning tree of G?
     """
-    def __init__(self, graph: nx.MultiGraph, solver=Glucose4):
+    def __init__(self, graph: nx.MultiGraph, solver=Cadical195):
         self.G = graph
         self.V = sorted(graph.nodes())
         self.E = list(graph.edges(keys=True))  # [(u,v,key), ...]
@@ -22,7 +51,7 @@ class KWildSAT:
         self.pool = IDPool()
         self.solver=solver
         self.wild_lits = []
-        self.cnf_base = self._build_base()
+        self.dsu = dd(lambda : Dsu(len(self.V)))
 
         assert len(self.V) > 1, "G must not be trivial"
         assert nx.is_connected(self.G), "G must be connected"
@@ -30,6 +59,11 @@ class KWildSAT:
         missing = [(u, v, key) for u, v, key, d in graph.edges(keys=True, data=True)
                    if ('color' not in d) or (d['color'] is None)]
         assert not missing, f"Every edge must have 'color'. Missing: {missing}"
+
+        for (u, v, key) in self.E:
+            cur_c = graph[u][v][key]['color']
+            self.dsu[cur_c].union(u, v)
+        self.cnf_base = self._build_base()
 
 
     def wild(self, u, v, key):
@@ -49,7 +83,7 @@ class KWildSAT:
     # Build base CNF independent of k
     def _build_base(self):
         # init
-        for (u, v, key) in self.E: # 이 부분 최적화 더 가능
+        for (u, v, key) in self.E:
             self.wild_lits.append(self.wild(u, v, key))
 
         for c in self.colors:
@@ -102,7 +136,9 @@ class KWildSAT:
         return base
 
 
-    def solve_for_k(self, k: int):
+    def solve_for_k(self, k: int, info=False):
+        if k < self.clb(): return False, []
+
         cnf = CNF()
         cnf.extend(self.cnf_base.clauses)
         
@@ -112,7 +148,11 @@ class KWildSAT:
             amk = CardEnc.atmost(lits=self.wild_lits, bound=k, top_id=self.pool.top)
             self.pool.top = amk.nv  
             cnf.extend(amk.clauses)
-
+        
+        if info:
+            print("Number of variables:", cnf.nv)
+            print("Number of clauses:", len(cnf.clauses))
+        
         with self.solver(bootstrap_with=cnf.clauses) as s:
             sat = s.solve()
             if not sat: return False, []
@@ -124,7 +164,7 @@ class KWildSAT:
 
     def find_min_k(self):
         """Binary search for the minimal k"""
-        lo, hi = 0, len(self.V) - 1
+        lo, hi = self.clb(), min(len(self.V) - 1, self.cub())
         ans_k, ans_w = None, None
         while lo <= hi:
             mid = (lo + hi) // 2
@@ -136,6 +176,16 @@ class KWildSAT:
                 lo = mid+1
 
         return ans_k, ans_w
+
+    def clb(self):
+        return max(self.dsu[c].c - 1 for c in self.colors)
+    
+    def cub(self):
+        return sum(self.dsu[c].c - 1 for c in self.colors)
+    
+    # return the dip number of given edge e
+    def dip(self, u, v, key=None):
+        return sum(self.dsu[c].find(u) != self.dsu[c].find(v) for c in self.colors)
 
     # Debugging: Decode a single literal into human-readable form
     def decode_clause(self, lit):
@@ -197,8 +247,9 @@ if __name__ == "__main__":
     ])
 
     show_graph(G)
-    ans_k, ans_w = KWildSAT(G).find_min_k()
+    KWildSAT(G)
+    # ans_k, ans_w = KWildSAT(G).find_min_k()
 
-    print(ans_k)
-    show_graph(G, ans_w)
+    # print(ans_k)
+    # show_graph(G, ans_w)
 

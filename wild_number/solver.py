@@ -1,10 +1,13 @@
+import tempfile
 import networkx as nx
 from pysat.formula import CNF, IDPool
 from pysat.card import CardEnc
 from pysat.solvers import Cadical195  # replace with Kissat/CaDiCaL, etc. if desired
 from collections import defaultdict as dd
+import subprocess
+import os
 
-from utils import show_graph
+from utils import show_graph, parse_kissat_output
 import pdb # debugger
 
 class Dsu:
@@ -43,7 +46,7 @@ class KWildSAT:
             for every color c, the subgraph induced by W ∪ {edges of color c}  
             contains a spanning tree of G?
     """
-    def __init__(self, graph: nx.MultiGraph, solver=Cadical195):
+    def __init__(self, graph: nx.MultiGraph, solver_path="./kissat", solver=Cadical195):
         self.G = graph
         self.V = sorted(graph.nodes())
         self.E = list(graph.edges(keys=True))  # [(u,v,key), ...]
@@ -52,13 +55,21 @@ class KWildSAT:
         self.solver=solver
         self.wild_lits = []
         self.dsu = dd(lambda : Dsu(len(self.V)))
+        self.solver_path = solver_path
 
-        assert len(self.V) > 1, "G must not be trivial"
-        assert nx.is_connected(self.G), "G must be connected"
+        if not os.path.isfile(solver_path):
+            raise FileNotFoundError(f"Solver not found: {solver_path}")
 
-        missing = [(u, v, key) for u, v, key, d in graph.edges(keys=True, data=True)
+        if len(self.V) <= 1:
+            raise ValueError("Graph must have more than one vertex (non-trivial graph required).")
+
+        if not nx.is_connected(self.G):
+            raise nx.NetworkXError("Graph must be connected.")
+
+        missing = [(u, v, key) for u, v, key, d in graph.edges(keys=True, data=True) 
                    if ('color' not in d) or (d['color'] is None)]
-        assert not missing, f"Every edge must have 'color'. Missing: {missing}"
+        if missing:
+            raise ValueError(f"Every edge must have a 'color' attribute. Missing: {missing}")
 
         for (u, v, key) in self.E:
             cur_c = graph[u][v][key]['color']
@@ -78,7 +89,6 @@ class KWildSAT:
     def tseitin(self, a, b): # tseitin(a, b) <=> a and b
         # tseitin(dist(c, u, t), wild(u, v, key)) == tseitin(wild(u, v, key), dist(c, u, t))
         return self.pool.id(('tseitin', min(a,b), max(a,b))) 
-
 
     # Build base CNF independent of k
     def _build_base(self):
@@ -134,9 +144,8 @@ class KWildSAT:
                 base.append([self.dist(c, v, n-1)])
 
         return base
-
-
-    def solve_for_k(self, k: int, info=False):
+    
+    def solve_for_k(self, k: int, Use_external=False):
         if k < self.clb(): return False, []
 
         cnf = CNF()
@@ -149,12 +158,12 @@ class KWildSAT:
             self.pool.top = amk.nv  
             cnf.extend(amk.clauses)
         
-        if info:
-            print("Number of variables:", cnf.nv)
-            print("Number of clauses:", len(cnf.clauses))
-        
+        if Use_external:
+            return self._external_solver(cnf)
+
         with self.solver(bootstrap_with=cnf.clauses) as s:
             sat = s.solve()
+
             if not sat: return False, []
 
             model = set(s.get_model())
@@ -162,13 +171,13 @@ class KWildSAT:
 
             return True, wild_set
 
-    def find_min_k(self):
+    def find_min_k(self, use_external=False):
         """Binary search for the minimal k"""
         lo, hi = self.clb(), min(len(self.V) - 1, self.cub())
         ans_k, ans_w = None, None
         while lo <= hi:
             mid = (lo + hi) // 2
-            ok, w = self.solve_for_k(mid)
+            ok, w = self.solve_for_k(mid, use_external)
             if ok:
                 ans_k, ans_w = mid, w
                 hi = mid-1
@@ -187,6 +196,28 @@ class KWildSAT:
     def dip(self, u, v, key=None):
         return sum(self.dsu[c].find(u) != self.dsu[c].find(v) for c in self.colors)
 
+    def _external_solver(self, cnf):
+        assert self.solver_path, "Please set self.solver_path to the path of an external solver"
+
+        # Create a temporary CNF file (auto-deleted after the 'with' block exits)
+        with tempfile.NamedTemporaryFile(suffix=".cnf") as tmp:
+            cnf.to_file(tmp.name)  # Write the CNF to the temporary file
+
+            # Run external solver (quiet mode, no statistics)
+            res = subprocess.run(
+                [self.solver_path, "-q", tmp.name],
+                capture_output=True, text=True
+            )
+            sat, model = parse_kissat_output(res.stdout)
+
+            if not sat:
+                return False, []
+            else:
+                # Decode the witness (set of "wild" edges)
+                wild_set = [(u, v, key) for (u, v, key) in self.E if self.wild(u, v, key) in model]
+                return True, wild_set
+
+        
     # Debugging: Decode a single literal into human-readable form
     def decode_clause(self, lit):
         obj = self.pool.obj(abs(lit))

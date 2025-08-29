@@ -188,3 +188,24 @@ def show_graph(
     plt.axis("off")
     plt.tight_layout()
     plt.show()
+
+
+def parse_kissat_output(output: str):
+    is_sat = None
+    model = set()
+
+    for line in output.splitlines():
+        if line.startswith("s "):
+            if "UNSAT" in line:
+                is_sat = False
+            elif "SAT" in line:
+                is_sat = True
+        elif line.startswith("v "):
+            lits = map(int, line.split()[1:])
+            for lit in lits:
+                if lit == 0:
+                    break
+                if lit > 0:
+                    model.add(lit)
+
+    return is_sat, model

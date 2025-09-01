@@ -2,6 +2,7 @@ import networkx as nx
 import matplotlib.pyplot as plt
 from collections import defaultdict
 import math
+import random
 
 # Pastel highlighter-style palette
 DEFAULT_PASTEL = [
@@ -237,3 +238,31 @@ class Dsu:
             self.p[root_v] = root_u
         self.c -= 1
         return True
+
+
+def random_partition(S, P):
+    assert len(S) >= sum(P)
+    items = list(S)
+    random.shuffle(items)
+
+    partitions = []
+    for p in P:
+        part = [items.pop() for _ in range(p)]  # 뒤에서 p개 pop
+        partitions.append(part)
+
+    return partitions
+
+def partitions_fixed_length(n, l, max_val=None):
+    if max_val is None:
+        max_val = n
+
+    # 종료 조건
+    if l == 1:
+        if 1 <= n <= max_val:
+            yield [n]
+        return
+
+    # i는 현재 항, 다음 항들은 i 이하
+    for i in range(1, min(max_val, n - l + 1) + 1):
+        for rest in partitions_fixed_length(n - i, l - 1, i):
+            yield [i] + rest

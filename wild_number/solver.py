@@ -249,8 +249,7 @@ if __name__ == "__main__":
         (4, 5, {'color': 'D'}),
     ])
 
-    ans_k, ans_w = KWildSAT(G).find_min_k()
-    # ans_k, ans_w = KWildSAT(G).find_min_k(use_external=True)
+    ans_k, ans_w = KWildSAT(G).find_min_k(use_external=True)
 
     print(ans_k)
     show_graph(G, ans_w)

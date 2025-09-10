@@ -7,10 +7,18 @@ from matplotlib.lines import Line2D
 from collections import defaultdict
 import math
 
-# Pastel highlighter-style palette
 DEFAULT_PASTEL = [
-    "#ffadad", "#ffd6a5", "#fdffb6", "#caffbf",
-    "#9bf6ff", "#a0c4ff", "#bdb2ff", "#ffc6ff", "#fffffc"
+    "#ffadad",  # pastel red
+    "#ffd6a5",  # pastel orange
+    "#fdffb6",  # pastel yellow
+    "#caffbf",  # pastel green
+    "#9bf6ff",  # pastel cyan
+    "#a0c4ff",  # pastel blue
+    "#bdb2ff",  # pastel purple
+    "#ffc6ff",  # pastel pink
+    "#fffffc",  # off-white
+    "#d0f4de",  # pastel mint
+    "#f1c0e8",  # pastel lavender-pink
 ]
 
 def _compute_pos(G, layout="kk", seed=42, scale=1.0, spring_k=None):
@@ -34,7 +42,7 @@ def _compute_pos(G, layout="kk", seed=42, scale=1.0, spring_k=None):
         spring_k = 1.2 / math.sqrt(n)
     return nx.spring_layout(G, seed=seed, k=spring_k, iterations=300, scale=scale)
 
-def show_graph(
+def show_graph_with_edge_colors(
     G: nx.Graph,
     label_attr: str = "color",
     palette: list[str] = None,
@@ -89,8 +97,70 @@ def show_graph(
     plt.tight_layout()
     plt.show()
 
-def make_cubic(n: int, k=3, t=3):  # k := degree, t := girth
-    fname = f"{n}_{k}_{t}.asc"
+def show_graph_with_node_colors(
+    G: nx.Graph,
+    color_attr: str = "color",
+    palette: list[str] = None,
+    seed: int = 42,
+    figsize=(6, 6),
+    dpi: int = 120,
+    edge_width: float = 1.8,
+    layout: str = "kk",
+    scale: float = 1.0,
+    spring_k: float | None = None,
+):
+    """노드 color_attr 값이 있으면 해당 색으로 노드 색칠."""
+    if palette is None:
+        palette = DEFAULT_PASTEL
+
+    pos = _compute_pos(G, layout=layout, seed=seed, scale=scale, spring_k=spring_k)
+
+    # 노드 라벨 수집
+    labels = [str(G.nodes[n].get(color_attr, "None")) for n in G.nodes()]
+
+    # 유니크 라벨 → 색상 매핑 (겹치지 않음)
+    uniq_labels = list(dict.fromkeys(labels))
+    color_map = {lbl: palette[i] for i, lbl in enumerate(uniq_labels)}
+
+    # 각 노드 색상
+    colors = [color_map[lbl] for lbl in labels]
+
+    # 그래프 그리기
+    plt.figure(figsize=figsize, dpi=dpi)
+    nx.draw_networkx_edges(G, pos, width=edge_width, edge_color="#333333", alpha=0.4)
+    nx.draw_networkx_nodes(
+        G, pos,
+        node_color=colors,
+        edgecolors="#333333",
+        linewidths=1.2,
+        node_size=520,
+    )
+    nx.draw_networkx_labels(G, pos, font_size=11)
+
+    # 범례
+    handles = [
+        Line2D([0], [0], marker="o", markersize=10,
+               markerfacecolor=color_map[lbl], markeredgecolor="#333333", lw=0)
+        for lbl in uniq_labels
+    ]
+
+    plt.legend(
+        handles, uniq_labels,
+        title=color_attr,
+        loc="center left",
+        bbox_to_anchor=(1.02, 0.5),
+        frameon=True, framealpha=0.9
+    )
+
+    plt.axis("off")
+    plt.tight_layout()
+    plt.show()
+
+def make_cubic(n: int, k=3, t=3, m=None):  # k := degree, t := girth, m := (i, j) where i<=j
+    if m:
+        fname = f"{n}_{k}_{t}#{m[0]}.asc"
+    else:
+        fname = f"{n}_{k}_{t}.asc"
 
     # If file already exists, do nothing
     if os.path.exists(fname):
@@ -99,10 +169,11 @@ def make_cubic(n: int, k=3, t=3):  # k := degree, t := girth
 
     # Otherwise run GenReg
     print(f"{fname} not found. Running GenReg...")
-    subprocess.run(
-        ["./GenReg.exe", str(n), str(k), str(t), "-a"],
-        check=True
-    )
+
+    cmd = ["./GenReg.exe", str(n), str(k), str(t), "-a"]
+    if m:
+        cmd.extend(["-m", str(m[0]), str(m[1])])
+    subprocess.run(cmd, check=True)
 
     print(f"Saved output to {fname}")
     return fname
@@ -154,12 +225,32 @@ def parse_genreg_asc(path="./10_3_3.asc"):
 
     return graphs
 
-def get_cubic(n, k=3, t=3):
-    fname = make_cubic(n, k, t)
+def get_cubic(n, k=3, t=3, m=None):
+    fname = make_cubic(n, k, t, m=m)
     graphs = parse_genreg_asc(fname)
     return graphs
 
+def parse_kissat_output(output: str):
+    is_sat = None
+    model = set()
+
+    for line in output.splitlines():
+        if line.startswith("s "):
+            if "UNSAT" in line:
+                is_sat = False
+            elif "SAT" in line:
+                is_sat = True
+        elif line.startswith("v "):
+            lits = map(int, line.split()[1:])
+            for lit in lits:
+                if lit == 0:
+                    break
+                if lit > 0:
+                    model.add(lit)
+
+    return is_sat, model
+
 
 if __name__ == "__main__":
-    graphs = make_cubic(12)
+    graphs = make_cubic(16)
     print(graphs[0])

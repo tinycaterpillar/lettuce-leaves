@@ -4,8 +4,6 @@ from pysat.card import CardEnc
 from pysat.solvers import Cadical195  # replace with Kissat/CaDiCaL, etc. if desired
 import random
 
-from backup.utils_for_independent import show_graph
-
 class KIndependent:
     """
         K-independent(NP-complete):

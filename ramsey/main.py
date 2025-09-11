@@ -129,6 +129,6 @@ class NRamsey:
                 return True, wild_set
 
 if __name__ == "__main__":
-    sat, G = NRamsey().solve_for_n(36, 6, 4)
+    sat, G = NRamsey().solve_for_n(10, 6, 4)
     # print(sat)
     # if sat: show_graph(G)

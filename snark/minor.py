@@ -119,10 +119,12 @@ class MinorChecker:
         # Create a temporary CNF file (auto-deleted after the 'with' block exits)
         with tempfile.NamedTemporaryFile(suffix=".cnf") as tmp:
             cnf.to_file(tmp.name)  # Write the CNF to the temporary file
-
-            # Run external solver (quiet mode, no statistics)
+            
+            # BreakID → Kissat 파이프라인 실행
+            p1 = subprocess.Popen(["./breakid", tmp.name], stdout=subprocess.PIPE)
             res = subprocess.run(
-                [self.solver_path, "-q", tmp.name],
+                [self.solver_path, "-q"],
+                stdin=p1.stdout,
                 capture_output=True, text=True
             )
             sat, model = parse_kissat_output(res.stdout)

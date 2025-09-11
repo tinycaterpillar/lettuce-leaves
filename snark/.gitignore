@@ -1,3 +1,6 @@
 GenReg.exe
 kissat
+breakid
 *.asc
+*.g6
+data

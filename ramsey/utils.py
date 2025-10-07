@@ -156,11 +156,6 @@ def show_graph_with_node_colors(
     plt.tight_layout()
     plt.show()
 
-
-    fname = make_cubic(n, k, t, m=m)
-    graphs = parse_genreg_asc(fname)
-    return graphs
-
 def parse_kissat_output(output: str):
     is_sat = None
     model = set()
@@ -184,3 +179,4 @@ def parse_kissat_output(output: str):
 
 if __name__ == "__main__":
     pass
+    

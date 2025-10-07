@@ -16,6 +16,7 @@ class KIndependent:
         self.E = list(graph.edges(keys=True))  # [(u,v,key), ...]
         self.pool = IDPool()
         self.solver=solver
+        self._check_edge_colors()
         self.cnf_base = self._build_base()
 
     def select(self, v):
@@ -68,17 +69,29 @@ class KIndependent:
                 hi = mid - 1
 
         return ans_k, ans_w
+    
+    def _check_edge_colors(self):
+        true_count = 0
+        false_count = 0
+
+        for u, v, k, data in self.G.edges(keys=True, data=True):
+            color = data.get("color", None)
+            if color not in (True, False):
+                raise ValueError(
+                    f"엣지 ({u}, {v}, key={k})의 color 속성이 True/False가 아닙니다: {color}"
+                )
+            if color is True:
+                true_count += 1
+            else:  # color is False
+                false_count += 1
+
+        print(f"True: {true_count}, False: {false_count}")
+
 
 if __name__ == "__main__":
-    G = nx.complete_graph(200, create_using=nx.MultiGraph)
-    
-    random.seed(123)
-    numb = 50
-    edges = list(G.edges(keys=True))
-    B_edges = random.sample(edges, numb)
-    for u, v, k in G.edges(keys=True): G[u][v][k]['color'] = 'T'
-    for u, v, k in B_edges: G[u][v][k]['color'] = 'F'
+    G = nx.read_graph6("graph_36_4_6.g6")
+    G = nx.MultiGraph(G)
 
-    ans_k, ans_w = KIndependent(G).find_max_k()
-    print(ans_k)
+    # ans_k, ans_w = KIndependent(G).find_max_k()
+    # print(ans_k)
     # show_graph(G, ans_w)

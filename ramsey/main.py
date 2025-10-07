@@ -5,6 +5,7 @@ from pysat.card import CardEnc
 import tempfile
 import subprocess
 from itertools import combinations
+import csv
 
 from utils import show_graph_with_edge_colors, parse_kissat_output
 
@@ -30,25 +31,23 @@ class NRamsey:
         return self.pool.id(("T", a, b))
 
     def _build_base_cnf(self):
-        n, t, f = self.n, self.t, self.f
-
         # 변수 초기화
-        for u in range(n):
-            for v in range(u + 1, n):
+        for u in range(self.n):
+            for v in range(u + 1, self.n):
                 _ = self.color(u, v)
 
         # --- Clique Exclusion Constraints ---
         # forbid any T-clique of size t
-        for subset in combinations(range(n), t):
+        for subset in combinations(range(self.n), self.t):
             clause = [-self.color(u, v) for u, v in combinations(subset, 2)]
             self.base_cnf.append(clause)
 
         # forbid any F-clique of size f
-        for subset in combinations(range(n), f):
+        for subset in combinations(range(self.n), self.f):
             clause = [self.color(u, v) for u, v in combinations(subset, 2)]
             self.base_cnf.append(clause)
 
-    def solve(self, Use_external=False):
+    def solve_for_n(self, Use_external=False):
         if Use_external:
             return self._external_solver(self.base_cnf)
 
@@ -63,7 +62,7 @@ class NRamsey:
                 for v in range(u + 1, self.n):
                     G[u][v]["color"] = "T" if self.color(u, v) in model else "F"
             return True, G
-
+        
     def _external_solver(self, cnf):
         assert self.solver_path, "Please set self.solver_path to the path of an external solver"
 
@@ -87,9 +86,22 @@ class NRamsey:
                 for v in range(u + 1, self.n):
                     G[u][v]["color"] = "T" if self.color(u, v) in model else "F"
             return True, G
+        
+    def save_cnf(self, filename="problem.cnf"):
+        self.base_cnf.to_file(filename)
+        print(f"CNF saved to {filename}")
 
 if __name__ == "__main__":
-    sat, G = NRamsey(n=35, t=6, f=4).solve(Use_external=True)
+    n, t, f = 25, 3, 8
+    sat, G = NRamsey(n=n, t=t, f=f).solve_for_n(Use_external=True)
     print("Is there a valid coloring?", sat)
-    # if sat:
+    if sat:
+        with open(f"graph_{n}_{t}_{f}.csv", "w", newline="") as f:
+            writer = csv.writer(f, delimiter=" ")
+            writer.writerow(["number of vertices", G.number_of_nodes()])
+
+            for u, v, data in G.edges(data=True):
+                if data.get("color") == "T":
+                    writer.writerow([u, v])
+
         # show_graph_with_edge_colors(G)

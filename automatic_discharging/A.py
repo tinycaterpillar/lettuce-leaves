@@ -26,39 +26,47 @@ for fn in tqdm(os.listdir(CONF_DIR), desc="Loading configuration files"):
 m = gp.Model("A")
 alpha = m.addVar(lb=-GRB.INFINITY, name="alpha")
 
-# variables: only a <= b and k <= d
+# variables: only a >= b and k >= d
 x = {}
 for k, d, a, b in tqdm(product(DEGS, repeat=4), total=len(DEGS) ** 4, desc="Creating variables"):
-    if a > b or k > d: continue
+    if a < b or k < d: continue
     x[(k, a, b, d)] = m.addVar(lb=-GRB.INFINITY, name=f"x_{{{k};{a},{b}->{d}}}")
 m.update()
 
+# x_{k;a,b→d}: charge sent from a k-vertex to a d-vertex when they share two common neighbors of degrees a and b.
 def get_x(k, a, b, d):
-    """x_{k;a,b->d} with antisymmetry, assuming a<=b in storage."""
-    if a > b:
+    """x_{k;a,b->d} with antisymmetry, assuming a>=b and k>=d in storage."""
+    if a < b:
         a, b = b, a
-    if k <= d:
+    if k >= d:
         return x[(k, a, b, d)]
     else:
         return -x[(d, a, b, k)]
 
 # ---------- configuration constraints ----------
-FIXED_D = 11
-for (k, a, b, d), var in x.items():
-    if d != FIXED_D: continue
 
-    val = (k - 6) / k
+FIXED_K = 11
+for (k, a, b, d), var in x.items():
+    if k != FIXED_K: continue
+
+    if d <= 5:
+        # R1: 11 -> d sends (6-d)/d
+        val = (6 - d) / d
+    else:
+        # no charge sent from 11-vertex to d >= 6
+        val = 0
+
     m.addConstr(var == val)
 
 conf_constr = []
 for k, neigh in tqdm(configs, desc="Adding configuration constraints"):
     c = m.addConstr(k - alpha
-        + gp.quicksum(
+        - gp.quicksum(
             get_x(
-                neigh[i],
+                k,
                 neigh[i - 1],
                 neigh[(i + 1) % k],
-                k
+                neigh[i]
             )
             for i in range(k)
         ) >= 0

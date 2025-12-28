@@ -27,6 +27,7 @@ for qunadle in read_quandles("simple_quandles.dat"):
         knot2.plot(gap=0.2, thickness=2).save("pd2_nocolor.png")
 
         # Display them side by side
+        print(f"Use quandle of size: {len(qunadle)}")
         show_PD1_PD2("pd1.png", "pd2_nocolor.png")
         break
 
@@ -34,9 +35,7 @@ for qunadle in read_quandles("simple_quandles.dat"):
     elif sat1 == SatStatus.UNSAT and sat2 == SatStatus.SAT:
         knot1.plot(gap=0.2, thickness=2).save("pd1_nocolor.png")
         knot2.plot(color=color2, gap=0.2, thickness=2).save("pd2.png")
-
+        
+        print(f"Use quandle of size: {len(qunadle)}")
         show_PD1_PD2("pd1_nocolor.png", "pd2.png")
-
-        # Print the distinguishing quandle
-        print(qunadle)
         break

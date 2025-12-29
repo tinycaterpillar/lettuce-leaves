@@ -45,6 +45,7 @@ m = gp.Model(env=env)
 # m.setParam(GRB.Param.PreSparsify, 2)
 
 alpha = m.addVar(lb=-GRB.INFINITY, name="alpha")
+m.setObjective(alpha, GRB.MAXIMIZE)
 
 # variables: only a >= b and k >= d
 x = {}

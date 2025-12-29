@@ -5,6 +5,7 @@ from itertools import product
 from tqdm import tqdm
 
 from utils import pretty_print_and_save
+from key import params
 
 CONF_DIR = "active"
 DEGS = list(range(3, 12))
@@ -24,11 +25,6 @@ for fn in tqdm(os.listdir(CONF_DIR), desc="Loading configuration files"):
 
 # ---------- model ----------
 # Create an environment with your WLS license
-params = {
-"WLSACCESSID": '4d477fcb-b32e-488e-8a77-a2474d2b4d60',
-"WLSSECRET": '210c6b8a-23b9-496a-a021-e091bda07eb1',
-"LICENSEID": 2759362,
-}
 env = gp.Env(params=params)
 
 # Create the model within the Gurobi environment

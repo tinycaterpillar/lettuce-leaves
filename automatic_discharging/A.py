@@ -23,7 +23,31 @@ for fn in tqdm(os.listdir(CONF_DIR), desc="Loading configuration files"):
 
 
 # ---------- model ----------
-m = gp.Model("A")
+# Create an environment with your WLS license
+params = {
+"WLSACCESSID": '4d477fcb-b32e-488e-8a77-a2474d2b4d60',
+"WLSSECRET": '210c6b8a-23b9-496a-a021-e091bda07eb1',
+"LICENSEID": 2759362,
+}
+env = gp.Env(params=params)
+
+# Create the model within the Gurobi environment
+m = gp.Model(env=env)
+
+# ---------- memory / performance parameters ----------
+# # Soft memory limit (GB) — set a few GB below total RAM (12.7GB here)
+# m.setParam(GRB.Param.SoftMemLimit, 12)
+
+# # Use Dual Simplex for LPs to reduce memory usage
+# m.setParam(GRB.Param.Method, 1)
+
+# # Use half of the available CPU threads
+# m.setParam(GRB.Param.Threads, 1)
+
+# # Keep presolve enabled and force sparsify reduction
+# m.setParam(GRB.Param.Presolve, 2)
+# m.setParam(GRB.Param.PreSparsify, 2)
+
 alpha = m.addVar(lb=-GRB.INFINITY, name="alpha")
 
 # variables: only a >= b and k >= d
@@ -44,7 +68,6 @@ def get_x(k, a, b, d):
         return -x[(d, a, b, k)]
 
 # ---------- configuration constraints ----------
-
 FIXED_K = 11
 for (k, a, b, d), var in x.items():
     if k != FIXED_K: continue
@@ -74,7 +97,6 @@ for k, neigh in tqdm(configs, desc="Adding configuration constraints"):
     conf_constr.append((k, neigh, c))
 
 # ---------- solve ----------
-m.setObjective(alpha, GRB.MAXIMIZE)
 m.optimize()
 
 pretty_print_and_save(m, alpha, conf_constr, save=(alpha.X < 6))

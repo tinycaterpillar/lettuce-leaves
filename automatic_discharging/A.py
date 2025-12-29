@@ -8,19 +8,43 @@ from utils import pretty_print_and_save
 from key import params
 
 CONF_DIR = "active"
+REDUCIBLE_DIR = "reducible"
 DEGS = list(range(3, 12))
 
-# ---------- load configurations ----------
+# ---------- load reducible configurations ----------
+reducible = set()
+
+for fn in os.listdir(REDUCIBLE_DIR):
+    if not fn.endswith("-vertex.txt"):
+        continue
+    k = int(fn.split("-")[0])
+    with open(os.path.join(REDUCIBLE_DIR, fn)) as f:
+        for line in f:
+            if line.strip():
+                cfg = tuple(map(int, line.split()))
+                reducible.add((k, cfg))
+
+print(f"Loaded {len(reducible)} reducible configurations")
+
+# ---------- load active configurations ----------
 configs = []
+skipped = 0
+
 for fn in tqdm(os.listdir(CONF_DIR), desc="Loading configuration files"):
-    if not fn.endswith("-vertex_filtered.txt"):
+    if not fn.endswith("-vertex.txt"):
         continue
     k = int(fn.split("-")[0])
     with open(os.path.join(CONF_DIR, fn)) as f:
         for line in f:
-            if line.strip():
-                configs.append((k, list(map(int, line.split()))))
+            if not line.strip():
+                continue
+            cfg = tuple(map(int, line.split()))
+            if (k, cfg) in reducible:
+                skipped += 1
+                continue
+            configs.append((k, list(cfg)))
 
+print(f"Skipped {skipped} reducible configurations")
 
 # ---------- model ----------
 # Create an environment with your WLS license

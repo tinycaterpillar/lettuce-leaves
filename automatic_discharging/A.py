@@ -4,108 +4,118 @@ from gurobipy import GRB
 from itertools import product
 from tqdm import tqdm
 
-from utils import pretty_print_and_save, pretty_print_rules
+from utils import pretty_print_and_save, pretty_print_rules, CONF_DIR, REDUCIBLE_DIR
 from key import params
 
-CONF_DIR = "active"
-REDUCIBLE_DIR = "reducible"
-DEGS = list(range(3, 12))
 
-# ---------- load reducible configurations ----------
-reducible = set()
+def solve(verbose=True):
+    DEGS = list(range(3, 12))
 
-for fn in os.listdir(REDUCIBLE_DIR):
-    if not fn.endswith("-vertex.txt"):
-        continue
-    k = int(fn.split("-")[0])
-    with open(os.path.join(REDUCIBLE_DIR, fn)) as f:
-        for line in f:
-            if line.strip():
+    # ---------- load reducible configurations ----------
+    reducible = set()
+
+    for fn in os.listdir(REDUCIBLE_DIR):
+        if not fn.endswith("-vertex.txt"):
+            continue
+        k = int(fn.split("-")[0])
+        with open(os.path.join(REDUCIBLE_DIR, fn)) as f:
+            for line in f:
+                if line.strip():
+                    cfg = tuple(map(int, line.split()))
+                    reducible.add((k, cfg))
+
+    if verbose:
+        print(f"Loaded {len(reducible)} reducible configurations")
+
+    # ---------- load active configurations ----------
+    configs = []
+    skipped = 0
+
+    it = os.listdir(CONF_DIR)
+    if verbose:
+        it = tqdm(it, desc="Loading configuration files")
+
+    for fn in it:
+        if not fn.endswith(".txt"):
+            continue
+        if "-vertex_" not in fn:
+            continue
+        k = int(fn.split("-vertex_")[0])
+        with open(os.path.join(CONF_DIR, fn)) as f:
+            for line in f:
+                if not line.strip():
+                    continue
                 cfg = tuple(map(int, line.split()))
-                reducible.add((k, cfg))
+                if (k, cfg) in reducible:
+                    skipped += 1
+                    continue
+                configs.append((k, list(cfg)))
 
-print(f"Loaded {len(reducible)} reducible configurations")
+    print(f"Skipped {skipped} reducible configurations")
 
-# ---------- load active configurations ----------
-configs = []
-skipped = 0
+    # ---------- model ----------
+    env = gp.Env(params=params)
+    m = gp.Model(env=env)
 
-for fn in tqdm(os.listdir(CONF_DIR), desc="Loading configuration files"):
-    if not fn.endswith(".txt"):
-        continue
-    if "-vertex_" not in fn:
-        continue
-    k = int(fn.split("-vertex_")[0])
-    with open(os.path.join(CONF_DIR, fn)) as f:
-        for line in f:
-            if not line.strip():
-                continue
-            cfg = tuple(map(int, line.split()))
-            if (k, cfg) in reducible:
-                skipped += 1
-                continue
-            configs.append((k, list(cfg)))
+    if not verbose:
+        m.setParam(GRB.Param.OutputFlag, 0)
 
-print(f"Skipped {skipped} reducible configurations")
+    alpha = m.addVar(lb=-GRB.INFINITY, name="alpha")
+    m.setObjective(alpha, GRB.MAXIMIZE)
 
-# ---------- model ----------
-# Create an environment with your WLS license
-env = gp.Env(params=params)
+    # ---------- variables ----------
+    x = {}
 
-# Create the model within the Gurobi environment
-m = gp.Model(env=env)
-alpha = m.addVar(lb=-GRB.INFINITY, name="alpha")
-m.setObjective(alpha, GRB.MAXIMIZE)
+    it = product(DEGS, repeat=2)
+    if verbose:
+        it = tqdm(it, total=len(DEGS)**2, desc="Creating variables")
 
-# ---------- memory / performance parameters ----------
-# # Soft memory limit (GB) — set a few GB below total RAM (12.7GB here)
-# m.setParam(GRB.Param.SoftMemLimit, 12)
+    for k, d in it:
+        if k < d:
+            continue
+        x[(k, d)] = m.addVar(lb=-GRB.INFINITY, name=f"x_{{{k}->{d}}}")
 
-# # Use Dual Simplex for LPs to reduce memory usage
-# m.setParam(GRB.Param.Method, 1)
+    m.update()
 
-# # Use half of the available CPU threads
-# m.setParam(GRB.Param.Threads, 1)
+    def get_x(k, d):
+        return x[(k, d)] if k >= d else -x[(d, k)]
 
-# # Keep presolve enabled and force sparsify reduction
-# m.setParam(GRB.Param.Presolve, 2)
-# m.setParam(GRB.Param.PreSparsify, 2)
+    # ---------- fixed rules ----------
+    FIXED_K = 11
+    for (k, d), var in x.items():
+        if k != FIXED_K:
+            continue
+        if d <= 5:
+            val = (6 - d) / d
+        else:
+            val = 0
+        m.addConstr(var == val)
 
-# variables: only k >= d
-x = {}
-for k, d in tqdm(product(DEGS, repeat=2), total=len(DEGS) ** 2, desc="Creating variables"):
-    if k < d: continue
-    x[(k, d)] = m.addVar(lb=-GRB.INFINITY, name=f"x_{{{k}->{d}}}")
-m.update()
+    # ---------- configuration constraints ----------
+    conf_constr = []
 
-# x_{k→d}: charge sent from a k-vertex to a d-vertex.
-def get_x(k, d):
-    """x_{k->d} with antisymmetry. k>=d in storage."""
-    if k >= d:
-        return x[(k, d)]
-    else:
-        return -x[(d, k)]
+    it = configs
+    if verbose:
+        it = tqdm(it, desc="Adding configuration constraints")
 
-# ---------- configuration constraints ----------
-FIXED_K = 11
-for (k, d), var in x.items():
-    if k != FIXED_K: continue
+    for k, neigh in it:
+        c = m.addConstr(
+            k - alpha - gp.quicksum(get_x(k, neigh[i]) for i in range(k)) >= 0
+        )
+        conf_constr.append((k, neigh, c))
 
-    if d <= 5:
-        # R1: 11 -> d sends (6-d)/d
-        val = (6 - d) / d
-    else:
-        # no charge sent from 11-vertex to d >= 6
-        val = 0
-    m.addConstr(var == val)
+    # ---------- solve ----------
+    m.optimize()
 
-conf_constr = []
-for k, neigh in tqdm(configs, desc="Adding configuration constraints"):
-    c = m.addConstr(k - alpha - gp.quicksum(get_x(k, neigh[i]) for i in range(k)) >= 0)
-    conf_constr.append((k, neigh, c))
+    if m.Status != GRB.OPTIMAL:
+        if verbose:
+            print("No optimal solution available.")
+        return None
 
-# ---------- solve ----------
-m.optimize()
+    pretty_print_and_save(m, alpha, conf_constr, verbose=verbose)
+    pretty_print_rules(x, verbose=verbose)
 
-pretty_print_and_save(m, alpha, conf_constr)
-pretty_print_rules(x)
+    return alpha.X
+
+if __name__ == "__main__":
+    solve(verbose=True)

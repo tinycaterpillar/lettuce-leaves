@@ -1,73 +1,94 @@
 import os
 from gurobipy import GRB
-from datetime import datetime
 
-def collect_tight_configs(conf_constr, eps=1e-6):
-    tight_by_k = {}
+CONF_DIR = "active"
+REDUCIBLE_DIR = "reducible"
+TIGHT_DIR = "tight"
+
+def collect_bottleneck_configs(conf_constr, eps_slack=1e-6, eps_pi=1e-9):
+    """
+    bottleneck = binding(slack~0) and valuable(|Pi|>0)
+    returns: dict[k] -> list of (neigh, slack, pi)
+    """
+    bottleneck_by_k = {}
 
     for k, neigh, c in conf_constr:
-        if abs(c.Slack) < eps:
-            tight_by_k.setdefault(k, []).append(neigh)
+        slack = c.Slack
+        pi = c.Pi  # dual value (shadow price)
 
-    return tight_by_k
+        if abs(slack) < eps_slack and abs(pi) > eps_pi:
+            bottleneck_by_k.setdefault(k, []).append(neigh)
+
+    return bottleneck_by_k
 
 
-def save_tight_configs(tight_by_k, serial, out_dir="tight"):
+def save_tight_configs(tight_by_k, out_dir=TIGHT_DIR):
     os.makedirs(out_dir, exist_ok=True)
 
     for k, neighs in tight_by_k.items():
-        fname = os.path.join(out_dir, f"{k}-vertex_{serial}.txt")
-        with open(fname, "w") as f:
+        fname = os.path.join(out_dir, f"{k}-vertex.txt")
+        with open(fname, "a") as f:
             for neigh in neighs:
                 f.write(" ".join(map(str, neigh)) + "\n")
 
+def clear_files_in_dir(dir_path):
+    """
+    Delete all files in dir_path (keep subdirectories).
+    """
+    if not os.path.isdir(dir_path):
+        raise ValueError(f"Not a directory: {dir_path}")
 
-def pretty_print_and_save(m, alpha, conf_constr, save=True, out_dir="tight"):
+    for name in os.listdir(dir_path):
+        path = os.path.join(dir_path, name)
+        if os.path.isfile(path):
+            os.remove(path)
+
+def pretty_print_and_save(m, alpha, conf_constr, verbose=True, out_dir=TIGHT_DIR):
     # collect
-    tight_by_k = collect_tight_configs(conf_constr)
+    tight_by_k = collect_bottleneck_configs(conf_constr)
 
     # ---- print summary ----
-    status_map = {
-        GRB.OPTIMAL: "OPTIMAL",
-        GRB.INFEASIBLE: "INFEASIBLE",
-        GRB.UNBOUNDED: "UNBOUNDED",
-        GRB.TIME_LIMIT: "TIME_LIMIT"
-    }
+    if verbose:
+        status_map = {
+            GRB.OPTIMAL: "OPTIMAL",
+            GRB.INFEASIBLE: "INFEASIBLE",
+            GRB.UNBOUNDED: "UNBOUNDED",
+            GRB.TIME_LIMIT: "TIME_LIMIT"
+        }
 
-    print("\n" + "="*60)
-    print(" Optimization Summary")
-    print("="*60)
+        print("\n" + "="*60)
+        print(" Optimization Summary")
+        print("="*60)
 
-    status = status_map.get(m.Status, f"STATUS {m.Status}")
-    serial = datetime.now().strftime("%Y%m%d_%H%M%S_%f")
-    print(f"Status        : {status}")
-    print(f"Serial        : {serial}")
+        status = status_map.get(m.Status, f"STATUS {m.Status}")
+        print(f"Status        : {status}")
 
-    if m.Status == GRB.OPTIMAL:
-        print(f"Alpha         : {alpha.X:.8f}")
-        print(f"Variables     : {m.NumVars}")
-        print(f"Constraints   : {m.NumConstrs}")
-    else:
-        print("No optimal solution available.")
-        return
+        if m.Status == GRB.OPTIMAL:
+            print(f"Alpha         : {alpha.X:.8f}")
+            print(f"Variables     : {m.NumVars}")
+            print(f"Constraints   : {m.NumConstrs}")
+        else:
+            print("No optimal solution available.")
+            return
 
-    print("="*60)
+        print("="*60)
 
-    total = sum(len(v) for v in tight_by_k.values())
-    print("\nTight configurations")
-    print("-"*40)
-    print(f"Total         : {total}")
+        total = sum(len(v) for v in tight_by_k.values())
+        print("\nTight configurations")
+        print("-"*40)
+        print(f"Total         : {total}")
 
-    for k in sorted(tight_by_k):
-        print(f"  k = {k:2d}     : {len(tight_by_k[k])}")
+        for k in sorted(tight_by_k):
+            print(f"  k = {k:2d}     : {len(tight_by_k[k])}")
 
     # ---- save ----
-    if save:
-        save_tight_configs(tight_by_k, serial, out_dir)
+    clear_files_in_dir(out_dir)
+    save_tight_configs(tight_by_k, out_dir)
+    if verbose:
         print(f"\nSaved to '{out_dir}/'")
 
 
-def pretty_print_rules(x, eps=1e-9, out_dir="tight", fname="rules.txt"):
+def pretty_print_rules(x, eps=1e-9, verbose=True, out_dir=".", fname="rules.txt"):
     """
     Print and save discharging rules in a clean aligned table.
     x : dict[(k, d)] -> gurobi Var
@@ -110,7 +131,8 @@ def pretty_print_rules(x, eps=1e-9, out_dir="tight", fname="rules.txt"):
     lines.append("=" * 50)
 
     # Print
-    print("\n".join(lines))
+    if verbose:
+        print("\n".join(lines))
 
     # Save
     os.makedirs(out_dir, exist_ok=True)
@@ -118,5 +140,5 @@ def pretty_print_rules(x, eps=1e-9, out_dir="tight", fname="rules.txt"):
     with open(path, "w") as f:
         for line in lines:
             f.write(line + "\n")
-
-    print(f"\nSaved to '{path}'")
+    if verbose:
+        print(f"\nSaved to '{path}'")

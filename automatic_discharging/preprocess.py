@@ -2,6 +2,8 @@ import os
 from collections import Counter
 from tqdm import tqdm
 
+from utils import REDUCIBLE_DIR
+
 PENDING_DIR = "pending"
 
 def signature(config):

@@ -4,7 +4,7 @@ from gurobipy import GRB
 from itertools import product
 from tqdm import tqdm
 
-from utils import pretty_print_and_save
+from utils import pretty_print_and_save, pretty_print_rules
 from key import params
 
 CONF_DIR = "active"
@@ -31,9 +31,11 @@ configs = []
 skipped = 0
 
 for fn in tqdm(os.listdir(CONF_DIR), desc="Loading configuration files"):
-    if not fn.endswith("-vertex.txt"):
+    if not fn.endswith(".txt"):
         continue
-    k = int(fn.split("-")[0])
+    if "-vertex_" not in fn:
+        continue
+    k = int(fn.split("-vertex_")[0])
     with open(os.path.join(CONF_DIR, fn)) as f:
         for line in f:
             if not line.strip():
@@ -106,3 +108,4 @@ for k, neigh in tqdm(configs, desc="Adding configuration constraints"):
 m.optimize()
 
 pretty_print_and_save(m, alpha, conf_constr)
+pretty_print_rules(x)

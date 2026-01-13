@@ -1,18 +1,10 @@
 import os
 import time
 
-from utils import TIGHT_DIR, REDUCIBLE_DIR
+from utils import TIGHT_DIR, REDUCIBLE_DIR, clear_dir
 from A import solve
 
 ALPHA_TARGET = 6.0
-
-def clear_dir(dir_path):
-    """Remove all files in a directory."""
-    if not os.path.isdir(dir_path):
-        return
-    for fn in os.listdir(dir_path):
-        os.remove(os.path.join(dir_path, fn))
-
 
 def move_tight_to_reducible():
     """

@@ -10,20 +10,19 @@ TIGHT_DIR = "tight"
 
 
 @dataclass
-class Constrints:
+class Constraint:
     k: int
     neigh: list
     c: gurobipy.Constr
     type: str   # "V" or "F"
 
 
-def collect_bottleneck_configs(conf_constr, eps_slack=1e-6):
-    tight = [cons for cons in conf_constr if abs(cons.c.Slack) < eps_slack]
+def collect_bottleneck_configs(conf_constr, eps=1e-6):
+    tight = [cons for cons in conf_constr if abs(cons.c.Slack) < eps]
     assert tight, "There is no tight constraint"
 
     best_pi = max(abs(cons.c.Pi) for cons in tight)
-
-    return [cons for cons in tight if abs(abs(cons.c.Pi) - best_pi) < 1e-9]
+    return [cons for cons in tight if abs(abs(cons.c.Pi) - best_pi) < eps]
 
 
 def save_tight_config(bottlenecks, out_dir=TIGHT_DIR):
@@ -36,7 +35,6 @@ def save_tight_config(bottlenecks, out_dir=TIGHT_DIR):
 
         with open(fname, "w") as f:
             f.write(" ".join(map(str, b.neigh)) + "\n")
-
 
 
 def clear_dir(dir_path):

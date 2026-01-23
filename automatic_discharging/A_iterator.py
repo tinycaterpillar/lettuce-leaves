@@ -41,6 +41,7 @@ def main():
         clear_dir(TIGHT_DIR)
 
         alpha = solve(verbose=False)
+        print(alpha)
         print(f"alpha = {alpha:.8f}")
 
         if alpha >= ALPHA_TARGET:

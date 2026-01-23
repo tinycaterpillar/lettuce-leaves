@@ -4,7 +4,7 @@ from gurobipy import GRB
 from itertools import product
 from tqdm import tqdm
 
-from utils import pretty_print_and_save, pretty_print_rules, CONF_DIR, REDUCIBLE_DIR, Constrints
+from utils import pretty_print_and_save, pretty_print_rules, CONF_DIR, REDUCIBLE_DIR, Constraint
 from key import params
 
 def load_reducible_configs(suffix):
@@ -116,21 +116,46 @@ def solve(verbose=True):
             val = 0
         m.addConstr(var == val)
 
-    FIXED_K = 8
-    for (k, d), var in xVV.items():
-        if k != FIXED_K:
+    for (k, d), var in xFF.items():
+        if k != FIXED_F:
             continue
-        if d == 5:
-            val = 1/5
-        else:
-            val = 0
+        val = 0
+        m.addConstr(var == val)
+
+    #######
+    for (k, d), var in xFV.items():
+        if d <= 6: continue
+        if k != 3: continue
+        val = -(d-6)/(2*d)
+        m.addConstr(var == val)
+
+    for (k, d), var in xFV.items():
+        if d != 5: continue
+
+        val = (2*k-3)/k
+        m.addConstr(var == val)
+
+    # FIXED_V = 8
+    # for (k, d), var in xVV.items():
+    #     if k != FIXED_V:
+    #         continue
+    #     if d == 5:
+    #         val = 1/5
+    #     else:
+    #         val = 0
+    #     m.addConstr(var == val)
+
+    for (k, d), var in xVV.items():
+        if d != 5: continue
+        if k == 5: continue
+        val = (k-6)/(2*k)
         m.addConstr(var == val)
 
     # enforce diagonal = 0 for skew-symmetry
     for k in faces:
-        m.addConstr(xFF[(k, k)] == 0, name=f"FF_diag0[{k}]")
+        m.addConstr(get_FF(k, k) == 0, name=f"FF_diag0[{k}]")
     for k in vertices:
-        m.addConstr(xVV[(k, k)] == 0, name=f"VV_diag0[{k}]")
+        m.addConstr(get_VV(k, k) == 0, name=f"VV_diag0[{k}]")
 
     # ---------- configuration constraints ----------
     conf_constr = []
@@ -152,7 +177,7 @@ def solve(verbose=True):
             )
             >= 0
         )
-        conf_constr.append(Constrints(k=k, neigh=neigh, c=c, type="V"))
+        conf_constr.append(Constraint(k=k, neigh=neigh, c=c, type="V"))
 
 
     # face-centered
@@ -172,7 +197,7 @@ def solve(verbose=True):
             )
             >= 0
         )
-        conf_constr.append(Constrints(k=k, neigh=neigh, c=c, type="F"))
+        conf_constr.append(Constraint(k=k, neigh=neigh, c=c, type="F"))
 
     # ---------- solve ----------
     m.optimize()

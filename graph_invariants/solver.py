@@ -2,6 +2,10 @@ import networkx as nx
 from pysat.formula import CNF, IDPool
 from pysat.card import CardEnc
 from pysat.solvers import Cadical195
+import tempfile
+import subprocess
+
+from utils import parse_kissat_output
 
 class ChromaticNumberSAT:
     """
@@ -13,6 +17,7 @@ class ChromaticNumberSAT:
         self.V = sorted(graph.nodes())
         self.pool = IDPool()
         self.solver = solver
+        self.solver_path = "./external_program/kissat"
 
     def var(self, v, i):
         return self.pool.id(("c", v, i))
@@ -39,15 +44,33 @@ class ChromaticNumberSAT:
                 cnf.append([-self.var(u, i), -self.var(v, i)])
 
         return cnf
+    
+    def _external_solver(self, cnf, quick):
+        assert self.solver_path, "Please set self.solver_path to the path of an external solver"
+        
+        with tempfile.NamedTemporaryFile(suffix=".cnf") as tmp:
+            cnf.to_file(tmp.name)
+            tmp.flush()
 
-    def _solve_k(self, k: int):
+            res = subprocess.run(
+                [self.solver_path, tmp.name],
+                capture_output=True, text=True
+            )
+
+            sat, model = parse_kissat_output(res.stdout, quick)
+            return sat, model
+
+    def _solve_k(self, k: int, external, quick):
         cnf = self._build_cnf_for_k(k)
+
+        if external: return self._external_solver(cnf, quick)
+            
         with self.solver(bootstrap_with=cnf.clauses) as s:
             sat = s.solve()
             if not sat:
                 return False, None
             model = set(s.get_model())
-            coloring = self._extract_coloring(k, model)
+            coloring = [] if quick else self._extract_coloring(k, model)
             return True, coloring
 
     def _extract_coloring(self, k: int, model: set[int]) -> dict:
@@ -69,7 +92,7 @@ class ChromaticNumberSAT:
         clique = nx.algorithms.approximation.max_clique(G)
         return len(clique)
 
-    def chromatic_number(self):
+    def chromatic_number(self, external=True, quick=False):
         n = len(self.V)
         if n == 0:
             return 0, {}
@@ -81,7 +104,7 @@ class ChromaticNumberSAT:
         best_k, best_coloring = None, None
         while lo <= hi:
             mid = (lo + hi) // 2
-            ok, coloring = self._solve_k(mid)
+            ok, coloring = self._solve_k(mid, external=external, quick=quick)
             if ok:
                 best_k, best_coloring = mid, coloring
                 hi = mid - 1
@@ -92,4 +115,4 @@ class ChromaticNumberSAT:
 
 
 if __name__ == "__main__":
-    pass
+    pass    

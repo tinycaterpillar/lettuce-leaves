@@ -49,49 +49,76 @@ def init_db(db_path: str = DB_PATH):
         conn.commit()
 
 
-def save_graph(
+def make_row(
     graph,
     file_path: str,
     graph_index: int,
     chromatic_number_of_square: int,
     prediction: float,
     conjecture_role: str,   # 'TIGHT'/'COUNTEREXAMPLE'/'SUPPORTING'/'UNKNOWN'
-    db_path: str = DB_PATH
 ):
-    g6_str = encode(graph)
+    """
+    Return a DB row tuple matching the results table schema.
+    """
+    g6 = encode(graph)
     file_name = os.path.basename(file_path)
 
     vertex_count = graph.number_of_nodes()
     edge_count = graph.number_of_edges()
     max_deg = max(dict(graph.degree()).values()) if vertex_count > 0 else 0
+
     timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
-    with sqlite3.connect(db_path) as conn:
-        cur = conn.cursor()
-        cur.execute("""
-            INSERT INTO results (
-                g6, file_name, graph_index,
-                vertex_count, edge_count, max_deg,
-                chromatic_number_of_square, prediction, conjecture_role,
-                timestamp
-            )
-            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-            ON CONFLICT(g6) DO UPDATE SET
-                file_name = excluded.file_name,
-                graph_index = excluded.graph_index,
-                vertex_count = excluded.vertex_count,
-                edge_count = excluded.edge_count,
-                max_deg = excluded.max_deg,
-                chromatic_number_of_square = excluded.chromatic_number_of_square,
-                prediction = excluded.prediction,
-                conjecture_role = excluded.conjecture_role,
-                timestamp = excluded.timestamp
-        """, (
-            g6_str, file_name, graph_index,
-            vertex_count, edge_count, max_deg,
-            chromatic_number_of_square, prediction, conjecture_role,
-            timestamp
-        ))
+    return (
+        g6,                 # g6
+        file_name,          # file_name
+        graph_index,        # graph_index
+        vertex_count,       # vertex_count
+        edge_count,         # edge_count
+        max_deg,            # max_deg
+        chromatic_number_of_square,
+        prediction,
+        conjecture_role,
+        timestamp,
+    )
+
+
+UPSERT_SQL = """
+INSERT INTO results (
+    g6, file_name, graph_index,
+    vertex_count, edge_count, max_deg,
+    chromatic_number_of_square, prediction, conjecture_role,
+    timestamp
+)
+VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+ON CONFLICT(g6) DO UPDATE SET
+    file_name = excluded.file_name,
+    graph_index = excluded.graph_index,
+    vertex_count = excluded.vertex_count,
+    edge_count = excluded.edge_count,
+    max_deg = excluded.max_deg,
+    chromatic_number_of_square = excluded.chromatic_number_of_square,
+    prediction = excluded.prediction,
+    conjecture_role = excluded.conjecture_role,
+    timestamp = excluded.timestamp;
+"""
+
+def save_rows(
+    rows: list[tuple],
+    db_path: str | Path = DB_PATH,
+):
+    """
+    rows: [(g6, file_name, graph_index, vertex_count, edge_count, max_deg,
+            chromatic_number_of_square, prediction, conjecture_role, timestamp), ...]
+    """
+    if not rows:
+        return
+
+    with sqlite3.connect(str(db_path)) as conn:
+        conn.execute("PRAGMA journal_mode=WAL;")
+        conn.execute("PRAGMA synchronous=NORMAL;")
+
+        conn.executemany(UPSERT_SQL, rows)
         conn.commit()
 
 
@@ -113,4 +140,3 @@ def export_to_excel_single_sheet(db_path: str = DB_PATH) -> None:
 if __name__ == "__main__":
     # init_db()
     export_to_excel_single_sheet()
-    

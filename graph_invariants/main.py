@@ -4,7 +4,7 @@ import sqlite3
 from pathlib import Path
 
 from utils import load_graphs, setup_logger
-from db import DB_PATH, make_row, save_rows
+from db import upsert_result
 from solver import ChromaticNumberSAT
 
 def get_prediction(delta):
@@ -30,17 +30,23 @@ logger.info(f"[PROCESSING] {folder} ({len(g_list)} graphs)")
 
 rows = []
 for ind, g in enumerate(g_list):
-    if ind%100 == 0: logger.info(f"[PROCESSING] {ind}th graphs")
+    if ind%10 == 0: logger.info(f"[PROCESSING] {ind}th graphs")
     delta = max(dict(g.degree()).values())
     if delta < 3: continue
 
     g2 = nx.power(g, 2)
-    chi, _ = ChromaticNumberSAT(g2).chromatic_number()
     predict = get_prediction(delta)
-    if predict <= chi:
-        rule = "COUNTEREXAMPLE" if chi > predict else 'TIGHT'
-        rows.append(make_row(g, path, ind, chi, predict, rule))
-        logger.info(f"[{rule}] found")
+    sat, _ = ChromaticNumberSAT(g2).solve_k(predict)
+    # χ(G2) <= predict
+    if sat:
+        support, _ = ChromaticNumberSAT(g2).solve_k(predict-1)
+        # χ(G2) = predict
+        if not support:
+            upsert_result(g=g, file_path=path, graph_index=ind, prediction=predict, conjecture_role="TIGHT")
+            logger.info(f"[TIGHT] found, {ind}th graphs")
+    # χ(G2) > predict
+    else:
+        upsert_result(g=g, file_path=path, graph_index=ind, prediction=predict, conjecture_role="COUNTEREXAMPLE")
+        logger.info(f"[COUNTEREXAMPLE] found, {ind}th graphs")
 
-save_rows(rows)
 logger.info(f"[DONE] Finished checking all {len(g_list)} graphs across all .g6 files.")

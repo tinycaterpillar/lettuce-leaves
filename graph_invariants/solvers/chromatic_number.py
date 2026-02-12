@@ -60,7 +60,7 @@ class ChromaticNumberSAT:
             sat, model = parse_kissat_output(res.stdout, quick)
             return sat, model
 
-    def solve_k(self, k: int, external=True, quick=True):
+    def _solve_k(self, k: int, external, quick):
         cnf = self._build_cnf_for_k(k)
 
         if external: return self._external_solver(cnf, quick)
@@ -104,7 +104,7 @@ class ChromaticNumberSAT:
         best_k, best_coloring = None, None
         while lo <= hi:
             mid = (lo + hi) // 2
-            ok, coloring = self.solve_k(mid, external=external, quick=quick)
+            ok, coloring = self._solve_k(mid, external=external, quick=quick)
             if ok:
                 best_k, best_coloring = mid, coloring
                 hi = mid - 1

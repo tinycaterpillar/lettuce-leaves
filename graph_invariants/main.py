@@ -1,52 +1,39 @@
-import argparse
-import networkx as nx
-import sqlite3
-from pathlib import Path
+from sage.all import *
+from itertools import product
+from tqdm import tqdm
+import random
+import os
 
-from utils import load_graphs, setup_logger
-from db import upsert_result
-from solver import ChromaticNumberSAT
+from utils import draw, setup_logger
+from solvers import contains_subgraph_through_vertex
 
-def get_prediction(delta):
-    if delta == 3: return 7
-    elif delta < 8: return delta+5
-    else: return 3*delta//2+1
+def oriented_path_iterator(length):
+    for directions in product([0, 1], repeat=length):
+        name = ''.join('→' if d == 0 else '←' for d in directions)
+        G = DiGraph(
+            [(i, i+1) if d == 0 else (i+1, i)
+             for i, d in enumerate(directions)],
+            name=name
+        )
+        yield G
 
-parser = argparse.ArgumentParser(
-    description="Process graph data folder"
-)
-parser.add_argument(
-    "folder",
-    type=str,
-    help="Path to data folder (e.g. data/11to20)"
-)
-args = parser.parse_args()
+def exp():
+    k = random.randint(3, 5)
+    n = random.randint(2*k+1, 20)
+    seed = random.randint(1, 1000)
+    logger.info(f"k {k}, n {n}, seed {seed}")
+    length = 2*k-1
 
-folder = Path(args.folder)
-path = str(list(folder.glob("*.g6"))[0])
-logger = setup_logger(folder)
-g_list = load_graphs(path)
-logger.info(f"[PROCESSING] {folder} ({len(g_list)} graphs)")
+    D = graphs.RandomRegular(2*k, n, seed=seed).eulerian_orientation()
+    for v in D.vertices():
+        for p in tqdm(oriented_path_iterator(length), total=(2**length)):
+            if contains_subgraph_through_vertex(D, p, v): continue
+            logger.info(f"[COUNTER] k {k}, n {n}, seed {seed}, p {p}")
 
-rows = []
-for ind, g in enumerate(g_list):
-    if ind%10 == 0: logger.info(f"[PROCESSING] {ind}th graphs")
-    delta = max(dict(g.degree()).values())
-    if delta < 3: continue
+    logger.info(f"[Done] k {k}, n {n}, seed {seed}, p {p}")
 
-    g2 = nx.power(g, 2)
-    predict = get_prediction(delta)
-    sat, _ = ChromaticNumberSAT(g2).solve_k(predict)
-    # χ(G2) <= predict
-    if sat:
-        support, _ = ChromaticNumberSAT(g2).solve_k(predict-1)
-        # χ(G2) = predict
-        if not support:
-            upsert_result(g=g, file_path=path, graph_index=ind, prediction=predict, conjecture_role="TIGHT")
-            logger.info(f"[TIGHT] found, {ind}th graphs")
-    # χ(G2) > predict
-    else:
-        upsert_result(g=g, file_path=path, graph_index=ind, prediction=predict, conjecture_role="COUNTEREXAMPLE")
-        logger.info(f"[COUNTEREXAMPLE] found, {ind}th graphs")
 
-logger.info(f"[DONE] Finished checking all {len(g_list)} graphs across all .g6 files.")
+if __name__ == "__main__":
+    logger = setup_logger(folder=".", filename=f"log{os.getpid()}.log")
+    for i in range(100):
+        exp()

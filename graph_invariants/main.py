@@ -18,20 +18,20 @@ def oriented_path_iterator(length):
         yield G
 
 def exp():
-    k = random.randint(3, 5)
-    n = random.randint(2*k+1, 20)
+    k = random.randint(3, 6)
+    n = random.randint(2*k+1, 100)
     seed = random.randint(1, 1000)
     logger.info(f"k {k}, n {n}, seed {seed}")
     length = 2*k-1
 
-
     D = graphs.RandomRegular(2*k, n, seed=seed).eulerian_orientation()
-    for v in D.vertices():
-        for p in oriented_path_iterator(length):
-            if contains_subgraph_through_vertex(D, p, v): continue
-            logger.info(f"[COUNTER] k {k}, n {n}, seed {seed}, p {p}, v {v}")
+    if not D.is_hamiltonian(): log.info(f"[COUNTER] k {k}, n {n}, seed {seed} is not hamiltonian")
+    # for v in D.vertices():
+    #     for p in oriented_path_iterator(length):
+    #         if contains_subgraph_through_vertex(D, p, v): continue
+    #         logger.info(f"[COUNTER] k {k}, n {n}, seed {seed}, p {p}, v {v}")
 
-    logger.info(f"[Done] k {k}, n {n}, seed {seed}, p {p}")
+    # logger.info(f"[Done] k {k}, n {n}, seed {seed}, p {p}")
 
 
 if __name__ == "__main__":

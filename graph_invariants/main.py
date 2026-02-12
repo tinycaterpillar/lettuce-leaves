@@ -24,16 +24,18 @@ def exp():
     logger.info(f"k {k}, n {n}, seed {seed}")
     length = 2*k-1
 
+
     D = graphs.RandomRegular(2*k, n, seed=seed).eulerian_orientation()
     for v in D.vertices():
-        for p in tqdm(oriented_path_iterator(length), total=(2**length)):
+        for p in oriented_path_iterator(length):
             if contains_subgraph_through_vertex(D, p, v): continue
-            logger.info(f"[COUNTER] k {k}, n {n}, seed {seed}, p {p}")
+            logger.info(f"[COUNTER] k {k}, n {n}, seed {seed}, p {p}, v {v}")
 
     logger.info(f"[Done] k {k}, n {n}, seed {seed}, p {p}")
 
 
 if __name__ == "__main__":
-    logger = setup_logger(folder=".", filename=f"log{os.getpid()}.log")
+    logger = setup_logger(folder="log", filename=f"log{os.getpid()}.log")
+
     for i in range(100):
         exp()

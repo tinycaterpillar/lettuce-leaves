@@ -5,7 +5,7 @@ import random
 import os
 
 from utils import draw, setup_logger
-from solvers import contains_subgraph_through_vertex
+from solvers import find_subgraph_with_vertex
 
 def oriented_path_iterator(length):
     for directions in product([0, 1], repeat=length):
@@ -17,25 +17,25 @@ def oriented_path_iterator(length):
         )
         yield G
 
-def exp():
-    k = random.randint(3, 6)
-    n = random.randint(2*k+1, 100)
-    seed = random.randint(1, 1000)
-    logger.info(f"k {k}, n {n}, seed {seed}")
-    length = 2*k-1
-
-    D = graphs.RandomRegular(2*k, n, seed=seed).eulerian_orientation()
-    if not D.is_hamiltonian(): log.info(f"[COUNTER] k {k}, n {n}, seed {seed} is not hamiltonian")
-    # for v in D.vertices():
-    #     for p in oriented_path_iterator(length):
-    #         if contains_subgraph_through_vertex(D, p, v): continue
-    #         logger.info(f"[COUNTER] k {k}, n {n}, seed {seed}, p {p}, v {v}")
-
-    # logger.info(f"[Done] k {k}, n {n}, seed {seed}, p {p}")
-
 
 if __name__ == "__main__":
     logger = setup_logger(folder="log", filename=f"log{os.getpid()}.log")
 
-    for i in range(100):
-        exp()
+    k = random.randint(3, 6)
+    n = random.randint(2*k+1, 2*k+5)
+    seed = random.randint(1, 1000)
+    k = 5; n = 12; seed = 311
+    logger.info(f"k {k}, n {n}, seed {seed}")
+    length = 2*k-1
+    
+    D = graphs.RandomRegular(2*k, n, seed=seed).eulerian_orientation()
+    for v in D.vertices():
+        sum = 0
+        for p in oriented_path_iterator(length):
+            cp = find_subgraph_with_vertex(D, p, v).__next__()
+            if cp:
+                sum += 1
+        print(f"Vertex: {v}, sum: {sum}")
+        logger.info(f"Vertex: {v}, sum: {sum}")
+            
+    

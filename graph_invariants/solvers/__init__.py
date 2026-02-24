@@ -1,8 +1,8 @@
 from .chromatic_number import ChromaticNumberSAT
-from .subgraph import contains_subgraph, contains_subgraph_through_vertex
+from .subgraph import find_subgraph_isomorphism, find_subgraph_with_vertex
 
 __all__ = [
     "ChromaticNumberSAT",
-    "contains_subgraph",
-    "contains_subgraph_through_vertex",
+    "find_subgraph_isomorphism",
+    "find_subgraph_with_vertex",
 ]

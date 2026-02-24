@@ -1,3 +1,5 @@
 data/
 external_program/
 log/
+results/
+__pycache__/

@@ -1,43 +1,15 @@
 from sage.all import *
-import networkx as nx
-from networkx.algorithms import isomorphism
 
-def contains_subgraph(G_sage, H_sage):
-    G_nx = nx.DiGraph(G_sage.to_dictionary())
-    H_nx = nx.DiGraph(H_sage.to_dictionary())
+def find_subgraph_isomorphism(G_sage, P_sage):
+    assert G_sage.is_directed() and P_sage.is_directed(), "Only directed graphs are supported"
 
-    if G_sage.is_directed():
-        matcher = isomorphism.DiGraphMatcher(G_nx, H_nx)
-    else:
-        matcher = isomorphism.GraphMatcher(G_nx, H_nx)
-
-    if matcher.subgraph_is_isomorphic():
-        return True, next(matcher.subgraph_isomorphisms_iter())
-    return False, None
+    it = G_sage.subgraph_search_iterator(P_sage, induced=False)
+    return it
 
 
-def contains_subgraph_through_vertex(G_sage, H_sage, v):
-    G = nx.DiGraph(G_sage.to_dictionary())
-    H = nx.DiGraph(H_sage.to_dictionary())
-
-    v_in, v_out = G.in_degree(v), G.out_degree(v)
-
-    for h in H.nodes():
-        if H.in_degree(h) > v_in or H.out_degree(h) > v_out:
-            continue
-
-        for x in G.nodes():
-            G.nodes[x]["must"] = (x == v)
-        for x in H.nodes():
-            H.nodes[x]["must"] = (x == h)
-
-        matcher = isomorphism.DiGraphMatcher(
-            G, H,
-            node_match=lambda a, b: a["must"] == b["must"]
-        )
-
-        for mapping in matcher.subgraph_isomorphisms_iter():
-            if mapping.get(h) == v:
-                return True, mapping
-
-    return False, None
+def find_subgraph_with_vertex(G_sage, P_sage, target_vertex):
+    it = G_sage.subgraph_search_iterator(P_sage, induced=False)
+    
+    for sub in it:
+        if target_vertex in sub.vertices() and sub.degree(target_vertex) == 1:
+            yield sub

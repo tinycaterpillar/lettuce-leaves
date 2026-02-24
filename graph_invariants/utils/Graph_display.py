@@ -1,8 +1,10 @@
 from sage.all import *
+import os
+from glob import glob
 import matplotlib.pyplot as plt
 import datetime
 
-def draw(G, H=None, name=None, save=False):
+def draw(G, H=None, name=None, folder=None):
     assert G.is_directed()
 
     fig, ax = plt.subplots(figsize=(8, 8))
@@ -26,10 +28,10 @@ def draw(G, H=None, name=None, save=False):
     ax.set_xticks([]); ax.set_yticks([])
     plt.axis("off")
 
-    if save:
-        timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
-        safe_name = name.replace(" ", "_") if name else "graph"
-        filename = f"results/{safe_name}_{timestamp}.png"
+    if folder:
+        assert name, "Name must be provided when saving the figure."
+        os.makedirs(folder, exist_ok=True)
+        filename = f"{folder}/{name}.png"
         plt.savefig(filename, dpi=300, bbox_inches='tight')
     else: plt.show(block=True)
 

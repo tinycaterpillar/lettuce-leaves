@@ -19,7 +19,7 @@ if __name__ == "__main__":
     
     D = graphs.RandomRegular(2*k, n, seed=seed).eulerian_orientation()
     for op in range(1<<length):
-        logger.log(f"op {decode_oriented_path(op, length)}, {len(list(find_subgraph_isomorphism(D, make_oriented_path(op, length))))}")
+        logger.info(f"op {decode_oriented_path(op, length)}, {len(list(find_subgraph_isomorphism(D, make_oriented_path(op, length))))}")
         # p = find_subgraph_with_vertex(D, make_oriented_path(op, length), 0).__next__()
         # draw(D, p, name=decode_oriented_path(op, length), folder=f"results/{n}_{k}_{seed}")
 

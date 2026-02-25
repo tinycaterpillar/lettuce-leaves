@@ -1,0 +1,64 @@
+[2026-02-25 01:20:45] INFO: Logger initialized at log/log2089.log
+[2026-02-25 01:20:45] INFO: k 7, n 59, seed 411
+[2026-02-25 01:20:47] INFO: Logger initialized at log/log2161.log
+[2026-02-25 01:20:47] INFO: k 7, n 101, seed 170
+[2026-02-25 01:20:49] INFO: Logger initialized at log/log2208.log
+[2026-02-25 01:20:49] INFO: k 3, n 90, seed 278
+[2026-02-25 01:20:49] INFO: alternating path exists for all vertices
+[2026-02-25 01:20:49] INFO: Logger initialized at log/log2252.log
+[2026-02-25 01:20:49] INFO: k 9, n 64, seed 40
+[2026-02-25 01:20:50] INFO: Logger initialized at log/log2296.log
+[2026-02-25 01:20:50] INFO: k 8, n 85, seed 337
+[2026-02-25 01:20:51] INFO: Logger initialized at log/log2343.log
+[2026-02-25 01:20:51] INFO: k 10, n 83, seed 859
+[2026-02-25 01:20:51] INFO: Logger initialized at log/log2380.log
+[2026-02-25 01:20:51] INFO: k 9, n 55, seed 491
+[2026-02-25 01:20:52] INFO: Logger initialized at log/log2429.log
+[2026-02-25 01:20:52] INFO: k 7, n 108, seed 541
+[2026-02-25 01:20:52] INFO: Logger initialized at log/log2469.log
+[2026-02-25 01:20:52] INFO: k 10, n 104, seed 990
+[2026-02-25 01:20:53] INFO: Logger initialized at log/log2513.log
+[2026-02-25 01:20:53] INFO: k 6, n 26, seed 567
+[2026-02-25 01:20:54] INFO: Logger initialized at log/log2550.log
+[2026-02-25 01:20:54] INFO: k 9, n 31, seed 897
+[2026-02-25 01:20:55] INFO: Logger initialized at log/log2597.log
+[2026-02-25 01:20:55] INFO: k 6, n 76, seed 697
+[2026-02-25 01:20:55] INFO: Logger initialized at log/log2641.log
+[2026-02-25 01:20:55] INFO: k 7, n 42, seed 425
+[2026-02-25 01:20:56] INFO: Logger initialized at log/log2685.log
+[2026-02-25 01:20:56] INFO: k 6, n 29, seed 673
+[2026-02-25 01:20:57] INFO: Logger initialized at log/log2725.log
+[2026-02-25 01:20:57] INFO: k 9, n 74, seed 707
+[2026-02-25 01:22:33] INFO: alternating path exists for all vertices
+[2026-02-25 01:23:03] INFO: alternating path exists for all vertices
+[2026-02-25 01:27:52] INFO: alternating path exists for all vertices
+[2026-02-25 01:59:41] INFO: Logger initialized at log/log29256.log
+[2026-02-25 01:59:41] INFO: k 5, n 104, seed 417
+[2026-02-25 01:59:42] INFO: Logger initialized at log/log29314.log
+[2026-02-25 01:59:42] INFO: k 5, n 98, seed 267
+[2026-02-25 01:59:43] INFO: Logger initialized at log/log29358.log
+[2026-02-25 01:59:43] INFO: k 5, n 85, seed 364
+[2026-02-25 01:59:44] INFO: Logger initialized at log/log29407.log
+[2026-02-25 01:59:44] INFO: k 3, n 8, seed 817
+[2026-02-25 01:59:44] INFO: alternating path exists for all vertices
+[2026-02-25 01:59:44] INFO: Logger initialized at log/log29448.log
+[2026-02-25 01:59:44] INFO: k 5, n 85, seed 459
+[2026-02-25 01:59:45] INFO: alternating path exists for all vertices
+[2026-02-25 01:59:45] INFO: Logger initialized at log/log29493.log
+[2026-02-25 01:59:45] INFO: k 5, n 65, seed 482
+[2026-02-25 01:59:46] INFO: Logger initialized at log/log29538.log
+[2026-02-25 01:59:46] INFO: k 3, n 52, seed 830
+[2026-02-25 01:59:46] INFO: alternating path exists for all vertices
+[2026-02-25 01:59:46] INFO: alternating path exists for all vertices
+[2026-02-25 01:59:46] INFO: Logger initialized at log/log29579.log
+[2026-02-25 01:59:46] INFO: k 5, n 85, seed 54
+[2026-02-25 01:59:47] INFO: alternating path exists for all vertices
+[2026-02-25 01:59:47] INFO: Logger initialized at log/log29624.log
+[2026-02-25 01:59:47] INFO: k 4, n 22, seed 856
+[2026-02-25 01:59:47] INFO: alternating path exists for all vertices
+[2026-02-25 01:59:48] INFO: Logger initialized at log/log29669.log
+[2026-02-25 01:59:48] INFO: k 3, n 23, seed 538
+[2026-02-25 01:59:48] INFO: alternating path exists for all vertices
+[2026-02-25 01:59:48] INFO: alternating path exists for all vertices
+[2026-02-25 01:59:48] INFO: alternating path exists for all vertices
+[2026-02-25 01:59:50] INFO: alternating path exists for all vertices

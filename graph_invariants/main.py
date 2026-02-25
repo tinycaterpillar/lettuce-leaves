@@ -11,7 +11,7 @@ from solvers import find_subgraph_isomorphism, find_subgraph_with_vertex
 if __name__ == "__main__":
     logger = setup_logger(folder="log", filename=f"log{os.getpid()}.log")
 
-    k = random.randint(3, 10)
+    k = random.randint(3, 5)
     n = random.randint(2*k+1, 2*k+100)
     seed = random.randint(1, 1000)
     length = 2*k-1

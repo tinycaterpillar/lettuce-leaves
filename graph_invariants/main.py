@@ -5,22 +5,32 @@ import random
 import os
 
 from utils import draw, setup_logger
-from solvers import decode_oriented_path, find_subgraph_isomorphism, make_oriented_path
+from generators import get_alternating_path, bitmask_to_sage_graph, bitmask_to_direction_string
+from solvers import find_subgraph_isomorphism, find_subgraph_with_vertex
 
 if __name__ == "__main__":
     logger = setup_logger(folder="log", filename=f"log{os.getpid()}.log")
 
-    k = random.randint(3, 4)
-    n = random.randint(2*k+1, 2*k+10)
+    k = random.randint(3, 10)
+    n = random.randint(2*k+1, 2*k+100)
     seed = random.randint(1, 1000)
     length = 2*k-1
     logger.info(f"k {k}, n {n}, seed {seed}")
-    op = random.randint(0, (1<<length)-1)
+    ap = get_alternating_path(length)
     
     D = graphs.RandomRegular(2*k, n, seed=seed).eulerian_orientation()
-    for op in range(1<<length):
-        logger.info(f"op {decode_oriented_path(op, length)}, {len(list(find_subgraph_isomorphism(D, make_oriented_path(op, length))))}")
-        # p = find_subgraph_with_vertex(D, make_oriented_path(op, length), 0).__next__()
-        # draw(D, p, name=decode_oriented_path(op, length), folder=f"results/{n}_{k}_{seed}")
+    flag = True
+    for v in D.vertices():
+        try:
+            p = find_subgraph_with_vertex(D, bitmask_to_sage_graph(ap, length), v).__next__()
+            # draw(D, p, name=bitmask_to_direction_string(ap, length)+f" with vertex {v}")
+        except StopIteration:
+            flag = False
+            logger.info(f"no alternating path with vertex {v}")
+    if flag:
+        logger.info("alternating path exists for all vertices")
+
+    
+  
 
     

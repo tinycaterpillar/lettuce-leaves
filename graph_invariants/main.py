@@ -6,7 +6,7 @@ import os
 import argparse
 
 from utils import draw, setup_logger, load_graphs
-from generators import orientation_with_min_semidegree, bitmask_to_sage_graph, bitmask_to_direction_string, get_oriented_path
+from generators import orientation_with_min_semidegree, bitmask_to_sage_graph, bitmask_to_direction_string, get_alternating_path
 from solvers import find_subgraph_isomorphism
 
 parser = argparse.ArgumentParser()
@@ -22,9 +22,15 @@ if __name__ == "__main__":
     G = graphs[args.i]
     logger.info(f"Test {args.i}th graph in {path}: {G.graph6_string()}")
     min_degree = min(G.degree())
+    n = G.order()
     D = orientation_with_min_semidegree(G, min_degree//2)
     k = min(min(D.in_degree()), min(D.out_degree()))
-    length = 2*k-1
-    for p in get_oriented_path(length):
-        cnt = len(list(find_subgraph_isomorphism(D, bitmask_to_sage_graph(p, length))))
-        logger.info(f"op {bitmask_to_direction_string(p, length)}, {cnt}")
+    logger.info(f"Orientation of {G.graph6_string()} with min semidegree {k}:\n{D.adjacency_matrix().str()}")
+    
+    ap = get_alternating_path(n-1)
+    try:
+        p = find_subgraph_isomorphism(D, bitmask_to_sage_graph(ap, n-1)).__next__()
+        # draw(D, p)
+        logger.info("Found Hamiltonian antidirected path")
+    except StopIteration:
+        logger.info("[COUNTER] No Hamiltonian antidirected path found")

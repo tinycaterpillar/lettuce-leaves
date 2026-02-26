@@ -4,6 +4,11 @@ from glob import glob
 import matplotlib.pyplot as plt
 import datetime
 
+pastels = [
+    (0.95, 0.78, 0.55),  # pastel orange
+    (0.75, 0.85, 0.95),  # pastel blue
+]
+
 def draw(G, H=None, name=None, folder=None):
     assert G.is_directed()
 
@@ -12,11 +17,14 @@ def draw(G, H=None, name=None, folder=None):
 
     P = Graphics()
     if H:
-        highlight = Graph(H.edges(labels=False))  # simple graph
-        P += highlight.plot(pos=pos,
-                            edge_color=(1.0, 0.7, 0.4),
-                            vertex_size=0,
-                            edge_thickness=12)
+        if not isinstance(H, (list, tuple)): H = [H]
+
+        for i, Hi in enumerate(H):
+            highlight = Graph(Hi.edges(labels=False))  # simple graph
+            P += highlight.plot(pos=pos,
+                                edge_color=pastels[i % len(pastels)],
+                                vertex_size=0,
+                                edge_thickness=14 - 7*(i % len(pastels)))
 
     P += G.plot(pos=pos, edge_color="black")
 
@@ -37,5 +45,5 @@ def draw(G, H=None, name=None, folder=None):
 
 if __name__ == "__main__":
     G = graphs.CycleGraph(6)
-    D = G.eulerian_orientation()
-    draw(D)
+    # D = G.eulerian_orientation()
+    # draw(D)

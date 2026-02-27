@@ -1,3 +1,5 @@
+import re
+
 def parse_kissat_output(output: str, quick: bool = False):
     """
     Parse kissat stdout.
@@ -27,3 +29,26 @@ def parse_kissat_output(output: str, quick: bool = False):
                     model.add(lit)
 
     return sat, model
+
+
+def parse_adjacency_matrix(m):
+    rows = []
+    for line in m.strip().split('\n'):
+        row = [int(x) for x in re.findall(r'\d+', line)]
+        if row:
+            rows.append(row)
+    return rows
+
+if __name__ == "__main__":
+    s = """[0 0 1 0 0 1 1 0 0]
+    [1 0 0 0 0 0 0 1 1]
+    [0 1 0 0 0 0 0 1 1]
+    [1 1 0 0 0 0 0 1 0]
+    [1 1 0 0 0 0 0 0 1]
+    [0 0 1 1 1 0 0 0 0]
+    [0 0 1 1 1 0 0 0 0]
+    [0 0 0 0 1 1 1 0 0]
+    [0 0 0 1 0 1 1 0 0]
+    """
+    print(parse_adjacency_matrix(s))
+

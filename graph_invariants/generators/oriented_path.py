@@ -16,7 +16,7 @@ def bitmask_to_sage_graph(P, length):
     V = list(range(length + 1))
     return DiGraph([V, edges], loops=False, multiedges=False)
 
-def get_alternating_path(length):
+def get_antidirected_path(length):
     P = 1
     for i in range(length-1):
         P <<= 1

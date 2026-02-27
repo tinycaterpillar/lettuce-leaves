@@ -1,0 +1,16 @@
+[2026-02-26 12:58:16] INFO: Logger initialized at log/log44214.log
+[2026-02-26 12:58:16] INFO: Test 723th graph in data/list_1662_graphs.g6: K?zm}}~nz~n~
+[2026-02-26 12:58:16] INFO: Orientation of K?zm}}~nz~n~ with min semidegree 3:
+[0 0 0 0 0 1 1 0 0 1 0 0]
+[0 0 0 0 0 0 1 0 0 0 1 1]
+[0 0 0 0 0 0 0 0 1 0 1 1]
+[0 0 0 0 0 0 0 1 1 0 0 1]
+[1 1 1 0 0 0 0 0 0 0 0 0]
+[0 1 1 0 1 0 0 0 0 0 0 0]
+[0 0 0 1 1 1 0 0 0 0 0 0]
+[1 1 0 0 1 1 1 0 0 0 0 0]
+[1 0 0 0 1 1 1 1 0 0 0 0]
+[0 0 1 1 1 1 1 1 1 0 0 0]
+[0 0 0 1 1 1 1 1 1 1 0 0]
+[0 0 0 0 1 1 1 1 1 1 1 0]
+[2026-02-26 12:58:16] INFO: Found Hamiltonian antidirected path

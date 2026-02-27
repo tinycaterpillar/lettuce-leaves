@@ -1,0 +1,16 @@
+[2026-02-26 12:59:46] INFO: Logger initialized at log/log68679.log
+[2026-02-26 12:59:46] INFO: Test 1380th graph in data/list_1662_graphs.g6: K~~umUl[w~d~
+[2026-02-26 12:59:46] INFO: Orientation of K~~umUl[w~d~ with min semidegree 4:
+[0 0 0 0 1 1 1 0 1 0 0 0]
+[1 0 0 0 1 1 0 0 0 1 0 0]
+[1 1 0 0 0 0 0 0 0 1 0 1]
+[1 1 1 0 0 0 0 0 0 0 1 0]
+[0 0 1 1 0 0 0 0 0 0 1 1]
+[0 0 1 1 0 0 0 0 0 0 1 1]
+[0 1 0 1 0 1 0 0 0 0 0 1]
+[1 1 0 0 1 0 1 0 0 0 0 0]
+[0 0 1 0 1 1 0 1 0 0 0 0]
+[0 0 0 1 0 0 1 1 1 0 0 0]
+[0 0 0 0 0 0 1 1 1 1 0 0]
+[0 0 0 0 0 0 0 1 1 1 1 0]
+[2026-02-26 12:59:46] INFO: Found Hamiltonian antidirected path

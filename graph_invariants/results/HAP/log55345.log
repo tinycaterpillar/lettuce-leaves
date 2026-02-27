@@ -1,0 +1,17 @@
+[2026-02-26 12:58:55] INFO: Logger initialized at log/log55345.log
+[2026-02-26 12:58:55] INFO: Test 1020th graph in data/list_1662_graphs.g6: LNXj]qtutlP~b~
+[2026-02-26 12:58:55] INFO: Orientation of LNXj]qtutlP~b~ with min semidegree 3:
+[0 0 0 0 0 0 0 0 0 1 1 1 1]
+[0 0 0 0 1 1 1 0 0 0 0 0 0]
+[0 1 0 0 0 0 0 0 1 0 1 0 0]
+[1 1 1 0 0 0 0 0 0 0 0 0 0]
+[0 0 1 0 0 0 0 0 0 0 0 1 1]
+[0 0 1 0 1 0 0 0 0 0 0 0 1]
+[0 0 1 0 1 1 0 0 0 0 0 0 0]
+[1 1 0 1 1 0 0 0 0 0 0 0 0]
+[1 0 0 1 0 1 0 1 0 0 0 0 0]
+[0 1 0 1 1 0 1 1 0 0 0 0 0]
+[0 0 0 1 0 1 1 0 1 0 0 0 0]
+[0 0 0 0 0 1 1 1 1 1 1 0 0]
+[0 0 0 0 0 0 1 1 1 1 1 1 0]
+[2026-02-26 12:58:55] INFO: Found Hamiltonian antidirected path

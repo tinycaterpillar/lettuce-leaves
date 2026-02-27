@@ -1,0 +1,17 @@
+[2026-02-26 12:58:52] INFO: Logger initialized at log/log54360.log
+[2026-02-26 12:58:52] INFO: Test 995th graph in data/list_1662_graphs.g6: L}{PXMVZujB~x}
+[2026-02-26 12:58:52] INFO: Orientation of L}{PXMVZujB~x} with min semidegree 3:
+[0 0 0 0 1 0 0 0 0 0 1 0 1]
+[1 0 0 0 0 0 0 0 0 1 0 0 1]
+[1 1 0 0 0 0 0 0 0 0 0 0 1]
+[1 1 0 0 0 0 0 0 0 0 0 1 0]
+[0 1 1 1 0 0 0 0 0 0 0 1 0]
+[0 0 0 1 0 0 0 0 1 0 0 1 0]
+[0 0 1 0 1 1 0 0 0 0 0 0 0]
+[0 0 1 0 0 1 1 0 0 0 0 0 0]
+[1 0 0 1 0 0 1 1 0 0 0 0 0]
+[0 0 1 0 1 1 1 1 0 0 0 0 0]
+[0 1 0 1 0 1 0 1 1 0 0 0 0]
+[0 0 0 0 0 0 1 1 1 1 1 0 0]
+[0 0 0 0 0 1 1 1 1 1 1 0 0]
+[2026-02-26 12:58:52] INFO: Found Hamiltonian antidirected path

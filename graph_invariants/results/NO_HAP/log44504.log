@@ -1,0 +1,16 @@
+[2026-02-26 12:58:17] INFO: Logger initialized at log/log44504.log
+[2026-02-26 12:58:18] INFO: Test 730th graph in data/list_1662_graphs.g6: KsaCB|}^b{No
+[2026-02-26 12:58:18] INFO: Orientation of KsaCB|}^b{No with min semidegree 3:
+[0 1 1 1 0 0 0 0 0 0 0 0]
+[0 0 0 0 0 0 0 1 1 0 0 1]
+[0 0 0 0 0 0 0 1 1 0 0 1]
+[0 0 0 0 0 0 0 1 1 0 0 1]
+[1 0 0 0 0 0 0 0 0 1 1 0]
+[1 0 0 0 0 0 0 0 0 1 1 0]
+[1 0 0 0 0 0 0 0 0 1 1 0]
+[0 0 0 0 1 1 1 0 0 0 0 0]
+[0 0 0 0 1 1 1 0 0 0 0 0]
+[0 1 1 1 0 0 0 0 0 0 0 0]
+[0 1 1 1 0 0 0 0 0 0 0 0]
+[0 0 0 0 1 1 1 0 0 0 0 0]
+[2026-02-26 12:58:18] INFO: [COUNTER] No Hamiltonian antidirected path found

@@ -1,0 +1,16 @@
+[2026-02-26 12:59:50] INFO: Logger initialized at log/log69674.log
+[2026-02-26 12:59:50] INFO: Test 1406th graph in data/list_1662_graphs.g6: Krh^eZjtpzfv
+[2026-02-26 12:59:50] INFO: Orientation of Krh^eZjtpzfv with min semidegree 3:
+[0 0 0 0 0 0 1 0 1 1 0 0]
+[1 0 0 1 0 0 0 1 0 0 0 0]
+[1 0 0 0 0 0 0 0 0 0 1 1]
+[0 0 1 0 0 0 0 0 0 0 1 1]
+[1 0 1 0 0 0 0 0 0 0 0 1]
+[0 1 0 1 1 0 0 0 0 0 0 0]
+[0 1 1 1 0 0 0 0 0 0 0 0]
+[1 0 0 0 1 1 0 0 0 0 0 0]
+[0 1 1 0 1 0 1 1 0 0 0 0]
+[0 1 0 1 0 1 1 1 0 0 0 0]
+[0 0 0 0 1 1 0 1 1 1 0 0]
+[0 0 0 0 0 1 1 0 1 1 1 0]
+[2026-02-26 12:59:50] INFO: Found Hamiltonian antidirected path

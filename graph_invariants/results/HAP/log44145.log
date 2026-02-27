@@ -1,0 +1,16 @@
+[2026-02-26 12:58:16] INFO: Logger initialized at log/log44145.log
+[2026-02-26 12:58:16] INFO: Test 721th graph in data/list_1662_graphs.g6: Kv~vFVeVx~B~
+[2026-02-26 12:58:16] INFO: Orientation of Kv~vFVeVx~B~ with min semidegree 4:
+[0 0 0 1 1 0 0 1 1 0 0 0]
+[1 0 0 1 0 1 0 0 0 1 0 0]
+[1 0 0 0 0 0 1 1 0 0 1 0]
+[0 0 1 0 0 0 0 0 0 1 1 1]
+[0 1 1 1 0 0 0 0 0 0 1 0]
+[1 0 1 1 0 0 0 0 0 0 0 1]
+[1 1 0 0 0 0 0 0 0 1 0 1]
+[0 1 0 0 1 0 1 0 0 0 0 1]
+[0 1 1 0 0 1 1 0 0 0 0 0]
+[0 0 0 0 1 1 0 1 1 0 0 0]
+[0 0 0 0 0 1 1 1 1 0 0 0]
+[0 0 0 0 1 0 0 0 1 1 1 0]
+[2026-02-26 12:58:16] INFO: Found Hamiltonian antidirected path

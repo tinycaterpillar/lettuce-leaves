@@ -1,0 +1,14 @@
+[2026-02-26 12:58:31] INFO: Logger initialized at log/log48404.log
+[2026-02-26 12:58:32] INFO: Test 836th graph in data/list_1662_graphs.g6: I}z\bcnFw
+[2026-02-26 12:58:32] INFO: Orientation of I}z\bcnFw with min semidegree 3:
+[0 0 0 0 1 1 1 0 0 0]
+[1 0 0 0 1 0 0 1 0 0]
+[1 1 0 0 0 0 0 0 1 0]
+[1 1 0 0 0 0 0 0 0 1]
+[0 0 1 0 0 0 0 0 1 1]
+[0 1 0 1 1 0 0 0 0 0]
+[0 0 1 1 0 0 0 0 0 1]
+[0 0 1 1 0 0 1 0 0 0]
+[0 0 0 0 0 1 1 1 0 0]
+[0 0 0 0 0 1 0 1 1 0]
+[2026-02-26 12:58:32] INFO: Found Hamiltonian antidirected path

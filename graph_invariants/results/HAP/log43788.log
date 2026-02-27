@@ -1,0 +1,16 @@
+[2026-02-26 12:58:15] INFO: Logger initialized at log/log43788.log
+[2026-02-26 12:58:15] INFO: Test 711th graph in data/list_1662_graphs.g6: K{~~~rt{y~f~
+[2026-02-26 12:58:15] INFO: Orientation of K{~~~rt{y~f~ with min semidegree 4:
+[0 0 0 0 1 0 1 0 1 1 0 0]
+[1 0 0 0 0 1 0 0 0 1 1 0]
+[1 1 0 0 0 1 0 0 0 0 0 1]
+[1 0 0 0 0 0 1 0 0 0 1 1]
+[0 1 1 1 0 0 0 0 0 0 1 0]
+[1 0 0 1 1 0 0 0 0 0 0 1]
+[0 1 1 0 1 1 0 0 0 0 0 1]
+[1 1 1 1 1 0 0 0 0 0 0 0]
+[0 1 1 1 0 1 0 1 0 0 0 0]
+[0 0 1 1 0 0 1 1 1 0 0 0]
+[0 0 0 0 0 1 1 1 1 1 0 0]
+[0 0 0 0 1 0 0 1 1 1 1 0]
+[2026-02-26 12:58:15] INFO: Found Hamiltonian antidirected path

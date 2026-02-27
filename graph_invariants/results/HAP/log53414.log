@@ -1,0 +1,17 @@
+[2026-02-26 12:58:49] INFO: Logger initialized at log/log53414.log
+[2026-02-26 12:58:49] INFO: Test 968th graph in data/list_1662_graphs.g6: L~zTTTSTG^d^D~
+[2026-02-26 12:58:49] INFO: Orientation of L~zTTTSTG^d^D~ with min semidegree 3:
+[0 0 0 1 1 1 0 0 0 0 0 0 0]
+[1 0 0 0 1 0 0 0 1 0 0 0 0]
+[1 1 0 0 0 0 0 0 0 0 0 1 0]
+[0 1 1 0 0 0 0 0 0 0 0 0 1]
+[0 0 1 0 0 0 0 0 0 0 1 1 0]
+[0 1 0 1 0 0 0 0 0 0 0 0 1]
+[1 0 1 0 1 0 0 0 0 0 0 0 0]
+[1 0 1 0 1 0 1 0 0 0 0 0 0]
+[0 0 0 1 0 1 0 0 0 0 0 0 1]
+[0 1 0 1 0 1 0 0 1 0 0 0 0]
+[0 0 0 0 0 1 1 1 1 1 0 0 0]
+[0 0 0 0 0 0 1 1 1 1 1 0 0]
+[0 0 0 0 0 0 1 1 0 1 1 1 0]
+[2026-02-26 12:58:49] INFO: Found Hamiltonian antidirected path

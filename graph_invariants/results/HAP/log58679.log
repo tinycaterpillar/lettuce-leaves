@@ -1,0 +1,17 @@
+[2026-02-26 12:59:06] INFO: Logger initialized at log/log58679.log
+[2026-02-26 12:59:06] INFO: Test 1111th graph in data/list_1662_graphs.g6: L~{?GKFFw~[}xz
+[2026-02-26 12:59:06] INFO: Orientation of L~{?GKFFw~[}xz with min semidegree 3:
+[0 0 0 0 1 0 0 0 0 0 0 1 1]
+[1 0 0 0 0 0 0 0 0 0 0 1 1]
+[1 1 0 0 0 0 0 0 0 0 0 0 1]
+[1 1 1 0 0 0 0 0 0 0 0 0 0]
+[0 1 1 1 0 0 0 0 0 0 0 0 0]
+[0 0 0 0 0 0 0 0 0 1 1 1 0]
+[0 0 0 0 0 1 0 0 0 1 1 0 0]
+[0 0 0 0 0 1 1 0 0 1 0 0 0]
+[0 0 0 0 0 1 1 1 0 0 0 0 0]
+[0 0 0 1 1 0 0 0 1 0 0 0 0]
+[0 0 0 1 1 0 0 1 1 0 0 0 0]
+[0 0 1 0 0 0 1 1 1 1 0 0 0]
+[0 0 0 0 0 1 1 1 1 0 1 1 0]
+[2026-02-26 12:59:06] INFO: Found Hamiltonian antidirected path

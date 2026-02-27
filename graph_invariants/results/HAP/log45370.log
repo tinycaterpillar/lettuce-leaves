@@ -1,0 +1,16 @@
+[2026-02-26 12:58:20] INFO: Logger initialized at log/log45370.log
+[2026-02-26 12:58:20] INFO: Test 752th graph in data/list_1662_graphs.g6: K}i[BdiTh]b{
+[2026-02-26 12:58:20] INFO: Orientation of K}i[BdiTh]b{ with min semidegree 3:
+[0 0 0 1 1 1 0 0 0 0 0 0]
+[1 0 0 0 0 0 0 1 1 0 0 0]
+[1 1 0 0 0 0 0 0 0 0 1 0]
+[0 1 0 0 0 0 0 0 0 1 0 1]
+[0 0 1 0 0 0 0 0 0 0 1 1]
+[0 0 0 1 1 0 0 0 0 0 0 1]
+[1 0 0 0 0 0 0 0 0 1 1 0]
+[0 0 1 1 0 0 1 0 0 0 0 0]
+[0 0 1 0 1 0 1 0 0 0 0 0]
+[0 1 0 0 0 1 0 0 1 0 0 0]
+[0 0 0 0 0 1 0 1 0 1 0 0]
+[0 0 0 0 0 0 1 1 1 0 0 0]
+[2026-02-26 12:58:20] INFO: Found Hamiltonian antidirected path

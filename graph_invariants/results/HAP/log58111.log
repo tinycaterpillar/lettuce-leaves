@@ -1,0 +1,17 @@
+[2026-02-26 12:59:05] INFO: Logger initialized at log/log58111.log
+[2026-02-26 12:59:05] INFO: Test 1095th graph in data/list_1662_graphs.g6: L`Kx~Zjx}yZTtf
+[2026-02-26 12:59:05] INFO: Orientation of L`Kx~Zjx}yZTtf with min semidegree 3:
+[0 0 0 0 0 0 0 0 1 1 1 0 1]
+[1 0 0 0 0 0 0 0 0 1 0 1 1]
+[0 0 0 0 0 0 1 1 1 0 0 0 0]
+[0 0 1 0 0 0 0 0 0 0 0 1 1]
+[0 0 1 1 0 0 0 1 0 0 0 0 0]
+[0 0 1 1 1 0 0 0 0 0 0 0 0]
+[0 0 0 1 1 1 0 0 0 0 0 0 0]
+[1 1 0 0 0 1 0 0 0 0 0 0 0]
+[0 1 0 0 1 0 1 1 0 0 0 0 0]
+[0 0 1 0 0 1 1 1 1 0 0 0 0]
+[0 1 0 1 1 1 0 1 0 0 0 0 0]
+[1 0 0 0 1 0 1 0 1 0 1 0 0]
+[0 0 0 0 0 1 1 0 0 1 1 1 0]
+[2026-02-26 12:59:05] INFO: Found Hamiltonian antidirected path

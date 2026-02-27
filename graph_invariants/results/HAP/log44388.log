@@ -1,0 +1,16 @@
+[2026-02-26 12:58:17] INFO: Logger initialized at log/log44388.log
+[2026-02-26 12:58:17] INFO: Test 725th graph in data/list_1662_graphs.g6: K{~~vrv|q~f~
+[2026-02-26 12:58:17] INFO: Orientation of K{~~vrv|q~f~ with min semidegree 4:
+[0 0 0 0 1 1 0 0 1 1 0 0]
+[1 0 0 0 0 0 0 0 1 1 1 0]
+[1 1 0 0 1 0 0 0 0 0 0 1]
+[1 0 0 0 0 1 0 0 0 0 1 1]
+[0 1 0 1 0 0 0 0 0 0 1 1]
+[0 1 1 0 1 0 0 0 0 0 0 1]
+[1 1 1 1 1 0 0 0 0 0 0 0]
+[1 1 1 1 1 0 0 0 0 0 0 0]
+[0 0 1 1 0 1 1 1 0 0 0 0]
+[0 0 1 1 0 1 1 1 0 0 0 0]
+[0 0 0 0 0 1 1 1 1 1 0 0]
+[0 0 0 0 0 0 1 1 1 1 1 0]
+[2026-02-26 12:58:17] INFO: Found Hamiltonian antidirected path

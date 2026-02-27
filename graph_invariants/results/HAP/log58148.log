@@ -1,0 +1,17 @@
+[2026-02-26 12:59:05] INFO: Logger initialized at log/log58148.log
+[2026-02-26 12:59:05] INFO: Test 1097th graph in data/list_1662_graphs.g6: L`Mztxzr]f}pzd
+[2026-02-26 12:59:05] INFO: Orientation of L`Mztxzr]f}pzd with min semidegree 3:
+[0 0 0 0 0 0 0 0 0 1 1 1 1]
+[1 0 0 0 0 0 0 0 1 0 1 0 0]
+[0 0 0 0 0 1 0 0 0 0 0 1 1]
+[0 0 1 0 0 0 1 1 0 0 0 0 0]
+[0 0 1 1 0 0 0 0 0 0 0 0 1]
+[1 0 0 1 1 0 0 0 0 0 0 0 0]
+[0 1 1 0 1 0 0 0 0 0 0 0 0]
+[1 0 1 0 1 1 0 0 0 0 0 0 0]
+[0 0 1 1 1 0 1 1 0 0 0 0 0]
+[0 1 0 0 1 1 0 1 1 0 0 0 0]
+[0 0 0 1 0 0 1 1 1 1 0 0 0]
+[0 1 0 1 0 1 1 0 0 0 1 0 0]
+[0 1 0 0 0 1 1 0 0 1 0 1 0]
+[2026-02-26 12:59:05] INFO: Found Hamiltonian antidirected path

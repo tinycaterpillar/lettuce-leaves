@@ -1,0 +1,12 @@
+[2026-02-26 12:56:47] INFO: Logger initialized at log/log17696.log
+[2026-02-26 12:56:47] INFO: Test 9th graph in data/list_1662_graphs.g6: G~~~~{
+[2026-02-26 12:56:47] INFO: Orientation of G~~~~{ with min semidegree 3:
+[0 0 0 0 0 1 1 1]
+[1 0 0 0 0 0 1 1]
+[1 1 0 0 0 0 0 1]
+[1 1 1 0 0 0 0 0]
+[1 1 1 1 0 0 0 0]
+[0 1 1 1 1 0 0 0]
+[0 0 1 1 1 1 0 0]
+[0 0 0 1 1 1 1 0]
+[2026-02-26 12:56:47] INFO: Found Hamiltonian antidirected path

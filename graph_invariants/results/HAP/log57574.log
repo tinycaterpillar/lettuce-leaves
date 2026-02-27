@@ -1,0 +1,17 @@
+[2026-02-26 12:59:03] INFO: Logger initialized at log/log57574.log
+[2026-02-26 12:59:03] INFO: Test 1084th graph in data/list_1662_graphs.g6: L`mzrm{[}]ZVx]
+[2026-02-26 12:59:03] INFO: Orientation of L`mzrm{[}]ZVx] with min semidegree 3:
+[0 0 0 0 0 0 0 0 0 0 1 1 1]
+[1 0 0 0 0 0 0 0 0 1 0 1 1]
+[0 0 0 0 0 1 1 0 0 0 0 0 1]
+[0 0 1 0 0 0 0 1 0 0 0 1 0]
+[1 0 1 1 0 0 0 0 0 0 0 0 0]
+[1 0 0 1 1 0 0 0 0 0 0 0 0]
+[0 1 0 1 1 0 0 0 0 0 0 0 0]
+[0 1 1 0 0 1 1 0 0 0 0 0 0]
+[1 0 1 1 1 1 0 0 0 0 0 0 0]
+[0 0 1 1 0 0 1 1 1 0 0 0 0]
+[0 1 0 0 1 1 1 1 0 0 0 0 0]
+[0 0 0 0 1 0 1 0 1 1 1 0 0]
+[0 0 0 0 0 1 0 1 1 1 1 0 0]
+[2026-02-26 12:59:03] INFO: Found Hamiltonian antidirected path

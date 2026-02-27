@@ -1,0 +1,16 @@
+[2026-02-26 12:58:38] INFO: Logger initialized at log/log50305.log
+[2026-02-26 12:58:38] INFO: Test 887th graph in data/list_1662_graphs.g6: KvohhmnRy}~~
+[2026-02-26 12:58:38] INFO: Orientation of KvohhmnRy}~~ with min semidegree 3:
+[0 1 0 0 0 0 0 0 1 0 0 1]
+[0 0 0 0 0 0 0 0 0 1 1 1]
+[1 0 0 0 0 0 0 1 0 0 0 1]
+[1 1 1 0 0 0 0 0 0 0 0 0]
+[1 1 0 0 0 0 0 0 0 0 1 0]
+[0 0 1 0 1 0 0 0 0 0 0 1]
+[0 0 1 1 0 1 0 0 0 0 0 0]
+[0 0 0 1 0 1 1 0 0 0 0 0]
+[0 0 1 0 1 1 1 1 0 0 0 0]
+[0 0 0 0 1 1 1 1 1 0 0 0]
+[0 0 0 1 0 1 1 1 0 1 0 0]
+[0 0 0 1 1 0 1 1 1 1 1 0]
+[2026-02-26 12:58:38] INFO: Found Hamiltonian antidirected path

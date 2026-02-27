@@ -1,0 +1,16 @@
+[2026-02-26 12:59:37] INFO: Logger initialized at log/log66727.log
+[2026-02-26 12:59:37] INFO: Test 1327th graph in data/list_1662_graphs.g6: K~`HW~mv\vm~
+[2026-02-26 12:59:37] INFO: Orientation of K~`HW~mv\vm~ with min semidegree 3:
+[0 0 1 0 0 0 0 0 0 1 1 0]
+[1 0 0 0 0 0 0 0 1 0 0 1]
+[0 1 0 0 0 0 0 0 0 0 1 1]
+[1 1 1 0 0 0 0 0 0 0 0 0]
+[1 0 0 0 0 0 0 1 1 0 0 0]
+[0 1 0 0 1 0 0 0 0 0 0 1]
+[0 0 1 0 1 1 0 0 0 0 0 0]
+[0 0 0 1 0 1 1 0 0 0 0 0]
+[1 0 1 0 0 1 1 0 0 0 0 0]
+[0 1 0 1 1 1 0 1 1 0 0 0]
+[0 0 0 1 1 0 1 1 1 1 0 0]
+[0 0 0 1 0 0 1 1 1 1 1 0]
+[2026-02-26 12:59:37] INFO: Found Hamiltonian antidirected path

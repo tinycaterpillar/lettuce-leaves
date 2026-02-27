@@ -1,0 +1,17 @@
+[2026-02-26 12:59:03] INFO: Logger initialized at log/log57538.log
+[2026-02-26 12:59:03] INFO: Test 1083th graph in data/list_1662_graphs.g6: LmuXh[f{nRn{f}
+[2026-02-26 12:59:03] INFO: Orientation of LmuXh[f{nRn{f} with min semidegree 3:
+[0 0 0 0 0 0 0 0 0 1 1 0 1]
+[1 0 0 0 0 0 0 0 0 0 1 1 0]
+[0 1 0 0 0 0 1 0 0 0 0 1 0]
+[1 1 0 0 0 0 0 0 0 0 0 1 1]
+[1 1 0 1 0 0 0 0 0 0 0 0 0]
+[1 0 0 1 1 0 0 0 0 0 0 0 0]
+[0 0 0 1 0 1 0 0 0 0 0 0 1]
+[0 0 1 0 1 1 1 0 0 0 0 0 0]
+[0 0 1 0 0 1 1 1 0 0 0 0 0]
+[0 1 1 1 0 0 1 0 1 0 0 0 0]
+[0 0 1 0 1 0 0 1 1 1 0 0 0]
+[0 0 0 0 1 1 1 1 1 0 0 0 0]
+[0 0 0 0 1 1 0 1 1 1 1 0 0]
+[2026-02-26 12:59:03] INFO: Found Hamiltonian antidirected path

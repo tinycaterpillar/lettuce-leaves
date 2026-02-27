@@ -1,0 +1,17 @@
+[2026-02-26 12:59:03] INFO: Logger initialized at log/log57815.log
+[2026-02-26 12:59:03] INFO: Test 1088th graph in data/list_1662_graphs.g6: L}n\qgjWzJb~F~
+[2026-02-26 12:59:03] INFO: Orientation of L}n\qgjWzJb~F~ with min semidegree 3:
+[0 0 0 1 1 1 0 0 0 0 0 0 0]
+[1 0 0 0 0 1 0 0 0 0 1 0 0]
+[1 1 0 0 1 0 0 0 0 0 0 0 0]
+[0 1 0 0 0 0 0 0 0 0 0 1 1]
+[0 0 0 1 0 0 0 0 0 0 0 1 1]
+[0 0 0 1 1 0 0 0 0 0 0 0 1]
+[1 0 1 1 1 0 0 0 0 0 0 0 0]
+[0 1 0 1 0 1 0 0 0 0 0 0 0]
+[0 0 1 0 1 0 1 1 0 0 0 0 0]
+[0 1 1 0 0 0 1 1 1 0 0 0 0]
+[0 0 1 0 0 1 0 1 1 1 0 0 0]
+[0 0 0 0 0 1 1 1 1 1 1 0 0]
+[0 0 0 0 0 0 1 1 1 1 1 1 0]
+[2026-02-26 12:59:03] INFO: Found Hamiltonian antidirected path

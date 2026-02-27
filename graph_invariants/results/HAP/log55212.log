@@ -1,0 +1,17 @@
+[2026-02-26 12:58:54] INFO: Logger initialized at log/log55212.log
+[2026-02-26 12:58:54] INFO: Test 1018th graph in data/list_1662_graphs.g6: LJaL[~mvR|Nj{{
+[2026-02-26 12:58:54] INFO: Orientation of LJaL[~mvR|Nj{{ with min semidegree 3:
+[0 0 0 0 0 0 0 0 1 1 0 0 1]
+[0 0 0 0 0 0 0 0 0 0 1 1 1]
+[0 1 0 0 0 0 0 0 0 0 1 1 1]
+[0 1 1 0 0 0 0 0 0 0 0 1 0]
+[1 0 0 0 0 0 1 1 0 0 0 0 0]
+[1 0 0 0 1 0 0 1 0 0 0 0 0]
+[1 0 1 0 0 1 0 0 0 0 0 0 0]
+[1 0 0 1 0 0 1 0 0 0 0 0 0]
+[0 1 1 0 1 1 1 0 0 0 0 0 0]
+[0 1 0 1 1 1 0 1 0 0 0 0 0]
+[0 0 0 1 1 1 1 0 1 0 0 0 0]
+[0 0 0 0 1 1 0 1 0 1 1 0 0]
+[0 0 0 1 0 0 1 1 1 1 0 0 0]
+[2026-02-26 12:58:54] INFO: Found Hamiltonian antidirected path

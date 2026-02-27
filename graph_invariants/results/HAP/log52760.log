@@ -1,0 +1,17 @@
+[2026-02-26 12:58:46] INFO: Logger initialized at log/log52760.log
+[2026-02-26 12:58:46] INFO: Test 953th graph in data/list_1662_graphs.g6: L~KwW[NF}Fw^wz
+[2026-02-26 12:58:46] INFO: Orientation of L~KwW[NF}Fw^wz with min semidegree 3:
+[0 0 0 0 0 0 0 0 0 0 1 1 1]
+[1 0 0 0 0 0 0 0 0 0 0 1 1]
+[1 1 0 0 0 0 0 0 0 0 0 0 1]
+[1 1 1 0 0 0 0 0 0 0 0 0 0]
+[0 0 1 1 0 0 0 0 0 1 0 0 0]
+[0 0 1 1 1 0 0 0 0 0 0 0 0]
+[0 0 0 0 1 1 0 0 1 0 0 0 0]
+[0 0 0 0 1 1 1 0 0 0 0 0 0]
+[0 0 0 0 1 1 0 1 0 0 0 0 0]
+[0 0 0 1 0 1 1 1 1 0 0 0 0]
+[0 1 0 0 0 0 1 1 1 1 0 0 0]
+[0 0 0 0 0 0 1 1 1 1 1 0 0]
+[0 0 0 0 0 0 1 1 1 0 1 1 0]
+[2026-02-26 12:58:46] INFO: Found Hamiltonian antidirected path

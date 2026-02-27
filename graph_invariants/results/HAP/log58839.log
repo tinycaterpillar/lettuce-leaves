@@ -1,0 +1,17 @@
+[2026-02-26 12:59:07] INFO: Logger initialized at log/log58839.log
+[2026-02-26 12:59:07] INFO: Test 1117th graph in data/list_1662_graphs.g6: L~Kx_[NB}Fw^r^
+[2026-02-26 12:59:07] INFO: Orientation of L~Kx_[NB}Fw^r^ with min semidegree 3:
+[0 0 0 0 0 0 0 0 0 0 1 1 1]
+[1 0 0 0 0 0 0 0 0 0 0 1 1]
+[1 1 0 0 1 0 0 0 0 0 0 0 0]
+[1 1 1 0 0 0 0 0 0 0 0 0 0]
+[0 0 0 1 0 0 0 0 0 1 0 0 1]
+[0 0 1 1 1 0 0 0 0 0 0 0 0]
+[0 0 1 1 0 0 0 0 1 0 0 0 0]
+[0 0 0 0 1 1 1 0 0 0 0 0 0]
+[0 0 0 0 1 1 0 1 0 0 0 0 0]
+[0 0 0 0 0 1 1 1 1 0 0 0 0]
+[0 1 0 0 0 0 1 1 1 1 0 0 0]
+[0 0 0 0 0 0 1 1 1 1 1 0 0]
+[0 0 0 0 0 1 0 1 1 1 1 1 0]
+[2026-02-26 12:59:07] INFO: Found Hamiltonian antidirected path

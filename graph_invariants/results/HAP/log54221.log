@@ -1,0 +1,17 @@
+[2026-02-26 12:58:51] INFO: Logger initialized at log/log54221.log
+[2026-02-26 12:58:51] INFO: Test 992th graph in data/list_1662_graphs.g6: L}dbLp]Jw~b~jv
+[2026-02-26 12:58:51] INFO: Orientation of L}dbLp]Jw~b~jv with min semidegree 3:
+[0 0 0 0 1 0 0 1 0 0 0 0 1]
+[1 0 1 0 0 0 0 0 1 0 0 0 0]
+[1 0 0 0 0 0 0 0 0 1 0 0 1]
+[1 1 0 0 0 0 0 0 0 0 1 0 0]
+[0 0 0 1 0 0 0 0 0 0 0 1 1]
+[0 1 1 0 0 0 0 0 0 0 0 1 0]
+[0 1 1 0 0 1 0 0 0 0 0 0 0]
+[0 0 1 1 1 0 0 0 0 0 0 0 0]
+[0 0 0 1 1 1 1 0 0 0 0 0 0]
+[0 0 0 0 1 1 1 1 1 0 0 0 0]
+[0 0 0 0 1 1 1 1 1 1 0 0 0]
+[0 0 0 1 0 0 1 1 1 1 1 0 0]
+[0 0 0 0 0 1 1 1 0 1 1 1 0]
+[2026-02-26 12:58:51] INFO: Found Hamiltonian antidirected path

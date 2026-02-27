@@ -1,0 +1,16 @@
+[2026-02-26 12:58:36] INFO: Logger initialized at log/log49860.log
+[2026-02-26 12:58:36] INFO: Test 874th graph in data/list_1662_graphs.g6: K~BMXoxfz^^~
+[2026-02-26 12:58:36] INFO: Orientation of K~BMXoxfz^^~ with min semidegree 3:
+[0 0 0 0 0 0 1 0 0 1 0 1]
+[1 0 0 0 0 0 0 0 0 0 1 1]
+[1 1 0 0 0 0 0 0 0 0 1 0]
+[1 1 1 0 0 0 0 0 0 0 0 0]
+[0 0 0 0 0 0 0 0 1 1 0 1]
+[1 1 0 0 1 0 0 0 0 0 0 0]
+[0 1 0 0 1 1 0 0 0 0 0 0]
+[0 0 1 1 1 0 0 0 0 0 0 0]
+[0 0 1 1 0 0 0 1 0 0 0 0]
+[0 0 0 1 0 1 1 1 1 0 0 0]
+[0 0 0 0 1 1 1 1 1 0 0 0]
+[0 0 1 1 0 1 1 1 1 1 1 0]
+[2026-02-26 12:58:36] INFO: Found Hamiltonian antidirected path

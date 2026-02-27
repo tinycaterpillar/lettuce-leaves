@@ -1,0 +1,17 @@
+[2026-02-26 12:58:47] INFO: Logger initialized at log/log53079.log
+[2026-02-26 12:58:47] INFO: Test 962th graph in data/list_1662_graphs.g6: L~{?GNfHw}bzvr
+[2026-02-26 12:58:47] INFO: Orientation of L~{?GNfHw}bzvr with min semidegree 3:
+[0 0 0 0 1 0 0 0 1 0 0 0 1]
+[1 0 0 0 0 0 0 0 1 0 0 0 1]
+[1 1 0 0 0 0 0 0 0 1 0 0 0]
+[1 1 1 0 0 0 0 0 0 0 0 0 0]
+[0 1 1 1 0 0 0 0 0 0 0 0 0]
+[0 0 0 0 0 0 0 0 0 0 1 1 1]
+[0 0 0 0 0 1 0 0 1 0 0 1 0]
+[0 0 0 0 0 1 1 0 0 1 0 0 0]
+[0 0 1 0 0 1 0 1 0 0 0 0 0]
+[0 0 0 0 0 1 1 0 1 0 0 0 0]
+[0 0 0 1 1 0 1 1 0 1 0 0 0]
+[0 0 0 1 1 0 0 1 0 1 1 0 0]
+[0 0 0 1 1 0 1 1 0 0 1 1 0]
+[2026-02-26 12:58:47] INFO: Found Hamiltonian antidirected path

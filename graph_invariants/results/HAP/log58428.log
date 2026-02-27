@@ -1,0 +1,17 @@
+[2026-02-26 12:59:05] INFO: Logger initialized at log/log58428.log
+[2026-02-26 12:59:06] INFO: Test 1107th graph in data/list_1662_graphs.g6: L}n_s|VTx^d~]n
+[2026-02-26 12:59:06] INFO: Orientation of L}n_s|VTx^d~]n with min semidegree 3:
+[0 1 1 0 0 0 0 1 0 0 0 0 0]
+[0 0 1 0 0 0 0 0 1 0 0 0 1]
+[0 0 0 0 0 0 0 0 0 0 1 1 1]
+[1 1 0 0 0 0 0 0 0 0 0 0 1]
+[1 0 1 1 0 0 0 0 0 0 0 0 0]
+[1 1 1 0 0 0 0 0 0 0 0 0 0]
+[0 0 0 1 1 0 0 0 0 0 0 1 0]
+[0 0 0 1 1 1 1 0 0 0 0 0 0]
+[0 0 0 1 0 1 1 1 0 0 0 0 0]
+[0 1 0 1 0 1 1 1 1 0 0 0 0]
+[0 0 0 0 1 1 1 1 1 1 0 0 0]
+[0 0 0 0 1 1 0 1 1 1 1 0 0]
+[0 0 0 0 1 0 1 0 1 1 1 1 0]
+[2026-02-26 12:59:06] INFO: Found Hamiltonian antidirected path

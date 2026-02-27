@@ -1,0 +1,15 @@
+[2026-02-26 12:59:38] INFO: Logger initialized at log/log66986.log
+[2026-02-26 12:59:38] INFO: Test 1336th graph in data/list_1662_graphs.g6: JtPM@{~~f~_
+[2026-02-26 12:59:39] INFO: Orientation of JtPM@{~~f~_ with min semidegree 3:
+[0 0 1 0 0 0 0 0 0 1 1]
+[1 0 0 0 0 0 0 0 0 1 1]
+[0 0 0 0 0 0 0 1 1 1 0]
+[1 0 1 0 0 0 0 0 1 0 0]
+[0 1 0 0 0 0 0 1 0 0 1]
+[0 1 0 0 1 0 0 0 1 0 0]
+[1 1 0 0 0 0 0 0 0 1 0]
+[0 0 0 1 0 1 1 0 0 0 0]
+[0 0 0 0 1 0 1 1 0 0 0]
+[0 0 0 1 1 1 0 0 0 0 0]
+[0 0 1 1 0 1 1 1 1 1 0]
+[2026-02-26 12:59:39] INFO: Found Hamiltonian antidirected path

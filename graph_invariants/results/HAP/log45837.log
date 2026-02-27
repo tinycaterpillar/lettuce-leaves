@@ -1,0 +1,18 @@
+[2026-02-26 12:58:22] INFO: Logger initialized at log/log45837.log
+[2026-02-26 12:58:22] INFO: Test 765th graph in data/list_1662_graphs.g6: M}zcccnDpxIYIvRN?
+[2026-02-26 12:58:22] INFO: Orientation of M}zcccnDpxIYIvRN? with min semidegree 3:
+[0 1 1 0 1 0 0 0 0 0 0 0 0 0]
+[0 0 0 0 1 0 0 0 0 0 0 1 0 1]
+[0 1 0 0 0 0 0 0 1 0 0 0 1 0]
+[1 1 0 0 0 0 0 0 0 0 1 0 0 0]
+[0 0 1 0 0 0 0 0 0 0 0 0 1 1]
+[1 1 1 0 0 0 0 0 0 0 0 0 0 1]
+[1 0 0 1 0 0 0 0 0 0 0 0 1 0]
+[1 0 0 1 0 0 1 0 0 0 0 0 0 0]
+[0 0 0 0 1 1 1 1 0 0 0 0 0 0]
+[0 0 0 1 0 1 1 1 0 0 0 0 0 0]
+[0 0 1 0 1 1 0 0 1 0 0 0 0 0]
+[0 0 0 1 0 0 1 1 0 1 0 0 0 0]
+[0 0 0 0 0 0 0 1 0 1 1 1 0 0]
+[0 0 0 0 0 0 0 0 1 1 1 1 0 0]
+[2026-02-26 12:58:22] INFO: Found Hamiltonian antidirected path

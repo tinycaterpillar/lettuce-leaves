@@ -2,6 +2,8 @@
 nohup python main.py data/71toinf &
 nohup ./run_all.sh > nohup.out 2>&1 &
 
+grep -R "COUNTER" log
+
 
 # Note
 log45155.log

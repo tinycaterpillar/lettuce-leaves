@@ -9,11 +9,13 @@ pastels = [
     (0.75, 0.85, 0.95),  # pastel blue
 ]
 
-def draw(G, H=None, name=None, folder=None):
+def draw(G, H=None, name=None, folder=None, layout="circular"):
+    """A layout algorithm – one of : “acyclic”, “circular” (plots the graph with vertices evenly distributed on a circle), “ranked”, “graphviz”, “planar”, “spring” (traditional spring layout, using the graph’s current positions as initial positions), or “tree” (the tree will be plotted in levels, depending on minimum distance for the root)."""
+
     assert G.is_directed()
 
     fig, ax = plt.subplots(figsize=(8, 8))
-    pos = G.layout("circular")
+    pos = G.layout(layout)
 
     P = Graphics()
     if H:

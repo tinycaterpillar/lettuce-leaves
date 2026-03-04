@@ -1,0 +1,16 @@
+[2026-02-27 11:47:34] INFO: Logger initialized at log/log73950.log
+[2026-02-27 11:47:35] INFO: Test 1468th graph in data/list_2000_graphs.g6: Kug?iLCHGpdW
+[2026-02-27 11:47:35] INFO: Orientation of Kug?iLCHGpdW with min semidegree 2:
+[0 0 1 1 0 0 0 0 0 0 0 0]
+[1 0 0 0 0 0 0 1 0 0 0 0]
+[0 0 0 0 0 0 0 0 0 1 0 1]
+[0 1 0 0 0 0 0 0 0 0 1 0]
+[1 0 1 0 0 0 0 0 0 0 0 0]
+[0 0 0 0 0 0 1 0 1 0 0 0]
+[0 0 0 1 0 0 0 0 0 0 0 1]
+[0 0 0 0 0 1 1 0 0 0 0 0]
+[0 1 0 0 0 0 0 0 0 0 1 0]
+[0 0 0 0 0 1 0 0 1 0 0 0]
+[0 0 0 0 1 0 0 0 0 1 0 0]
+[0 0 0 0 1 0 0 1 0 0 0 0]
+[2026-02-27 11:47:35] INFO: [COUNTER] There is no antidirtected path starting from {5}

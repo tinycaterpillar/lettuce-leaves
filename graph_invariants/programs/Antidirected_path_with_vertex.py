@@ -23,7 +23,7 @@ args = parser.parse_args()
 if __name__ == "__main__":
     logger = setup_logger(folder="log", filename=f"log{os.getpid()}.log")
 
-    path = "data/list_1662_graphs.g6"
+    path = "data/list_2000_graphs.g6"
     graphs = load_graphs(path)
 
     G = graphs[args.i]
@@ -44,7 +44,7 @@ if __name__ == "__main__":
     except StopIteration:
         logger.info("[COUNTER] No antidirected path of length 2k-1 found")
     if len(ends) != n:
-        logger.info(f"[COUNTER] There is no antidirtected path starting from {set(range(n)) - ends}")
+        logger.info(f"[COUNTER] There is no antidirtected path which has a endvertex in {set(range(n)) - ends}")
     else:
-        logger.info(f"antidirected path starting with any vertex")
+        logger.info(f"Any vertex can be an endvertex of a antidirected path")
     

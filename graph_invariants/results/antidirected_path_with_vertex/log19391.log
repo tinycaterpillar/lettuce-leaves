@@ -1,0 +1,10 @@
+[2026-02-27 11:43:37] INFO: Logger initialized at log/log19391.log
+[2026-02-27 11:43:37] INFO: Test 21th graph in data/list_2000_graphs.g6: E}lw
+[2026-02-27 11:43:37] INFO: Orientation of E}lw with min semidegree 2:
+[0 0 1 0 1 0]
+[1 0 0 0 0 1]
+[0 1 0 0 0 1]
+[1 1 0 0 0 0]
+[0 0 1 1 0 0]
+[0 0 0 1 1 0]
+[2026-02-27 11:43:37] INFO: [COUNTER] There is no antidirtected path starting from {1, 4}

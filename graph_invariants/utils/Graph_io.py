@@ -1,5 +1,6 @@
 import os
 from sage.all import *
+from pathlib import Path
 
 def decode(g6_string: str) -> Graph:
     """
@@ -39,7 +40,19 @@ def load_graphs(file_path: str) -> list[Graph]:
     return graphs
 
 
+def get_meta_data(path):
+    path = Path(path)
+    
+    # data → metadata
+    meta_path = path.with_suffix('.txt')
+    meta_path = Path(str(meta_path).replace('data', 'metadata', 1))
+    
+    with open(meta_path, 'r', encoding='utf-8') as f:
+        return f.read()
+
+
 if __name__ == "__main__":
-    G = graphs.CompleteGraph(8)
-    g6 = encode(G)
-    print(g6)
+    # test command:
+    # python -m utils.Graph_io
+    path = "data/list_43_graphs.g6"
+    print(get_meta_data(path))

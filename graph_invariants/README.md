@@ -3,7 +3,8 @@ nohup python main.py data/71toinf &
 nohup ./run_all.sh > nohup.out 2>&1 &
 
 grep -R "COUNTER" log
-
+grep -l "MEMORY_ERROR" log/* | xargs rm
+grep -L "\[END\]" log/* | xargs rm
 
 # Note
 log45155.log

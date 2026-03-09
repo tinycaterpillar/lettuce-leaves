@@ -1,0 +1,21 @@
+[2026-03-05 20:45:23] INFO: Logger initialized at log/log143414.log
+[2026-03-05 20:45:23] INFO: Test 133th graph in data/list_660_graphs.g6: Hqgyz~~
+[2026-03-05 20:45:23] INFO: meta data: 
+minimum degree >= 4
+independent number <= 2
+connected
+[2026-03-05 20:45:23] INFO: Orientation of Hqgyz~~ with min semidegree 2:
+[0 1 0 0 0 0 0 0 1]
+[0 0 0 0 0 0 1 1 0]
+[1 0 0 0 0 0 0 0 1]
+[0 1 0 0 0 1 0 0 0]
+[1 0 1 0 0 0 0 0 0]
+[0 0 1 0 1 0 0 0 0]
+[0 0 0 1 1 1 0 0 0]
+[0 0 1 1 1 1 1 0 0]
+[0 1 0 1 1 1 1 1 0]
+[2026-03-05 20:45:23] INFO: op ←←←, 162
+[2026-03-05 20:45:23] INFO: op →←←, 116
+[2026-03-05 20:45:23] INFO: op →→←, 116
+[2026-03-05 20:45:23] INFO: op ←→←, 124
+[2026-03-05 20:45:23] INFO: [END]

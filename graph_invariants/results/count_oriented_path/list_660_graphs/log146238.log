@@ -1,0 +1,22 @@
+[2026-03-05 20:45:33] INFO: Logger initialized at log/log146238.log
+[2026-03-05 20:45:33] INFO: Test 209th graph in data/list_660_graphs.g6: I~?GW]^Zo
+[2026-03-05 20:45:33] INFO: meta data: 
+minimum degree >= 4
+independent number <= 2
+connected
+[2026-03-05 20:45:33] INFO: Orientation of I~?GW]^Zo with min semidegree 2:
+[0 0 0 1 0 0 0 0 1 0]
+[1 0 0 0 0 0 0 0 0 1]
+[1 1 0 0 0 0 0 0 0 0]
+[0 1 1 0 0 0 0 0 0 0]
+[0 0 0 0 0 0 0 0 1 1]
+[0 0 0 0 1 0 0 1 0 0]
+[0 0 0 0 1 1 0 0 0 0]
+[0 0 0 0 1 0 1 0 0 0]
+[0 0 0 1 0 1 1 1 0 0]
+[0 0 1 0 0 1 1 1 0 0]
+[2026-03-05 20:45:33] INFO: op ←←←, 102
+[2026-03-05 20:45:33] INFO: op →←←, 74
+[2026-03-05 20:45:33] INFO: op →→←, 74
+[2026-03-05 20:45:33] INFO: op ←→←, 52
+[2026-03-05 20:45:33] INFO: [END]

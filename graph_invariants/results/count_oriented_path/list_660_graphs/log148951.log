@@ -1,0 +1,23 @@
+[2026-03-05 20:45:55] INFO: Logger initialized at log/log148951.log
+[2026-03-05 20:45:55] INFO: Test 278th graph in data/list_660_graphs.g6: J}dWw{nizN_
+[2026-03-05 20:45:55] INFO: meta data: 
+minimum degree >= 4
+independent number <= 2
+connected
+[2026-03-05 20:45:55] INFO: Orientation of J}dWw{nizN_ with min semidegree 2:
+[0 0 1 0 0 0 0 0 0 1 0]
+[1 0 0 0 0 0 0 0 0 0 1]
+[0 1 0 0 0 0 0 0 0 0 1]
+[1 1 0 0 0 0 0 0 0 0 0]
+[1 0 0 1 0 0 0 0 0 0 0]
+[0 1 0 1 1 0 0 0 0 0 0]
+[0 0 0 1 1 1 0 0 0 0 0]
+[0 0 0 1 1 1 1 0 0 0 0]
+[0 0 1 0 1 1 1 1 0 0 0]
+[0 0 1 0 1 0 1 1 1 0 0]
+[0 0 0 0 0 1 1 1 1 1 0]
+[2026-03-05 20:45:55] INFO: op ←←←, 266
+[2026-03-05 20:45:55] INFO: op →←←, 218
+[2026-03-05 20:45:55] INFO: op →→←, 218
+[2026-03-05 20:45:55] INFO: op ←→←, 202
+[2026-03-05 20:45:55] INFO: [END]

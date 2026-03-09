@@ -15,6 +15,7 @@ def encode(G: Graph) -> str:
     Input: G (Graph): A Sage graph
     Output: str: The canonical Graph6 string (House of Graphs format)
     """
+    assert isinstance(G, Graph), "G must be a sage graph"
     return G.canonical_label().graph6_string().strip()
 
 

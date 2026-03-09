@@ -1,0 +1,21 @@
+[2026-03-05 20:45:13] INFO: Logger initialized at log/log141039.log
+[2026-03-05 20:45:13] INFO: Test 68th graph in data/list_660_graphs.g6: H`K~Mr~
+[2026-03-05 20:45:13] INFO: meta data: 
+minimum degree >= 4
+independent number <= 2
+connected
+[2026-03-05 20:45:13] INFO: Orientation of H`K~Mr~ with min semidegree 2:
+[0 0 0 0 0 0 1 1 0]
+[1 0 0 0 0 0 0 0 1]
+[0 0 0 0 0 1 0 0 1]
+[0 0 1 0 0 0 0 1 0]
+[0 0 1 1 0 0 0 0 0]
+[0 0 0 1 1 0 0 0 0]
+[0 1 1 0 0 1 0 0 0]
+[0 1 0 0 1 0 0 0 0]
+[1 0 0 1 1 1 1 1 0]
+[2026-03-05 20:45:13] INFO: op ←←←, 106
+[2026-03-05 20:45:13] INFO: op →←←, 81
+[2026-03-05 20:45:13] INFO: op →→←, 81
+[2026-03-05 20:45:13] INFO: op ←→←, 70
+[2026-03-05 20:45:13] INFO: [END]

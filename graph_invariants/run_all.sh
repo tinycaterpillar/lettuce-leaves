@@ -1,3 +1,8 @@
 #!/bin/bash
-ulimit -v 8000000 # 8GB
-seq 0 42 | xargs -n 1 -P 10 timeout 600s python Labeled_oriented_path.py -i
+
+ulimit -v 8000000  # Around 8GB
+
+seq 0 1774 | parallel -j 10 \
+    --timeout 30m \
+    --nice 19 \
+    "ionice -c3 python dirtected_path_starting_vertex.py -i {}"

@@ -1,0 +1,24 @@
+[2026-03-08 16:34:57] INFO: Logger initialized at log3/log632855.log
+[2026-03-08 16:34:57] INFO: Test 934th graph in data/list_1775_graphs.g6: N~?GW?@?W^`~~{~b]Ng
+[2026-03-08 16:34:57] INFO: meta data: 
+minimum degree >= 6
+independent number >= 2
+connected
+Not regular
+[2026-03-08 16:34:57] INFO: Orientation of N~?GW?@?W^`~~{~b]Ng with min semidegree 3:
+[0 0 0 0 0 0 0 0 0 0 0 0 1 1 1]
+[1 0 0 0 0 0 0 0 0 0 0 0 1 1 0]
+[1 1 0 0 0 0 0 0 0 0 0 0 1 0 0]
+[1 1 1 0 0 0 0 0 0 0 0 0 0 0 0]
+[0 0 0 0 0 0 0 0 0 0 1 1 1 0 0]
+[0 0 0 0 1 0 0 0 0 0 1 1 0 0 0]
+[0 0 0 0 1 1 0 0 0 0 1 0 0 0 0]
+[0 0 0 0 0 0 0 0 0 0 0 1 1 0 1]
+[0 0 0 0 0 0 0 1 0 0 0 1 0 0 1]
+[0 0 0 0 0 0 0 1 1 0 0 0 1 0 0]
+[0 0 0 0 0 0 0 1 1 1 0 0 0 0 0]
+[0 0 0 0 0 0 1 0 0 1 1 0 0 0 0]
+[0 0 0 1 0 1 1 0 1 0 0 0 0 0 0]
+[0 0 1 1 1 1 1 0 0 0 1 1 0 0 0]
+[0 1 1 1 0 0 0 0 0 1 1 1 0 1 0]
+[2026-03-08 16:34:57] INFO: Any vertex can be a start vertex of a directed path of length 2k-1

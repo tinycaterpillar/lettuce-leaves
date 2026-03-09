@@ -1,0 +1,19 @@
+[2026-03-05 20:45:08] INFO: Logger initialized at log/log139911.log
+[2026-03-05 20:45:08] INFO: Test 38th graph in data/list_660_graphs.g6: Fql~w
+[2026-03-05 20:45:08] INFO: meta data: 
+minimum degree >= 4
+independent number <= 2
+connected
+[2026-03-05 20:45:08] INFO: Orientation of Fql~w with min semidegree 2:
+[0 0 0 0 1 0 1]
+[1 0 0 0 0 1 0]
+[1 0 0 0 0 0 1]
+[0 1 0 0 0 1 0]
+[0 0 1 1 0 0 0]
+[0 0 1 0 1 0 0]
+[0 1 0 1 1 1 0]
+[2026-03-05 20:45:08] INFO: op ←←←, 65
+[2026-03-05 20:45:08] INFO: op →←←, 40
+[2026-03-05 20:45:08] INFO: op →→←, 40
+[2026-03-05 20:45:08] INFO: op ←→←, 25
+[2026-03-05 20:45:08] INFO: [END]

@@ -1,0 +1,21 @@
+[2026-03-05 20:45:15] INFO: Logger initialized at log/log141416.log
+[2026-03-05 20:45:15] INFO: Test 78th graph in data/list_660_graphs.g6: HQh\zz~
+[2026-03-05 20:45:15] INFO: meta data: 
+minimum degree >= 4
+independent number <= 2
+connected
+[2026-03-05 20:45:15] INFO: Orientation of HQh\zz~ with min semidegree 2:
+[0 0 0 0 0 0 1 0 1]
+[0 0 0 0 0 0 0 1 1]
+[1 0 0 0 0 0 1 0 0]
+[0 1 0 0 0 1 0 0 0]
+[1 0 1 0 0 0 0 0 0]
+[0 1 0 0 1 0 0 0 0]
+[0 0 0 1 1 1 0 0 0]
+[0 0 1 1 1 1 0 0 0]
+[0 0 1 1 1 1 1 1 0]
+[2026-03-05 20:45:15] INFO: op ←←←, 137
+[2026-03-05 20:45:15] INFO: op →←←, 108
+[2026-03-05 20:45:15] INFO: op →→←, 108
+[2026-03-05 20:45:15] INFO: op ←→←, 109
+[2026-03-05 20:45:15] INFO: [END]

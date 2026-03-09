@@ -1,0 +1,20 @@
+[2026-03-05 20:45:42] INFO: Logger initialized at log/log147320.log
+[2026-03-05 20:45:42] INFO: Test 236th graph in data/list_660_graphs.g6: Grqix{
+[2026-03-05 20:45:42] INFO: meta data: 
+minimum degree >= 4
+independent number <= 2
+connected
+[2026-03-05 20:45:42] INFO: Orientation of Grqix{ with min semidegree 2:
+[0 0 0 0 1 1 0 0]
+[1 0 0 0 0 0 1 0]
+[1 0 0 0 0 0 0 1]
+[0 1 1 0 0 0 0 0]
+[0 1 0 0 0 0 0 1]
+[0 0 1 0 1 0 0 0]
+[0 0 0 1 1 1 0 0]
+[0 0 0 1 0 1 1 0]
+[2026-03-05 20:45:42] INFO: op ←←←, 65
+[2026-03-05 20:45:42] INFO: op →←←, 49
+[2026-03-05 20:45:42] INFO: op →→←, 49
+[2026-03-05 20:45:42] INFO: op ←→←, 29
+[2026-03-05 20:45:42] INFO: [END]

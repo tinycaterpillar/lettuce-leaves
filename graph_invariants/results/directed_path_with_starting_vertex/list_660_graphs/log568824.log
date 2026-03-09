@@ -1,0 +1,24 @@
+[2026-03-06 17:24:55] INFO: Logger initialized at log2/log568824.log
+[2026-03-06 17:24:55] INFO: Test 631th graph in data/list_660_graphs.g6: O~y~U}}t~y]UB~Yzffym~
+[2026-03-06 17:24:55] INFO: meta data: 
+minimum degree >= 4
+independent number <= 2
+connected
+[2026-03-06 17:24:55] INFO: Orientation of O~y~U}}t~y]UB~Yzffym~ with min semidegree 5:
+[0 0 0 0 1 1 0 0 0 1 1 1 0 0 0 0]
+[1 0 0 0 0 0 0 1 0 1 0 0 0 1 0 1]
+[1 1 0 0 0 0 0 0 1 0 0 0 0 1 1 0]
+[1 1 1 0 0 0 0 0 0 0 0 0 0 0 1 1]
+[0 1 1 0 0 0 0 0 0 0 0 0 1 1 1 0]
+[0 0 1 1 1 0 0 0 0 0 0 0 1 0 1 0]
+[1 1 1 0 1 0 0 0 0 0 0 0 0 0 0 1]
+[1 0 0 1 1 1 1 0 0 0 0 0 0 0 0 1]
+[1 0 0 1 1 1 1 0 0 0 0 0 0 0 0 0]
+[0 0 0 1 0 1 1 1 1 0 0 0 0 0 0 1]
+[0 1 1 1 1 1 0 1 0 0 0 0 0 0 0 0]
+[0 1 1 1 0 0 1 0 1 1 0 0 0 0 0 0]
+[0 0 0 0 0 0 1 1 1 1 1 1 0 0 0 0]
+[0 0 0 0 0 0 1 1 1 0 1 1 1 0 0 0]
+[0 0 0 0 0 0 0 0 1 1 1 1 1 1 0 0]
+[0 0 0 0 0 1 0 0 0 0 1 1 1 1 1 0]
+[2026-03-06 17:25:19] INFO: Any vertex can be a start vertex of a directed path of length 2k-1

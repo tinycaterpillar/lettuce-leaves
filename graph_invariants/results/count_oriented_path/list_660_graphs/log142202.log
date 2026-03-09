@@ -1,0 +1,21 @@
+[2026-03-05 20:45:18] INFO: Logger initialized at log/log142202.log
+[2026-03-05 20:45:18] INFO: Test 99th graph in data/list_660_graphs.g6: H`Nmz~~
+[2026-03-05 20:45:18] INFO: meta data: 
+minimum degree >= 4
+independent number <= 2
+connected
+[2026-03-05 20:45:18] INFO: Orientation of H`Nmz~~ with min semidegree 2:
+[0 0 0 0 0 1 0 0 1]
+[1 0 0 0 0 0 0 1 0]
+[0 0 0 0 0 1 0 0 1]
+[0 0 1 0 0 0 1 0 0]
+[0 0 1 1 0 0 0 0 0]
+[0 1 0 0 1 0 0 0 0]
+[1 1 0 0 1 1 0 0 0]
+[0 0 1 1 1 1 1 0 0]
+[0 1 0 1 1 1 1 1 0]
+[2026-03-05 20:45:18] INFO: op ←←←, 167
+[2026-03-05 20:45:18] INFO: op →←←, 141
+[2026-03-05 20:45:18] INFO: op →→←, 141
+[2026-03-05 20:45:18] INFO: op ←→←, 150
+[2026-03-05 20:45:18] INFO: [END]

@@ -1,0 +1,22 @@
+[2026-03-08 16:34:48] INFO: Logger initialized at log3/log631914.log
+[2026-03-08 16:34:49] INFO: Test 908th graph in data/list_1775_graphs.g6: L~aKZ`p[W^`~B~
+[2026-03-08 16:34:49] INFO: meta data: 
+minimum degree >= 6
+independent number >= 2
+connected
+Not regular
+[2026-03-08 16:34:49] INFO: Orientation of L~aKZ`p[W^`~B~ with min semidegree 3:
+[0 0 0 0 1 1 1 0 0 0 0 0 0]
+[1 0 0 0 0 0 0 0 1 1 0 0 0]
+[1 1 0 0 0 0 0 0 0 1 0 0 0]
+[1 1 1 0 0 0 0 0 0 0 0 0 0]
+[0 0 0 0 0 0 0 0 0 0 1 1 1]
+[0 0 0 0 1 0 0 0 0 0 0 1 1]
+[0 0 0 0 1 1 0 0 0 0 0 0 1]
+[0 1 1 1 0 0 0 0 0 0 0 0 0]
+[0 0 1 1 0 0 0 1 0 0 0 0 0]
+[0 0 0 1 0 0 0 1 1 0 0 0 0]
+[0 0 0 0 0 1 1 1 1 1 0 0 0]
+[0 0 0 0 0 0 1 1 1 1 1 0 0]
+[0 0 0 0 0 0 0 1 1 1 1 1 0]
+[2026-03-08 16:34:49] INFO: Any vertex can be a start vertex of a directed path of length 2k-1

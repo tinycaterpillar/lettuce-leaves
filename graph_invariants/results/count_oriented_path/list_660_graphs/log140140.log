@@ -1,0 +1,21 @@
+[2026-03-05 20:45:09] INFO: Logger initialized at log/log140140.log
+[2026-03-05 20:45:09] INFO: Test 45th graph in data/list_660_graphs.g6: HKeZb^~
+[2026-03-05 20:45:09] INFO: meta data: 
+minimum degree >= 4
+independent number <= 2
+connected
+[2026-03-05 20:45:09] INFO: Orientation of HKeZb^~ with min semidegree 2:
+[0 0 0 0 0 1 0 0 1]
+[0 0 0 0 0 0 0 1 1]
+[0 1 0 0 0 0 1 0 0]
+[1 0 0 0 0 0 0 0 1]
+[1 0 0 1 0 0 0 0 0]
+[0 0 0 1 1 0 0 0 0]
+[0 1 0 1 0 0 0 0 0]
+[0 0 1 0 1 1 1 0 0]
+[0 0 1 0 1 1 1 1 0]
+[2026-03-05 20:45:09] INFO: op ←←←, 119
+[2026-03-05 20:45:09] INFO: op →←←, 83
+[2026-03-05 20:45:09] INFO: op →→←, 83
+[2026-03-05 20:45:09] INFO: op ←→←, 62
+[2026-03-05 20:45:09] INFO: [END]

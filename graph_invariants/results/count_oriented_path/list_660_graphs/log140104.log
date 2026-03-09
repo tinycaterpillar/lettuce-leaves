@@ -1,0 +1,21 @@
+[2026-03-05 20:45:09] INFO: Logger initialized at log/log140104.log
+[2026-03-05 20:45:09] INFO: Test 44th graph in data/list_660_graphs.g6: H`rHpn~
+[2026-03-05 20:45:09] INFO: meta data: 
+minimum degree >= 4
+independent number <= 2
+connected
+[2026-03-05 20:45:09] INFO: Orientation of H`rHpn~ with min semidegree 2:
+[0 0 0 0 0 1 0 0 1]
+[1 0 0 0 0 0 0 0 1]
+[0 0 0 0 0 0 1 1 0]
+[0 0 1 0 0 0 0 1 0]
+[1 1 0 0 0 0 0 0 0]
+[0 1 0 0 1 0 0 0 0]
+[0 0 0 1 1 0 0 0 0]
+[0 0 0 0 0 1 1 0 0]
+[0 0 1 1 1 1 1 1 0]
+[2026-03-05 20:45:09] INFO: op ←←←, 99
+[2026-03-05 20:45:09] INFO: op →←←, 65
+[2026-03-05 20:45:09] INFO: op →→←, 65
+[2026-03-05 20:45:09] INFO: op ←→←, 59
+[2026-03-05 20:45:09] INFO: [END]

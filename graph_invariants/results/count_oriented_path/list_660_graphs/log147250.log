@@ -1,0 +1,20 @@
+[2026-03-05 20:45:42] INFO: Logger initialized at log/log147250.log
+[2026-03-05 20:45:42] INFO: Test 234th graph in data/list_660_graphs.g6: GrotY{
+[2026-03-05 20:45:42] INFO: meta data: 
+minimum degree >= 4
+independent number <= 2
+connected
+[2026-03-05 20:45:42] INFO: Orientation of GrotY{ with min semidegree 2:
+[0 0 0 0 1 0 1 0]
+[1 0 0 0 0 0 0 1]
+[1 0 0 0 0 0 1 0]
+[0 1 1 0 0 0 0 0]
+[0 1 0 0 0 0 0 1]
+[0 0 1 1 0 0 0 0]
+[0 0 0 0 1 1 0 0]
+[0 0 0 1 0 1 1 0]
+[2026-03-05 20:45:42] INFO: op ←←←, 64
+[2026-03-05 20:45:42] INFO: op →←←, 36
+[2026-03-05 20:45:42] INFO: op →→←, 36
+[2026-03-05 20:45:42] INFO: op ←→←, 18
+[2026-03-05 20:45:42] INFO: [END]

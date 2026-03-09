@@ -1,0 +1,23 @@
+[2026-03-05 20:46:00] INFO: Logger initialized at log/log149605.log
+[2026-03-05 20:46:00] INFO: Test 296th graph in data/list_660_graphs.g6: J`Kx}VF}Vh_
+[2026-03-05 20:46:00] INFO: meta data: 
+minimum degree >= 4
+independent number <= 2
+connected
+[2026-03-05 20:46:00] INFO: Orientation of J`Kx}VF}Vh_ with min semidegree 2:
+[0 0 0 0 0 0 0 0 1 1 0]
+[1 0 0 0 0 0 0 0 0 0 1]
+[0 0 0 0 0 1 0 0 0 0 1]
+[0 0 1 0 0 0 1 0 0 0 0]
+[0 0 1 1 0 0 0 0 0 0 0]
+[0 0 0 1 1 0 0 0 0 0 0]
+[0 0 1 0 1 1 0 0 0 0 0]
+[1 1 0 0 1 0 1 0 0 0 0]
+[0 1 0 0 0 1 1 1 0 0 0]
+[0 1 1 1 1 0 0 1 0 0 0]
+[1 0 0 1 0 1 0 0 1 1 0]
+[2026-03-05 20:46:00] INFO: op ←←←, 204
+[2026-03-05 20:46:00] INFO: op →←←, 181
+[2026-03-05 20:46:00] INFO: op →→←, 181
+[2026-03-05 20:46:00] INFO: op ←→←, 160
+[2026-03-05 20:46:00] INFO: [END]

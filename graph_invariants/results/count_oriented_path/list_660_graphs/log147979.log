@@ -1,0 +1,21 @@
+[2026-03-05 20:45:47] INFO: Logger initialized at log/log147979.log
+[2026-03-05 20:45:47] INFO: Test 253th graph in data/list_660_graphs.g6: HRiiqnN
+[2026-03-05 20:45:47] INFO: meta data: 
+minimum degree >= 4
+independent number <= 2
+connected
+[2026-03-05 20:45:47] INFO: Orientation of HRiiqnN with min semidegree 2:
+[0 0 0 0 0 1 0 0 1]
+[0 0 0 0 0 0 0 1 1]
+[1 0 0 1 0 0 0 0 0]
+[0 1 0 0 0 0 1 0 0]
+[1 0 1 0 0 0 0 0 0]
+[0 0 1 0 1 0 0 0 0]
+[0 1 0 0 1 0 0 0 0]
+[0 0 0 1 0 1 1 0 0]
+[0 0 0 0 1 1 1 1 0]
+[2026-03-05 20:45:47] INFO: op ←←←, 90
+[2026-03-05 20:45:47] INFO: op →←←, 58
+[2026-03-05 20:45:47] INFO: op →→←, 58
+[2026-03-05 20:45:47] INFO: op ←→←, 39
+[2026-03-05 20:45:47] INFO: [END]

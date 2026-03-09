@@ -1,0 +1,20 @@
+[2026-03-08 16:02:34] INFO: Logger initialized at log3/log621344.log
+[2026-03-08 16:02:35] INFO: Test 605th graph in data/list_1775_graphs.g6: J{S~~~~~~~_
+[2026-03-08 16:02:35] INFO: meta data: 
+minimum degree >= 6
+independent number >= 2
+connected
+Not regular
+[2026-03-08 16:02:35] INFO: Orientation of J{S~~~~~~~_ with min semidegree 4:
+[0 0 0 0 0 0 0 1 1 1 1]
+[1 0 0 0 0 0 0 0 1 1 1]
+[1 1 0 0 0 0 0 0 0 1 1]
+[1 0 0 0 0 0 1 1 0 0 1]
+[0 1 0 1 0 0 1 1 0 0 0]
+[0 0 1 1 1 0 0 0 1 0 0]
+[1 1 1 0 0 1 0 0 0 0 0]
+[0 1 1 0 0 1 1 0 0 0 0]
+[0 0 1 1 1 0 1 1 0 0 0]
+[0 0 0 1 1 1 1 1 1 0 0]
+[0 0 0 0 1 1 1 1 1 1 0]
+[2026-03-08 16:02:35] INFO: Any vertex can be a start vertex of a directed path of length 2k-1

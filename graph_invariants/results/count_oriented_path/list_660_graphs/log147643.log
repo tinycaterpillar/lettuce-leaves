@@ -1,0 +1,20 @@
+[2026-03-05 20:45:45] INFO: Logger initialized at log/log147643.log
+[2026-03-05 20:45:45] INFO: Test 244th graph in data/list_660_graphs.g6: Gdlr^{
+[2026-03-05 20:45:45] INFO: meta data: 
+minimum degree >= 4
+independent number <= 2
+connected
+[2026-03-05 20:45:45] INFO: Orientation of Gdlr^{ with min semidegree 2:
+[0 0 0 0 1 0 0 1]
+[1 0 0 0 0 0 1 0]
+[0 0 0 0 0 1 0 1]
+[1 0 1 0 0 0 0 0]
+[0 0 1 1 0 0 0 0]
+[0 1 0 1 0 0 0 0]
+[0 0 1 0 1 1 0 0]
+[0 1 0 1 1 1 1 0]
+[2026-03-05 20:45:45] INFO: op ←←←, 91
+[2026-03-05 20:45:45] INFO: op →←←, 66
+[2026-03-05 20:45:45] INFO: op →→←, 66
+[2026-03-05 20:45:45] INFO: op ←→←, 51
+[2026-03-05 20:45:45] INFO: [END]

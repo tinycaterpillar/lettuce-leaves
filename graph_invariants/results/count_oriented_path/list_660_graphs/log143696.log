@@ -1,0 +1,21 @@
+[2026-03-05 20:45:24] INFO: Logger initialized at log/log143696.log
+[2026-03-05 20:45:24] INFO: Test 140th graph in data/list_660_graphs.g6: HqK~]~~
+[2026-03-05 20:45:24] INFO: meta data: 
+minimum degree >= 4
+independent number <= 2
+connected
+[2026-03-05 20:45:24] INFO: Orientation of HqK~]~~ with min semidegree 2:
+[0 0 0 0 0 0 0 1 1]
+[1 0 0 0 0 0 0 0 1]
+[1 0 0 0 0 1 0 0 0]
+[0 1 0 0 0 0 0 1 0]
+[0 0 1 1 0 0 0 0 0]
+[0 0 0 1 1 0 0 0 0]
+[1 1 1 0 1 1 0 0 0]
+[0 1 0 0 1 1 1 0 0]
+[0 0 1 1 1 1 1 1 0]
+[2026-03-05 20:45:24] INFO: op ←←←, 173
+[2026-03-05 20:45:24] INFO: op →←←, 133
+[2026-03-05 20:45:24] INFO: op →→←, 133
+[2026-03-05 20:45:24] INFO: op ←→←, 139
+[2026-03-05 20:45:24] INFO: [END]

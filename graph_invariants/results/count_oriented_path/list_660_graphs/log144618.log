@@ -1,0 +1,21 @@
+[2026-03-05 20:45:27] INFO: Logger initialized at log/log144618.log
+[2026-03-05 20:45:27] INFO: Test 164th graph in data/list_660_graphs.g6: HRlu~^~
+[2026-03-05 20:45:27] INFO: meta data: 
+minimum degree >= 4
+independent number <= 2
+connected
+[2026-03-05 20:45:27] INFO: Orientation of HRlu~^~ with min semidegree 2:
+[0 0 0 0 0 0 0 1 1]
+[0 0 0 0 0 1 0 0 1]
+[1 0 0 0 1 0 0 0 0]
+[0 1 1 0 0 0 0 0 0]
+[1 0 0 1 0 0 0 0 0]
+[0 0 1 1 0 0 0 0 0]
+[1 1 0 1 1 1 0 0 0]
+[0 1 1 0 1 1 1 0 0]
+[0 0 1 1 1 1 1 1 0]
+[2026-03-05 20:45:27] INFO: op ←←←, 170
+[2026-03-05 20:45:27] INFO: op →←←, 153
+[2026-03-05 20:45:27] INFO: op →→←, 153
+[2026-03-05 20:45:27] INFO: op ←→←, 170
+[2026-03-05 20:45:27] INFO: [END]

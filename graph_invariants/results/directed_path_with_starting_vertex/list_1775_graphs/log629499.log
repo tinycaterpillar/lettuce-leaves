@@ -1,0 +1,22 @@
+[2026-03-08 16:34:19] INFO: Logger initialized at log3/log629499.log
+[2026-03-08 16:34:20] INFO: Test 838th graph in data/list_1775_graphs.g6: LtPLaW~njz]Xrt
+[2026-03-08 16:34:20] INFO: meta data: 
+minimum degree >= 6
+independent number >= 2
+connected
+Not regular
+[2026-03-08 16:34:20] INFO: Orientation of LtPLaW~njz]Xrt with min semidegree 3:
+[0 0 0 0 0 0 0 0 0 1 0 1 1]
+[1 0 0 0 0 0 0 0 0 0 1 1 0]
+[1 0 0 0 0 0 0 0 1 1 0 0 0]
+[1 0 1 0 0 0 0 0 0 0 1 0 0]
+[0 1 0 0 0 0 0 0 1 0 0 0 1]
+[0 1 0 0 1 0 0 0 0 0 0 0 1]
+[1 0 1 1 0 0 0 0 0 0 0 0 0]
+[0 1 0 0 1 1 0 0 0 0 0 0 0]
+[0 0 0 1 0 1 1 1 0 0 0 0 0]
+[0 0 0 1 1 1 1 0 1 0 0 0 0]
+[0 0 1 0 1 1 0 1 1 0 0 0 0]
+[0 0 1 1 0 0 1 1 0 0 1 0 0]
+[0 1 0 0 0 0 1 1 0 1 0 1 0]
+[2026-03-08 16:34:20] INFO: Any vertex can be a start vertex of a directed path of length 2k-1

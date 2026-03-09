@@ -1,0 +1,20 @@
+[2026-03-05 20:48:53] INFO: Logger initialized at log/log162988.log
+[2026-03-05 20:48:53] INFO: Test 622th graph in data/list_660_graphs.g6: GqN~v{
+[2026-03-05 20:48:53] INFO: meta data: 
+minimum degree >= 4
+independent number <= 2
+connected
+[2026-03-05 20:48:53] INFO: Orientation of GqN~v{ with min semidegree 2:
+[0 0 0 0 0 1 1 0]
+[1 0 0 0 0 0 0 1]
+[1 0 0 0 0 0 0 1]
+[0 1 0 0 0 1 0 0]
+[0 0 1 1 0 0 0 0]
+[0 1 1 0 1 0 0 0]
+[0 1 1 1 1 0 0 0]
+[1 0 0 1 1 1 1 0]
+[2026-03-05 20:48:53] INFO: op ←←←, 117
+[2026-03-05 20:48:53] INFO: op →←←, 89
+[2026-03-05 20:48:53] INFO: op →→←, 89
+[2026-03-05 20:48:53] INFO: op ←→←, 75
+[2026-03-05 20:48:53] INFO: [END]

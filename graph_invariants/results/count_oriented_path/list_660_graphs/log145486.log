@@ -1,0 +1,21 @@
+[2026-03-05 20:45:31] INFO: Logger initialized at log/log145486.log
+[2026-03-05 20:45:31] INFO: Test 188th graph in data/list_660_graphs.g6: HdYz}~~
+[2026-03-05 20:45:31] INFO: meta data: 
+minimum degree >= 4
+independent number <= 2
+connected
+[2026-03-05 20:45:31] INFO: Orientation of HdYz}~~ with min semidegree 2:
+[0 0 0 0 0 0 0 1 1]
+[1 0 0 0 0 0 0 0 1]
+[0 0 0 0 0 1 1 0 0]
+[1 0 1 0 0 0 0 0 0]
+[0 1 1 0 0 0 0 0 0]
+[1 0 0 1 1 0 0 0 0]
+[0 1 0 1 1 1 0 0 0]
+[0 1 0 1 1 1 1 0 0]
+[0 0 1 1 1 1 1 1 0]
+[2026-03-05 20:45:31] INFO: op ←←←, 187
+[2026-03-05 20:45:31] INFO: op →←←, 154
+[2026-03-05 20:45:31] INFO: op →→←, 154
+[2026-03-05 20:45:31] INFO: op ←→←, 162
+[2026-03-05 20:45:31] INFO: [END]

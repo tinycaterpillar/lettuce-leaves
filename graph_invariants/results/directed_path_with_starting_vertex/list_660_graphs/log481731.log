@@ -1,0 +1,21 @@
+[2026-03-06 14:54:00] INFO: Logger initialized at log2/log481731.log
+[2026-03-06 14:54:00] INFO: Test 362th graph in data/list_660_graphs.g6: L`NxpszvNMW^o~
+[2026-03-06 14:54:00] INFO: meta data: 
+minimum degree >= 4
+independent number <= 2
+connected
+[2026-03-06 14:54:00] INFO: Orientation of L`NxpszvNMW^o~ with min semidegree 3:
+[0 0 0 0 0 1 0 0 0 1 1 0 0]
+[1 0 0 0 0 0 0 0 0 0 0 1 1]
+[0 0 0 0 0 1 1 1 0 0 0 0 0]
+[0 0 1 0 0 0 1 1 0 0 0 0 0]
+[0 0 1 1 0 0 0 0 1 0 0 0 0]
+[0 1 0 1 1 0 0 0 0 0 0 0 0]
+[0 0 0 0 1 0 0 0 0 0 0 1 1]
+[0 0 0 0 1 0 1 0 0 0 0 0 1]
+[0 0 1 1 0 0 1 1 0 0 0 0 0]
+[0 1 0 1 1 1 0 0 1 0 0 0 0]
+[0 1 1 0 0 1 1 1 0 0 0 0 0]
+[1 0 0 0 0 0 0 1 1 1 1 0 0]
+[1 0 0 0 0 0 0 0 1 1 1 1 0]
+[2026-03-06 14:54:00] INFO: Any vertex can be a start vertex of a directed path of length 2k-1

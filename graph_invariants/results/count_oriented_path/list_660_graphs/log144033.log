@@ -1,0 +1,21 @@
+[2026-03-05 20:45:25] INFO: Logger initialized at log/log144033.log
+[2026-03-05 20:45:25] INFO: Test 150th graph in data/list_660_graphs.g6: H`lv~z~
+[2026-03-05 20:45:25] INFO: meta data: 
+minimum degree >= 4
+independent number <= 2
+connected
+[2026-03-05 20:45:25] INFO: Orientation of H`lv~z~ with min semidegree 2:
+[0 0 0 0 0 0 1 1 0]
+[1 0 0 0 0 0 0 0 1]
+[0 0 0 0 1 0 0 0 1]
+[0 0 1 0 0 1 0 0 0]
+[1 0 0 1 0 0 0 0 0]
+[0 1 1 0 0 0 0 0 0]
+[0 1 1 1 1 1 0 0 0]
+[0 1 1 1 1 1 0 0 0]
+[1 0 0 1 1 1 1 1 0]
+[2026-03-05 20:45:25] INFO: op ←←←, 174
+[2026-03-05 20:45:25] INFO: op →←←, 151
+[2026-03-05 20:45:25] INFO: op →→←, 151
+[2026-03-05 20:45:25] INFO: op ←→←, 176
+[2026-03-05 20:45:25] INFO: [END]

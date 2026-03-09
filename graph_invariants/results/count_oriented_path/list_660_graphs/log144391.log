@@ -1,0 +1,21 @@
+[2026-03-05 20:45:26] INFO: Logger initialized at log/log144391.log
+[2026-03-05 20:45:26] INFO: Test 159th graph in data/list_660_graphs.g6: HLrZt~~
+[2026-03-05 20:45:26] INFO: meta data: 
+minimum degree >= 4
+independent number <= 2
+connected
+[2026-03-05 20:45:26] INFO: Orientation of HLrZt~~ with min semidegree 2:
+[0 0 0 0 0 0 0 1 1]
+[0 0 0 0 0 1 0 0 1]
+[0 1 0 0 0 0 1 0 0]
+[1 0 1 0 0 0 0 0 0]
+[1 1 0 0 0 0 0 0 0]
+[1 0 0 1 1 0 0 0 0]
+[0 1 0 1 1 0 0 0 0]
+[0 0 1 1 1 1 1 0 0]
+[0 0 1 1 1 1 1 1 0]
+[2026-03-05 20:45:26] INFO: op ←←←, 168
+[2026-03-05 20:45:26] INFO: op →←←, 134
+[2026-03-05 20:45:26] INFO: op →→←, 134
+[2026-03-05 20:45:26] INFO: op ←→←, 139
+[2026-03-05 20:45:26] INFO: [END]

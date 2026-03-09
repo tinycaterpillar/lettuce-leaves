@@ -1,0 +1,21 @@
+[2026-03-05 20:45:25] INFO: Logger initialized at log/log144022.log
+[2026-03-05 20:45:25] INFO: Test 148th graph in data/list_660_graphs.g6: HdW}z~~
+[2026-03-05 20:45:25] INFO: meta data: 
+minimum degree >= 4
+independent number <= 2
+connected
+[2026-03-05 20:45:25] INFO: Orientation of HdW}z~~ with min semidegree 2:
+[0 0 0 0 0 0 1 0 1]
+[1 0 0 0 0 0 0 1 0]
+[0 0 0 0 0 1 0 0 1]
+[1 0 1 0 0 0 0 0 0]
+[0 1 1 0 0 0 0 0 0]
+[0 0 0 1 1 0 0 0 0]
+[0 1 0 1 1 1 0 0 0]
+[0 0 1 1 1 1 1 0 0]
+[0 1 0 1 1 1 1 1 0]
+[2026-03-05 20:45:25] INFO: op ←←←, 162
+[2026-03-05 20:45:25] INFO: op →←←, 138
+[2026-03-05 20:45:25] INFO: op →→←, 138
+[2026-03-05 20:45:25] INFO: op ←→←, 152
+[2026-03-05 20:45:25] INFO: [END]

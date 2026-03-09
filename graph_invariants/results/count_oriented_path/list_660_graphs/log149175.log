@@ -1,0 +1,23 @@
+[2026-03-05 20:45:56] INFO: Logger initialized at log/log149175.log
+[2026-03-05 20:45:56] INFO: Test 284th graph in data/list_660_graphs.g6: J`Kx~fksuX_
+[2026-03-05 20:45:56] INFO: meta data: 
+minimum degree >= 4
+independent number <= 2
+connected
+[2026-03-05 20:45:56] INFO: Orientation of J`Kx~fksuX_ with min semidegree 2:
+[0 0 0 0 0 0 0 1 1 0 1]
+[1 0 0 0 0 0 0 0 0 1 1]
+[0 0 0 0 0 1 1 0 0 0 0]
+[0 0 1 0 0 0 1 0 0 0 0]
+[0 0 1 1 0 0 0 0 0 0 0]
+[0 0 0 1 1 0 0 0 0 0 0]
+[0 0 0 0 1 1 0 0 0 0 0]
+[0 1 1 1 0 0 1 0 0 0 0]
+[0 1 1 0 1 1 0 0 0 0 0]
+[1 0 0 1 0 0 1 1 0 0 0]
+[0 0 0 0 1 1 0 0 1 1 0]
+[2026-03-05 20:45:56] INFO: op ←←←, 178
+[2026-03-05 20:45:56] INFO: op →←←, 182
+[2026-03-05 20:45:56] INFO: op →→←, 182
+[2026-03-05 20:45:56] INFO: op ←→←, 128
+[2026-03-05 20:45:56] INFO: [END]

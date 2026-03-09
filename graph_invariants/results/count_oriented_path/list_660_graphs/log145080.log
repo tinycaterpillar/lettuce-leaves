@@ -1,0 +1,21 @@
+[2026-03-05 20:45:29] INFO: Logger initialized at log/log145080.log
+[2026-03-05 20:45:29] INFO: Test 179th graph in data/list_660_graphs.g6: HtXXz~~
+[2026-03-05 20:45:29] INFO: meta data: 
+minimum degree >= 4
+independent number <= 2
+connected
+[2026-03-05 20:45:29] INFO: Orientation of HtXXz~~ with min semidegree 2:
+[0 1 0 0 0 0 0 0 1]
+[0 0 0 0 0 1 0 1 0]
+[1 0 0 0 0 0 0 0 1]
+[1 0 1 0 0 0 0 0 0]
+[0 1 1 0 0 0 0 0 0]
+[0 0 0 1 1 0 0 0 0]
+[0 0 1 1 1 1 0 0 0]
+[0 0 1 1 1 1 1 0 0]
+[0 1 0 1 1 1 1 1 0]
+[2026-03-05 20:45:29] INFO: op ←←←, 170
+[2026-03-05 20:45:29] INFO: op →←←, 134
+[2026-03-05 20:45:29] INFO: op →→←, 134
+[2026-03-05 20:45:29] INFO: op ←→←, 149
+[2026-03-05 20:45:29] INFO: [END]

@@ -1,0 +1,18 @@
+[2026-03-08 16:01:53] INFO: Logger initialized at log3/log619001.log
+[2026-03-08 16:01:53] INFO: Test 539th graph in data/list_1775_graphs.g6: HR~~vn~
+[2026-03-08 16:01:53] INFO: meta data: 
+minimum degree >= 6
+independent number >= 2
+connected
+Not regular
+[2026-03-08 16:01:53] INFO: Orientation of HR~~vn~ with min semidegree 3:
+[0 0 0 0 0 1 1 1 0]
+[0 0 0 0 1 0 0 1 1]
+[1 0 0 0 0 1 0 0 1]
+[0 1 1 0 0 0 0 0 1]
+[1 0 1 1 0 0 0 0 0]
+[0 1 0 1 1 0 0 0 0]
+[0 1 1 1 1 0 0 0 0]
+[0 0 1 1 0 1 1 0 0]
+[1 0 0 0 1 1 1 1 0]
+[2026-03-08 16:01:53] INFO: Any vertex can be a start vertex of a directed path of length 2k-1

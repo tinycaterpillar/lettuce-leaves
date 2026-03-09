@@ -1,0 +1,17 @@
+[2026-03-06 14:52:54] INFO: Logger initialized at log2/log470426.log
+[2026-03-06 14:52:55] INFO: Test 61th graph in data/list_660_graphs.g6: H}CXZ^~
+[2026-03-06 14:52:55] INFO: meta data: 
+minimum degree >= 4
+independent number <= 2
+connected
+[2026-03-06 14:52:55] INFO: Orientation of H}CXZ^~ with min semidegree 2:
+[0 1 0 0 0 0 0 0 1]
+[0 0 0 0 0 0 0 1 1]
+[1 1 0 0 0 0 0 0 0]
+[1 1 0 0 0 0 0 0 0]
+[0 0 0 1 0 0 0 0 1]
+[0 0 0 1 1 0 0 0 0]
+[0 0 1 0 1 1 0 0 0]
+[0 0 1 0 1 1 1 0 0]
+[0 0 1 1 0 1 1 1 0]
+[2026-03-06 14:52:55] INFO: Any vertex can be a start vertex of a directed path of length 2k-1

@@ -1,0 +1,21 @@
+[2026-03-08 16:02:40] INFO: Logger initialized at log3/log621762.log
+[2026-03-08 16:02:40] INFO: Test 617th graph in data/list_1775_graphs.g6: K?zm}}~nz~n~
+[2026-03-08 16:02:40] INFO: meta data: 
+minimum degree >= 6
+independent number >= 2
+connected
+Not regular
+[2026-03-08 16:02:40] INFO: Orientation of K?zm}}~nz~n~ with min semidegree 3:
+[0 0 0 0 0 1 1 0 0 1 0 0]
+[0 0 0 0 0 0 1 0 0 0 1 1]
+[0 0 0 0 0 0 0 0 1 0 1 1]
+[0 0 0 0 0 0 0 1 1 0 0 1]
+[1 1 1 0 0 0 0 0 0 0 0 0]
+[0 1 1 0 1 0 0 0 0 0 0 0]
+[0 0 0 1 1 1 0 0 0 0 0 0]
+[1 1 0 0 1 1 1 0 0 0 0 0]
+[1 0 0 0 1 1 1 1 0 0 0 0]
+[0 0 1 1 1 1 1 1 1 0 0 0]
+[0 0 0 1 1 1 1 1 1 1 0 0]
+[0 0 0 0 1 1 1 1 1 1 1 0]
+[2026-03-08 16:02:40] INFO: Any vertex can be a start vertex of a directed path of length 2k-1

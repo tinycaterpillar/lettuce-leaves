@@ -1,0 +1,21 @@
+[2026-03-05 20:45:20] INFO: Logger initialized at log/log142875.log
+[2026-03-05 20:45:20] INFO: Test 118th graph in data/list_660_graphs.g6: HKnZvn~
+[2026-03-05 20:45:20] INFO: meta data: 
+minimum degree >= 4
+independent number <= 2
+connected
+[2026-03-05 20:45:20] INFO: Orientation of HKnZvn~ with min semidegree 2:
+[0 0 0 0 0 0 0 1 1]
+[0 0 0 0 0 1 0 0 1]
+[0 1 0 0 1 0 0 0 0]
+[1 0 0 0 0 1 0 0 0]
+[1 0 0 1 0 0 0 0 0]
+[1 0 0 0 1 0 0 0 0]
+[0 1 1 1 1 0 0 0 0]
+[0 1 1 1 0 1 1 0 0]
+[0 0 1 1 1 1 1 1 0]
+[2026-03-05 20:45:20] INFO: op ←←←, 164
+[2026-03-05 20:45:20] INFO: op →←←, 136
+[2026-03-05 20:45:20] INFO: op →→←, 136
+[2026-03-05 20:45:20] INFO: op ←→←, 140
+[2026-03-05 20:45:20] INFO: [END]

@@ -1,0 +1,23 @@
+[2026-03-05 20:45:59] INFO: Logger initialized at log/log149527.log
+[2026-03-05 20:45:59] INFO: Test 293th graph in data/list_660_graphs.g6: J~CWW[Nw~F_
+[2026-03-05 20:45:59] INFO: meta data: 
+minimum degree >= 4
+independent number <= 2
+connected
+[2026-03-05 20:45:59] INFO: Orientation of J~CWW[Nw~F_ with min semidegree 2:
+[0 0 0 0 0 0 0 0 0 1 1]
+[1 0 0 0 0 0 0 0 0 0 1]
+[1 1 0 0 0 0 0 0 0 0 0]
+[1 1 1 0 0 0 0 0 0 0 0]
+[0 0 0 1 0 0 0 1 0 0 0]
+[0 0 0 1 1 0 0 0 0 0 0]
+[0 0 0 0 1 1 0 0 0 0 0]
+[0 0 0 0 0 1 1 0 0 0 0]
+[0 0 0 0 1 1 1 1 0 0 0]
+[0 1 1 0 0 0 1 1 1 0 0]
+[0 0 1 0 0 0 1 1 1 1 0]
+[2026-03-05 20:45:59] INFO: op ←←←, 186
+[2026-03-05 20:45:59] INFO: op →←←, 132
+[2026-03-05 20:45:59] INFO: op →→←, 132
+[2026-03-05 20:45:59] INFO: op ←→←, 125
+[2026-03-05 20:45:59] INFO: [END]

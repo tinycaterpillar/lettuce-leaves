@@ -1,0 +1,21 @@
+[2026-03-05 20:45:29] INFO: Logger initialized at log/log145219.log
+[2026-03-05 20:45:29] INFO: Test 181th graph in data/list_660_graphs.g6: HvSzZ^~
+[2026-03-05 20:45:29] INFO: meta data: 
+minimum degree >= 4
+independent number <= 2
+connected
+[2026-03-05 20:45:29] INFO: Orientation of HvSzZ^~ with min semidegree 2:
+[0 0 0 1 0 0 0 0 1]
+[1 0 0 0 0 0 0 1 0]
+[1 0 0 0 0 0 0 0 1]
+[0 1 1 0 0 0 0 0 0]
+[0 1 0 1 0 0 0 0 0]
+[0 0 1 1 1 0 0 0 0]
+[0 1 1 0 1 1 0 0 0]
+[0 0 1 0 1 1 1 0 0]
+[0 1 0 1 1 1 1 1 0]
+[2026-03-05 20:45:29] INFO: op ←←←, 169
+[2026-03-05 20:45:30] INFO: op →←←, 140
+[2026-03-05 20:45:30] INFO: op →→←, 140
+[2026-03-05 20:45:30] INFO: op ←→←, 138
+[2026-03-05 20:45:30] INFO: [END]

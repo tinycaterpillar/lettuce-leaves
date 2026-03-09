@@ -1,0 +1,21 @@
+[2026-03-05 20:45:19] INFO: Logger initialized at log/log142391.log
+[2026-03-05 20:45:19] INFO: Test 105th graph in data/list_660_graphs.g6: H`tp~^~
+[2026-03-05 20:45:19] INFO: meta data: 
+minimum degree >= 4
+independent number <= 2
+connected
+[2026-03-05 20:45:19] INFO: Orientation of H`tp~^~ with min semidegree 2:
+[0 0 0 0 0 0 0 1 1]
+[1 0 0 0 0 0 0 0 1]
+[0 0 0 0 0 1 1 0 0]
+[0 0 1 0 1 0 0 0 0]
+[1 1 0 0 0 0 0 0 0]
+[0 1 0 1 0 0 0 0 0]
+[0 0 0 1 1 1 0 0 0]
+[0 1 1 0 1 1 1 0 0]
+[0 0 1 1 1 1 1 1 0]
+[2026-03-05 20:45:19] INFO: op ←←←, 153
+[2026-03-05 20:45:19] INFO: op →←←, 118
+[2026-03-05 20:45:19] INFO: op →→←, 118
+[2026-03-05 20:45:19] INFO: op ←→←, 126
+[2026-03-05 20:45:19] INFO: [END]

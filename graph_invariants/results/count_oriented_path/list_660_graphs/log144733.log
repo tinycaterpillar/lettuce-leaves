@@ -1,0 +1,21 @@
+[2026-03-05 20:45:28] INFO: Logger initialized at log/log144733.log
+[2026-03-05 20:45:28] INFO: Test 167th graph in data/list_660_graphs.g6: HrrHx~~
+[2026-03-05 20:45:28] INFO: meta data: 
+minimum degree >= 4
+independent number <= 2
+connected
+[2026-03-05 20:45:28] INFO: Orientation of HrrHx~~ with min semidegree 2:
+[0 0 0 0 0 1 0 0 1]
+[1 0 0 0 0 0 0 0 1]
+[1 0 0 0 0 0 0 1 0]
+[0 1 1 0 0 0 0 0 0]
+[1 1 0 0 0 0 0 0 0]
+[0 1 0 0 1 0 0 0 0]
+[0 0 1 1 1 1 0 0 0]
+[0 0 0 1 1 1 1 0 0]
+[0 0 1 1 1 1 1 1 0]
+[2026-03-05 20:45:28] INFO: op ←←←, 151
+[2026-03-05 20:45:28] INFO: op →←←, 119
+[2026-03-05 20:45:28] INFO: op →→←, 119
+[2026-03-05 20:45:28] INFO: op ←→←, 119
+[2026-03-05 20:45:28] INFO: [END]

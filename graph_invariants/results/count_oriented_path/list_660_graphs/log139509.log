@@ -1,0 +1,19 @@
+[2026-03-05 20:45:06] INFO: Logger initialized at log/log139509.log
+[2026-03-05 20:45:06] INFO: Test 29th graph in data/list_660_graphs.g6: F{dzw
+[2026-03-05 20:45:06] INFO: meta data: 
+minimum degree >= 4
+independent number <= 2
+connected
+[2026-03-05 20:45:06] INFO: Orientation of F{dzw with min semidegree 2:
+[0 1 1 0 0 0 0]
+[0 0 0 0 0 1 1]
+[0 1 0 0 0 1 0]
+[1 0 0 0 0 0 1]
+[1 0 0 1 0 0 0]
+[0 0 0 1 1 0 0]
+[0 0 1 0 1 1 0]
+[2026-03-05 20:45:06] INFO: op ←←←, 59
+[2026-03-05 20:45:06] INFO: op →←←, 31
+[2026-03-05 20:45:06] INFO: op →→←, 31
+[2026-03-05 20:45:06] INFO: op ←→←, 15
+[2026-03-05 20:45:06] INFO: [END]

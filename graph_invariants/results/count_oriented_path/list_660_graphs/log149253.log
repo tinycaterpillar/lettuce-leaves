@@ -1,0 +1,23 @@
+[2026-03-05 20:45:57] INFO: Logger initialized at log/log149253.log
+[2026-03-05 20:45:57] INFO: Test 285th graph in data/list_660_graphs.g6: JtPLa^{Np}_
+[2026-03-05 20:45:57] INFO: meta data: 
+minimum degree >= 4
+independent number <= 2
+connected
+[2026-03-05 20:45:57] INFO: Orientation of JtPLa^{Np}_ with min semidegree 2:
+[0 0 1 0 0 0 0 0 1 0 0]
+[1 0 0 0 0 0 0 0 1 0 0]
+[0 0 0 0 0 0 0 0 0 1 1]
+[1 0 1 0 0 0 0 0 0 0 0]
+[0 1 0 0 0 0 0 0 0 0 1]
+[0 1 0 0 1 0 0 0 0 0 0]
+[1 0 1 1 0 0 0 0 0 0 0]
+[0 1 0 0 1 1 1 0 0 0 0]
+[0 0 1 1 1 1 0 0 0 0 0]
+[0 0 0 1 1 1 1 1 0 0 0]
+[0 0 0 1 0 1 1 1 0 1 0]
+[2026-03-05 20:45:57] INFO: op ←←←, 216
+[2026-03-05 20:45:57] INFO: op →←←, 168
+[2026-03-05 20:45:57] INFO: op →→←, 168
+[2026-03-05 20:45:57] INFO: op ←→←, 167
+[2026-03-05 20:45:57] INFO: [END]

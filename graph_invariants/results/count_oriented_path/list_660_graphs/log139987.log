@@ -1,0 +1,21 @@
+[2026-03-05 20:45:08] INFO: Logger initialized at log/log139987.log
+[2026-03-05 20:45:08] INFO: Test 42th graph in data/list_660_graphs.g6: HwCW~N~
+[2026-03-05 20:45:08] INFO: meta data: 
+minimum degree >= 4
+independent number <= 2
+connected
+[2026-03-05 20:45:08] INFO: Orientation of HwCW~N~ with min semidegree 2:
+[0 0 0 0 0 0 0 1 1]
+[1 0 0 0 0 0 0 0 1]
+[1 1 0 0 0 0 0 0 0]
+[0 0 0 0 0 0 1 0 1]
+[0 0 0 1 0 0 0 0 1]
+[0 0 0 1 1 0 0 0 0]
+[0 0 0 0 1 1 0 0 0]
+[0 1 1 0 0 1 1 0 0]
+[0 0 1 0 0 1 1 1 0]
+[2026-03-05 20:45:08] INFO: op ←←←, 110
+[2026-03-05 20:45:08] INFO: op →←←, 76
+[2026-03-05 20:45:08] INFO: op →→←, 76
+[2026-03-05 20:45:08] INFO: op ←→←, 47
+[2026-03-05 20:45:08] INFO: [END]

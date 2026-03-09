@@ -1,0 +1,21 @@
+[2026-03-05 20:45:22] INFO: Logger initialized at log/log143332.log
+[2026-03-05 20:45:22] INFO: Test 132th graph in data/list_660_graphs.g6: HtOy~^~
+[2026-03-05 20:45:22] INFO: meta data: 
+minimum degree >= 4
+independent number <= 2
+connected
+[2026-03-05 20:45:22] INFO: Orientation of HtOy~^~ with min semidegree 2:
+[0 0 0 0 0 0 0 1 1]
+[1 0 0 0 0 0 0 0 1]
+[1 0 0 0 0 1 0 0 0]
+[1 0 1 0 0 0 0 0 0]
+[0 1 0 0 0 0 1 0 0]
+[0 0 0 1 1 0 0 0 0]
+[0 1 0 1 0 1 0 0 0]
+[0 1 1 0 1 1 1 0 0]
+[0 0 1 1 1 1 1 1 0]
+[2026-03-05 20:45:22] INFO: op ←←←, 157
+[2026-03-05 20:45:22] INFO: op →←←, 115
+[2026-03-05 20:45:22] INFO: op →→←, 115
+[2026-03-05 20:45:22] INFO: op ←→←, 118
+[2026-03-05 20:45:22] INFO: [END]

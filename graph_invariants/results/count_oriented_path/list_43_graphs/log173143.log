@@ -1,0 +1,19 @@
+[2026-03-05 21:05:00] INFO: Logger initialized at log/log173143.log
+[2026-03-05 21:05:00] INFO: Test 3th graph in data/list_43_graphs.g6: E~~w
+[2026-03-05 21:05:00] INFO: meta data: 
+minimum degree >= 4
+independent number = 1
+connected
+
+[2026-03-05 21:05:00] INFO: Orientation of E~~w with min semidegree 2:
+[0 0 0 0 1 1]
+[1 0 0 0 0 1]
+[1 1 0 0 0 0]
+[1 1 1 0 0 0]
+[0 1 1 1 0 0]
+[0 0 1 1 1 0]
+[2026-03-05 21:05:00] INFO: op ←←←, 63
+[2026-03-05 21:05:00] INFO: op →←←, 45
+[2026-03-05 21:05:00] INFO: op →→←, 45
+[2026-03-05 21:05:00] INFO: op ←→←, 27
+[2026-03-05 21:05:00] INFO: [END]

@@ -1,0 +1,20 @@
+[2026-03-05 20:49:08] INFO: Logger initialized at log/log164482.log
+[2026-03-05 20:49:08] INFO: Test 659th graph in data/list_660_graphs.g6: GwC^~w
+[2026-03-05 20:49:08] INFO: meta data: 
+minimum degree >= 4
+independent number <= 2
+connected
+[2026-03-05 20:49:08] INFO: Orientation of GwC^~w with min semidegree 2:
+[0 0 0 0 0 0 1 1]
+[1 0 0 0 0 0 1 0]
+[1 1 0 0 0 0 0 0]
+[0 0 0 0 0 0 1 1]
+[0 0 0 1 0 0 1 0]
+[0 0 0 1 1 0 0 0]
+[0 0 1 0 0 1 0 0]
+[0 1 1 0 1 1 0 0]
+[2026-03-05 20:49:08] INFO: op ←←←, 64
+[2026-03-05 20:49:08] INFO: op →←←, 50
+[2026-03-05 20:49:08] INFO: op →→←, 50
+[2026-03-05 20:49:08] INFO: op ←→←, 28
+[2026-03-05 20:49:08] INFO: [END]

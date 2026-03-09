@@ -1,0 +1,18 @@
+[2026-03-05 20:45:04] INFO: Logger initialized at log/log139060.log
+[2026-03-05 20:45:04] INFO: Test 15th graph in data/list_660_graphs.g6: E}lw
+[2026-03-05 20:45:04] INFO: meta data: 
+minimum degree >= 4
+independent number <= 2
+connected
+[2026-03-05 20:45:04] INFO: Orientation of E}lw with min semidegree 2:
+[0 0 1 0 1 0]
+[1 0 0 0 0 1]
+[0 1 0 0 0 1]
+[1 1 0 0 0 0]
+[0 0 1 1 0 0]
+[0 0 0 1 1 0]
+[2026-03-05 20:45:04] INFO: op ←←←, 36
+[2026-03-05 20:45:04] INFO: op →←←, 20
+[2026-03-05 20:45:04] INFO: op →→←, 20
+[2026-03-05 20:45:04] INFO: op ←→←, 8
+[2026-03-05 20:45:04] INFO: [END]

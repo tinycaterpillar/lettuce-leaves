@@ -1,0 +1,22 @@
+[2026-03-08 16:33:16] INFO: Logger initialized at log3/log624842.log
+[2026-03-08 16:33:17] INFO: Test 705th graph in data/list_1775_graphs.g6: L~?GX~orm\f|~s
+[2026-03-08 16:33:17] INFO: meta data: 
+minimum degree >= 6
+independent number >= 2
+connected
+Not regular
+[2026-03-08 16:33:17] INFO: Orientation of L~?GX~orm\f|~s with min semidegree 3:
+[0 0 0 0 0 0 0 0 0 1 1 0 1]
+[1 0 0 0 0 0 0 0 0 0 1 0 1]
+[1 1 0 0 0 0 0 1 0 0 0 0 0]
+[1 1 1 0 0 0 0 0 0 0 0 0 0]
+[0 0 0 0 0 0 0 1 0 0 0 1 1]
+[0 0 0 0 1 0 0 0 0 1 0 1 0]
+[0 0 0 0 1 1 0 0 0 0 0 1 0]
+[0 0 0 1 0 1 1 0 0 0 0 0 0]
+[1 1 1 1 0 0 0 0 0 0 0 0 0]
+[0 1 0 0 1 0 1 0 1 0 0 0 0]
+[0 0 0 0 1 1 1 0 1 1 0 0 0]
+[0 0 1 1 0 0 0 1 1 0 1 0 0]
+[0 0 1 1 0 1 1 1 0 1 0 0 0]
+[2026-03-08 16:33:17] INFO: Any vertex can be a start vertex of a directed path of length 2k-1

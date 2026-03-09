@@ -1,0 +1,21 @@
+[2026-03-05 20:45:30] INFO: Logger initialized at log/log145232.log
+[2026-03-05 20:45:30] INFO: Test 185th graph in data/list_660_graphs.g6: HLnJ~n~
+[2026-03-05 20:45:30] INFO: meta data: 
+minimum degree >= 4
+independent number <= 2
+connected
+[2026-03-05 20:45:30] INFO: Orientation of HLnJ~n~ with min semidegree 2:
+[0 0 0 0 0 0 0 1 1]
+[0 0 0 0 0 1 0 0 1]
+[0 1 0 0 1 0 0 0 0]
+[1 0 1 0 0 0 0 0 0]
+[1 0 0 1 0 0 0 0 0]
+[1 0 0 0 1 0 0 0 0]
+[0 1 1 1 1 1 0 0 0]
+[0 1 1 1 0 1 1 0 0]
+[0 0 1 1 1 1 1 1 0]
+[2026-03-05 20:45:30] INFO: op ←←←, 176
+[2026-03-05 20:45:30] INFO: op →←←, 149
+[2026-03-05 20:45:30] INFO: op →→←, 149
+[2026-03-05 20:45:30] INFO: op ←→←, 171
+[2026-03-05 20:45:30] INFO: [END]

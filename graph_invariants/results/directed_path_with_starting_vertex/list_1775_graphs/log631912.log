@@ -1,0 +1,22 @@
+[2026-03-08 16:34:48] INFO: Logger initialized at log3/log631912.log
+[2026-03-08 16:34:48] INFO: Test 907th graph in data/list_1775_graphs.g6: L~rMX_pKW^`~B~
+[2026-03-08 16:34:48] INFO: meta data: 
+minimum degree >= 6
+independent number >= 2
+connected
+Not regular
+[2026-03-08 16:34:48] INFO: Orientation of L~rMX_pKW^`~B~ with min semidegree 3:
+[0 0 0 0 1 1 1 0 0 0 0 0 0]
+[1 0 0 0 1 0 1 0 0 0 0 0 0]
+[1 1 0 0 0 0 0 0 0 1 0 0 0]
+[1 1 1 0 0 0 0 0 0 0 0 0 0]
+[0 0 0 0 0 0 0 0 0 0 1 1 1]
+[0 1 0 0 1 0 0 0 0 0 0 0 1]
+[0 0 0 0 1 1 0 0 0 0 0 0 1]
+[0 0 1 1 0 0 0 0 0 0 0 1 0]
+[0 0 1 1 0 0 0 1 0 0 0 0 0]
+[0 0 0 1 0 0 0 1 1 0 0 0 0]
+[0 0 0 0 0 1 1 1 1 1 0 0 0]
+[0 0 0 0 0 1 1 0 1 1 1 0 0]
+[0 0 0 0 0 0 0 1 1 1 1 1 0]
+[2026-03-08 16:34:48] INFO: Any vertex can be a start vertex of a directed path of length 2k-1

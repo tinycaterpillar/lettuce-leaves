@@ -1,0 +1,21 @@
+[2026-03-05 20:45:15] INFO: Logger initialized at log/log141424.log
+[2026-03-05 20:45:15] INFO: Test 80th graph in data/list_660_graphs.g6: HwFXzv~
+[2026-03-05 20:45:15] INFO: meta data: 
+minimum degree >= 4
+independent number <= 2
+connected
+[2026-03-05 20:45:15] INFO: Orientation of HwFXzv~ with min semidegree 2:
+[0 0 0 0 0 1 0 0 1]
+[1 0 0 0 0 0 0 1 0]
+[1 1 0 0 0 0 0 0 0]
+[0 0 0 0 0 1 0 0 1]
+[0 0 0 1 0 0 1 0 0]
+[0 1 0 0 1 0 0 0 0]
+[0 0 1 1 0 1 0 0 0]
+[0 0 1 1 1 0 1 0 0]
+[0 1 1 0 1 1 1 1 0]
+[2026-03-05 20:45:15] INFO: op ←←←, 140
+[2026-03-05 20:45:15] INFO: op →←←, 105
+[2026-03-05 20:45:15] INFO: op →→←, 105
+[2026-03-05 20:45:15] INFO: op ←→←, 100
+[2026-03-05 20:45:15] INFO: [END]

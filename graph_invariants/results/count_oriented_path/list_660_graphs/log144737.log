@@ -1,0 +1,21 @@
+[2026-03-05 20:45:28] INFO: Logger initialized at log/log144737.log
+[2026-03-05 20:45:28] INFO: Test 168th graph in data/list_660_graphs.g6: HYU}t~~
+[2026-03-05 20:45:28] INFO: meta data: 
+minimum degree >= 4
+independent number <= 2
+connected
+[2026-03-05 20:45:28] INFO: Orientation of HYU}t~~ with min semidegree 2:
+[0 0 0 0 0 0 0 1 1]
+[0 0 0 0 0 0 1 0 1]
+[1 1 0 0 0 0 0 0 0]
+[0 1 0 0 0 1 0 0 0]
+[0 1 0 1 0 0 0 0 0]
+[1 0 1 0 1 0 0 0 0]
+[1 0 0 1 1 0 0 0 0]
+[0 0 1 1 1 1 1 0 0]
+[0 0 1 1 1 1 1 1 0]
+[2026-03-05 20:45:28] INFO: op ←←←, 166
+[2026-03-05 20:45:28] INFO: op →←←, 136
+[2026-03-05 20:45:28] INFO: op →→←, 136
+[2026-03-05 20:45:28] INFO: op ←→←, 139
+[2026-03-05 20:45:28] INFO: [END]

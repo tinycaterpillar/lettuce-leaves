@@ -1,0 +1,20 @@
+[2026-03-05 20:45:40] INFO: Logger initialized at log/log147127.log
+[2026-03-05 20:45:40] INFO: Test 231th graph in data/list_660_graphs.g6: G~rHx{
+[2026-03-05 20:45:40] INFO: meta data: 
+minimum degree >= 4
+independent number <= 2
+connected
+[2026-03-05 20:45:40] INFO: Orientation of G~rHx{ with min semidegree 2:
+[0 0 1 1 0 0 0 0]
+[1 0 1 0 0 0 0 0]
+[0 0 0 0 0 0 1 1]
+[0 1 1 0 0 0 0 1]
+[1 1 0 0 0 0 0 0]
+[1 1 0 0 1 0 0 0]
+[0 0 0 1 1 1 0 0]
+[0 0 0 0 1 1 1 0]
+[2026-03-05 20:45:40] INFO: op ←←←, 106
+[2026-03-05 20:45:40] INFO: op →←←, 64
+[2026-03-05 20:45:40] INFO: op →→←, 64
+[2026-03-05 20:45:40] INFO: op ←→←, 38
+[2026-03-05 20:45:40] INFO: [END]

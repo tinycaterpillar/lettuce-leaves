@@ -1,0 +1,19 @@
+[2026-03-05 20:49:00] INFO: Logger initialized at log/log163802.log
+[2026-03-05 20:49:00] INFO: Test 643th graph in data/list_660_graphs.g6: F\^]w
+[2026-03-05 20:49:00] INFO: meta data: 
+minimum degree >= 4
+independent number <= 2
+connected
+[2026-03-05 20:49:00] INFO: Orientation of F\^]w with min semidegree 2:
+[0 0 0 0 0 1 1]
+[0 0 0 0 1 0 1]
+[1 1 0 0 0 0 0]
+[1 0 1 0 0 0 0]
+[0 0 1 1 0 0 0]
+[0 1 0 1 1 0 0]
+[0 0 0 1 1 1 0]
+[2026-03-05 20:49:00] INFO: op ←←←, 68
+[2026-03-05 20:49:00] INFO: op →←←, 40
+[2026-03-05 20:49:00] INFO: op →→←, 40
+[2026-03-05 20:49:00] INFO: op ←→←, 23
+[2026-03-05 20:49:00] INFO: [END]

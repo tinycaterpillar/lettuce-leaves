@@ -1,0 +1,15 @@
+[2026-03-06 14:52:49] INFO: Logger initialized at log2/log469324.log
+[2026-03-06 14:52:49] INFO: Test 33th graph in data/list_660_graphs.g6: Ft\~w
+[2026-03-06 14:52:49] INFO: meta data: 
+minimum degree >= 4
+independent number <= 2
+connected
+[2026-03-06 14:52:49] INFO: Orientation of Ft\~w with min semidegree 2:
+[0 1 0 0 0 0 1]
+[0 0 0 0 1 1 0]
+[1 0 0 0 0 0 1]
+[1 0 1 0 0 0 0]
+[0 0 1 1 0 0 0]
+[0 0 1 1 1 0 0]
+[0 1 0 1 1 1 0]
+[2026-03-06 14:52:49] INFO: Any vertex can be a start vertex of a directed path of length 2k-1

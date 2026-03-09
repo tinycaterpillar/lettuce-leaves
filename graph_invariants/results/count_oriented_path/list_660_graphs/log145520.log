@@ -1,0 +1,21 @@
+[2026-03-05 20:45:31] INFO: Logger initialized at log/log145520.log
+[2026-03-05 20:45:31] INFO: Test 189th graph in data/list_660_graphs.g6: HqN~r~~
+[2026-03-05 20:45:31] INFO: meta data: 
+minimum degree >= 4
+independent number <= 2
+connected
+[2026-03-05 20:45:31] INFO: Orientation of HqN~r~~ with min semidegree 2:
+[0 0 0 0 0 1 0 0 1]
+[1 0 0 0 0 0 0 1 0]
+[1 0 0 0 0 0 0 0 1]
+[0 1 0 0 0 1 0 0 0]
+[0 0 1 1 0 0 0 0 0]
+[0 1 1 0 1 0 0 0 0]
+[1 1 1 1 1 0 0 0 0]
+[0 0 1 1 1 1 1 0 0]
+[0 1 0 1 1 1 1 1 0]
+[2026-03-05 20:45:31] INFO: op ←←←, 197
+[2026-03-05 20:45:31] INFO: op →←←, 172
+[2026-03-05 20:45:31] INFO: op →→←, 172
+[2026-03-05 20:45:31] INFO: op ←→←, 188
+[2026-03-05 20:45:31] INFO: [END]

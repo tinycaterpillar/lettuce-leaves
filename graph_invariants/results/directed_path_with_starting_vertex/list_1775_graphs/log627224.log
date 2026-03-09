@@ -1,0 +1,22 @@
+[2026-03-08 16:33:52] INFO: Logger initialized at log3/log627224.log
+[2026-03-08 16:33:52] INFO: Test 773th graph in data/list_1775_graphs.g6: LV}tYhJPzrs~v{
+[2026-03-08 16:33:52] INFO: meta data: 
+minimum degree >= 6
+independent number >= 2
+connected
+Not regular
+[2026-03-08 16:33:52] INFO: Orientation of LV}tYhJPzrs~v{ with min semidegree 3:
+[0 0 0 1 0 0 0 0 0 0 0 1 1]
+[0 0 0 0 1 0 0 0 0 0 1 0 1]
+[1 0 0 0 0 0 0 0 0 0 1 1 0]
+[0 1 1 0 0 0 0 0 0 0 0 0 1]
+[1 0 1 1 0 0 0 0 0 0 0 0 0]
+[1 0 1 1 0 0 0 0 0 0 0 1 0]
+[1 0 1 0 1 1 0 0 0 0 0 0 0]
+[0 1 0 1 0 1 0 0 0 0 0 0 0]
+[0 1 0 0 1 0 1 1 0 0 0 0 0]
+[0 1 0 0 0 1 1 1 1 0 0 0 0]
+[0 0 0 1 1 0 0 1 1 1 0 0 0]
+[0 0 0 0 0 0 1 1 1 1 1 0 0]
+[0 0 0 0 1 1 1 1 1 1 0 0 0]
+[2026-03-08 16:33:52] INFO: Any vertex can be a start vertex of a directed path of length 2k-1

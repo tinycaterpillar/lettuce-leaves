@@ -1,0 +1,21 @@
+[2026-03-05 20:45:44] INFO: Logger initialized at log/log147596.log
+[2026-03-05 20:45:44] INFO: Test 242th graph in data/list_660_graphs.g6: H{dbG{^
+[2026-03-05 20:45:44] INFO: meta data: 
+minimum degree >= 4
+independent number <= 2
+connected
+[2026-03-05 20:45:44] INFO: Orientation of H{dbG{^ with min semidegree 2:
+[0 0 0 1 1 0 0 0 0]
+[1 0 0 0 0 0 1 0 0]
+[1 1 0 0 0 0 0 0 0]
+[0 0 0 0 0 0 0 1 1]
+[0 0 0 1 0 0 0 0 1]
+[0 1 1 0 0 0 0 0 0]
+[0 0 1 0 0 1 0 0 0]
+[0 0 0 0 1 1 1 0 0]
+[0 0 0 0 0 1 1 1 0]
+[2026-03-05 20:45:44] INFO: op ←←←, 84
+[2026-03-05 20:45:44] INFO: op →←←, 47
+[2026-03-05 20:45:44] INFO: op →→←, 47
+[2026-03-05 20:45:44] INFO: op ←→←, 26
+[2026-03-05 20:45:44] INFO: [END]

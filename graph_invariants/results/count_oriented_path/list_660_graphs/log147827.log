@@ -1,0 +1,21 @@
+[2026-03-05 20:45:46] INFO: Logger initialized at log/log147827.log
+[2026-03-05 20:45:46] INFO: Test 248th graph in data/list_660_graphs.g6: H}lah[^
+[2026-03-05 20:45:46] INFO: meta data: 
+minimum degree >= 4
+independent number <= 2
+connected
+[2026-03-05 20:45:46] INFO: Orientation of H}lah[^ with min semidegree 2:
+[0 0 1 1 0 0 0 0 0]
+[1 0 0 0 0 1 0 0 0]
+[0 1 0 0 0 0 0 1 0]
+[0 1 0 0 0 0 0 0 1]
+[1 0 1 1 0 0 0 0 0]
+[0 0 1 0 0 0 0 0 1]
+[0 1 0 1 0 1 0 0 0]
+[0 0 0 0 1 1 1 0 0]
+[0 0 0 0 1 0 1 1 0]
+[2026-03-05 20:45:46] INFO: op ←←←, 96
+[2026-03-05 20:45:46] INFO: op →←←, 73
+[2026-03-05 20:45:46] INFO: op →→←, 73
+[2026-03-05 20:45:46] INFO: op ←→←, 45
+[2026-03-05 20:45:46] INFO: [END]

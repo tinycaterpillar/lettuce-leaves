@@ -1,0 +1,21 @@
+[2026-03-06 14:54:21] INFO: Logger initialized at log2/log485386.log
+[2026-03-06 14:54:21] INFO: Test 461th graph in data/list_660_graphs.g6: L~{?GNft|^JyNr
+[2026-03-06 14:54:21] INFO: meta data: 
+minimum degree >= 4
+independent number <= 2
+connected
+[2026-03-06 14:54:21] INFO: Orientation of L~{?GNft|^JyNr with min semidegree 3:
+[0 0 0 0 0 0 0 0 1 1 1 0 0]
+[1 0 0 0 0 0 0 0 0 1 0 1 0]
+[1 1 0 0 0 0 0 0 0 0 1 0 0]
+[1 1 1 0 0 0 0 0 0 0 0 0 0]
+[1 1 1 1 0 0 0 0 0 0 0 0 0]
+[0 0 0 0 0 0 0 0 1 0 0 1 1]
+[0 0 0 0 0 1 0 0 1 0 0 0 1]
+[0 0 0 0 0 1 1 0 0 0 0 0 1]
+[0 1 1 0 0 0 0 1 0 0 0 0 0]
+[0 0 0 1 0 1 1 1 1 0 0 0 0]
+[0 0 0 0 1 1 1 1 1 0 0 0 0]
+[0 0 0 1 1 0 1 1 0 1 0 0 0]
+[0 0 1 1 1 0 0 0 0 0 1 1 0]
+[2026-03-06 14:54:21] INFO: Any vertex can be a start vertex of a directed path of length 2k-1

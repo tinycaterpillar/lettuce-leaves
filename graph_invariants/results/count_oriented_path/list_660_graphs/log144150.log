@@ -1,0 +1,21 @@
+[2026-03-05 20:45:26] INFO: Logger initialized at log/log144150.log
+[2026-03-05 20:45:26] INFO: Test 153th graph in data/list_660_graphs.g6: HR]~Mv~
+[2026-03-05 20:45:26] INFO: meta data: 
+minimum degree >= 4
+independent number <= 2
+connected
+[2026-03-05 20:45:26] INFO: Orientation of HR]~Mv~ with min semidegree 2:
+[0 0 0 0 0 0 0 1 1]
+[0 0 0 0 1 0 0 0 1]
+[1 0 0 0 0 1 0 0 0]
+[0 1 1 0 0 0 0 0 0]
+[0 0 1 1 0 0 0 0 0]
+[1 0 0 1 1 0 0 0 0]
+[1 1 1 0 0 1 0 0 0]
+[0 1 0 1 1 0 1 0 0]
+[0 0 1 1 1 1 1 1 0]
+[2026-03-05 20:45:26] INFO: op ←←←, 166
+[2026-03-05 20:45:26] INFO: op →←←, 141
+[2026-03-05 20:45:26] INFO: op →→←, 141
+[2026-03-05 20:45:26] INFO: op ←→←, 133
+[2026-03-05 20:45:26] INFO: [END]

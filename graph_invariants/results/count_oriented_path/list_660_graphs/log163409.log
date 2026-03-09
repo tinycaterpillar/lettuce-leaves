@@ -1,0 +1,20 @@
+[2026-03-05 20:48:57] INFO: Logger initialized at log/log163409.log
+[2026-03-05 20:48:57] INFO: Test 633th graph in data/list_660_graphs.g6: G{S~~w
+[2026-03-05 20:48:57] INFO: meta data: 
+minimum degree >= 4
+independent number <= 2
+connected
+[2026-03-05 20:48:57] INFO: Orientation of G{S~~w with min semidegree 2:
+[0 0 0 0 0 0 1 1]
+[1 0 0 0 0 0 1 0]
+[1 1 0 0 0 0 0 0]
+[1 0 0 0 0 0 0 1]
+[0 1 0 1 0 0 0 0]
+[0 0 1 1 1 0 0 0]
+[0 0 1 1 1 1 0 0]
+[0 1 1 0 1 1 0 0]
+[2026-03-05 20:48:57] INFO: op ←←←, 108
+[2026-03-05 20:48:57] INFO: op →←←, 76
+[2026-03-05 20:48:57] INFO: op →→←, 76
+[2026-03-05 20:48:57] INFO: op ←→←, 58
+[2026-03-05 20:48:57] INFO: [END]

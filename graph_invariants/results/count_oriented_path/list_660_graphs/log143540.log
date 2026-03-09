@@ -1,0 +1,21 @@
+[2026-03-05 20:45:23] INFO: Logger initialized at log/log143540.log
+[2026-03-05 20:45:23] INFO: Test 135th graph in data/list_660_graphs.g6: HhqXz~~
+[2026-03-05 20:45:23] INFO: meta data: 
+minimum degree >= 4
+independent number <= 2
+connected
+[2026-03-05 20:45:23] INFO: Orientation of HhqXz~~ with min semidegree 2:
+[0 0 0 0 0 1 0 0 1]
+[1 0 0 0 0 0 0 1 0]
+[0 1 0 0 0 0 0 0 1]
+[0 0 1 0 0 0 1 0 0]
+[1 1 0 0 0 0 0 0 0]
+[0 0 0 1 1 0 0 0 0]
+[0 0 1 0 1 1 0 0 0]
+[0 0 1 1 1 1 1 0 0]
+[0 1 0 1 1 1 1 1 0]
+[2026-03-05 20:45:23] INFO: op ←←←, 153
+[2026-03-05 20:45:23] INFO: op →←←, 118
+[2026-03-05 20:45:23] INFO: op →→←, 118
+[2026-03-05 20:45:23] INFO: op ←→←, 127
+[2026-03-05 20:45:23] INFO: [END]

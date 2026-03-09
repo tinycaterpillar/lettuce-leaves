@@ -1,0 +1,21 @@
+[2026-03-05 20:45:32] INFO: Logger initialized at log/log145921.log
+[2026-03-05 20:45:32] INFO: Test 199th graph in data/list_660_graphs.g6: HRl}~^~
+[2026-03-05 20:45:32] INFO: meta data: 
+minimum degree >= 4
+independent number <= 2
+connected
+[2026-03-05 20:45:32] INFO: Orientation of HRl}~^~ with min semidegree 2:
+[0 0 0 0 0 0 0 1 1]
+[0 0 0 0 0 1 0 0 1]
+[1 0 0 0 1 0 0 0 0]
+[0 1 1 0 0 0 0 0 0]
+[1 0 0 1 0 0 0 0 0]
+[0 0 1 1 1 0 0 0 0]
+[1 1 0 1 1 1 0 0 0]
+[0 1 1 0 1 1 1 0 0]
+[0 0 1 1 1 1 1 1 0]
+[2026-03-05 20:45:32] INFO: op ←←←, 191
+[2026-03-05 20:45:32] INFO: op →←←, 179
+[2026-03-05 20:45:32] INFO: op →→←, 179
+[2026-03-05 20:45:32] INFO: op ←→←, 193
+[2026-03-05 20:45:32] INFO: [END]

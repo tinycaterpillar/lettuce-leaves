@@ -1,0 +1,21 @@
+[2026-03-05 20:45:18] INFO: Logger initialized at log/log142321.log
+[2026-03-05 20:45:18] INFO: Test 104th graph in data/list_660_graphs.g6: HRhY|~~
+[2026-03-05 20:45:18] INFO: meta data: 
+minimum degree >= 4
+independent number <= 2
+connected
+[2026-03-05 20:45:18] INFO: Orientation of HRhY|~~ with min semidegree 2:
+[0 0 0 0 0 0 0 1 1]
+[0 0 0 0 0 1 0 0 1]
+[1 0 0 0 0 0 0 1 0]
+[0 1 1 0 0 0 0 0 0]
+[1 0 1 0 0 0 0 0 0]
+[0 0 0 1 1 0 0 0 0]
+[0 1 0 1 1 1 0 0 0]
+[0 0 0 1 1 1 1 0 0]
+[0 0 1 1 1 1 1 1 0]
+[2026-03-05 20:45:18] INFO: op ←←←, 156
+[2026-03-05 20:45:18] INFO: op →←←, 124
+[2026-03-05 20:45:18] INFO: op →→←, 124
+[2026-03-05 20:45:18] INFO: op ←→←, 127
+[2026-03-05 20:45:18] INFO: [END]

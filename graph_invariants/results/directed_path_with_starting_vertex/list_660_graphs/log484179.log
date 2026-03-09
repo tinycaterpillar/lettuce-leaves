@@ -1,0 +1,21 @@
+[2026-03-06 14:54:14] INFO: Logger initialized at log2/log484179.log
+[2026-03-06 14:54:14] INFO: Test 429th graph in data/list_660_graphs.g6: L~uGW[fF~NM^[~
+[2026-03-06 14:54:14] INFO: meta data: 
+minimum degree >= 4
+independent number <= 2
+connected
+[2026-03-06 14:54:14] INFO: Orientation of L~uGW[fF~NM^[~ with min semidegree 3:
+[0 1 1 0 0 0 0 0 0 0 1 0 0]
+[0 0 0 0 0 0 0 0 0 0 1 1 1]
+[0 1 0 0 0 0 0 0 0 0 0 1 1]
+[1 1 1 0 0 0 0 0 0 0 0 0 0]
+[1 1 0 1 0 0 0 0 0 0 0 0 0]
+[1 0 0 0 1 0 0 0 0 1 0 0 0]
+[0 0 0 0 1 1 0 0 0 0 0 0 1]
+[0 0 0 0 1 1 1 0 0 0 0 0 0]
+[0 0 1 0 0 1 1 1 0 0 0 0 0]
+[0 0 0 1 1 0 1 1 1 0 0 0 0]
+[0 0 1 0 0 1 1 1 1 0 0 0 0]
+[0 0 0 1 0 0 1 1 1 1 1 0 0]
+[0 0 0 1 0 0 0 1 1 1 1 1 0]
+[2026-03-06 14:54:14] INFO: Any vertex can be a start vertex of a directed path of length 2k-1

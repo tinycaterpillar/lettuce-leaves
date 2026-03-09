@@ -1,0 +1,21 @@
+[2026-03-05 20:45:27] INFO: Logger initialized at log/log144623.log
+[2026-03-05 20:45:27] INFO: Test 165th graph in data/list_660_graphs.g6: HQl~~z~
+[2026-03-05 20:45:27] INFO: meta data: 
+minimum degree >= 4
+independent number <= 2
+connected
+[2026-03-05 20:45:27] INFO: Orientation of HQl~~z~ with min semidegree 2:
+[0 0 0 0 0 0 1 1 0]
+[0 0 0 0 0 1 0 0 1]
+[1 0 0 0 0 0 0 0 1]
+[0 1 0 0 1 0 0 0 0]
+[1 0 1 0 0 0 0 0 0]
+[0 0 1 1 1 0 0 0 0]
+[0 1 1 1 1 1 0 0 0]
+[0 1 1 1 1 1 0 0 0]
+[1 0 0 1 1 1 1 1 0]
+[2026-03-05 20:45:27] INFO: op ←←←, 195
+[2026-03-05 20:45:27] INFO: op →←←, 176
+[2026-03-05 20:45:27] INFO: op →→←, 176
+[2026-03-05 20:45:27] INFO: op ←→←, 199
+[2026-03-05 20:45:27] INFO: [END]

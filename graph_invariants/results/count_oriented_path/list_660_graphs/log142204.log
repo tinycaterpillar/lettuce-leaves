@@ -1,0 +1,21 @@
+[2026-03-05 20:45:18] INFO: Logger initialized at log/log142204.log
+[2026-03-05 20:45:18] INFO: Test 100th graph in data/list_660_graphs.g6: H`N~u~~
+[2026-03-05 20:45:18] INFO: meta data: 
+minimum degree >= 4
+independent number <= 2
+connected
+[2026-03-05 20:45:18] INFO: Orientation of H`N~u~~ with min semidegree 2:
+[0 0 0 0 0 0 0 1 1]
+[1 0 0 0 0 0 0 0 1]
+[0 0 0 0 0 1 1 0 0]
+[0 0 1 0 0 1 0 0 0]
+[0 0 1 1 0 0 0 0 0]
+[1 1 0 0 1 0 0 0 0]
+[1 1 0 1 1 0 0 0 0]
+[0 1 0 1 1 1 1 0 0]
+[0 0 1 1 1 1 1 1 0]
+[2026-03-05 20:45:18] INFO: op ←←←, 188
+[2026-03-05 20:45:18] INFO: op →←←, 155
+[2026-03-05 20:45:18] INFO: op →→←, 155
+[2026-03-05 20:45:18] INFO: op ←→←, 159
+[2026-03-05 20:45:18] INFO: [END]

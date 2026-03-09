@@ -1,0 +1,20 @@
+[2026-03-06 17:23:03] INFO: Logger initialized at log2/log568543.log
+[2026-03-06 17:23:03] INFO: Test 623th graph in data/list_660_graphs.g6: K~`HW~mv\vm~
+[2026-03-06 17:23:03] INFO: meta data: 
+minimum degree >= 4
+independent number <= 2
+connected
+[2026-03-06 17:23:03] INFO: Orientation of K~`HW~mv\vm~ with min semidegree 3:
+[0 0 1 0 0 0 0 0 0 1 1 0]
+[1 0 0 0 0 0 0 0 1 0 0 1]
+[0 1 0 0 0 0 0 0 0 0 1 1]
+[1 1 1 0 0 0 0 0 0 0 0 0]
+[1 0 0 0 0 0 0 1 1 0 0 0]
+[0 1 0 0 1 0 0 0 0 0 0 1]
+[0 0 1 0 1 1 0 0 0 0 0 0]
+[0 0 0 1 0 1 1 0 0 0 0 0]
+[1 0 1 0 0 1 1 0 0 0 0 0]
+[0 1 0 1 1 1 0 1 1 0 0 0]
+[0 0 0 1 1 0 1 1 1 1 0 0]
+[0 0 0 1 0 0 1 1 1 1 1 0]
+[2026-03-06 17:23:03] INFO: Any vertex can be a start vertex of a directed path of length 2k-1

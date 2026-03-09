@@ -1,0 +1,23 @@
+[2026-03-05 20:46:00] INFO: Logger initialized at log/log149599.log
+[2026-03-05 20:46:00] INFO: Test 294th graph in data/list_660_graphs.g6: JwC^~B`FWz_
+[2026-03-05 20:46:00] INFO: meta data: 
+minimum degree >= 4
+independent number <= 2
+connected
+[2026-03-05 20:46:00] INFO: Orientation of JwC^~B`FWz_ with min semidegree 2:
+[0 0 0 0 0 0 1 1 0 0 0]
+[1 0 0 0 0 0 1 0 0 0 0]
+[1 1 0 0 0 0 0 0 0 0 0]
+[0 0 0 0 0 0 0 0 0 1 1]
+[0 0 0 1 0 0 0 0 0 0 1]
+[0 0 0 1 1 0 0 0 0 0 0]
+[0 0 1 1 1 1 0 0 0 0 0]
+[0 1 1 0 0 0 0 0 0 0 0]
+[1 1 1 0 0 0 0 1 0 0 0]
+[0 0 0 0 1 1 0 1 1 0 0]
+[0 0 0 0 0 1 0 1 1 1 0]
+[2026-03-05 20:46:00] INFO: op ←←←, 167
+[2026-03-05 20:46:00] INFO: op →←←, 119
+[2026-03-05 20:46:00] INFO: op →→←, 119
+[2026-03-05 20:46:00] INFO: op ←→←, 99
+[2026-03-05 20:46:00] INFO: [END]

@@ -1,0 +1,21 @@
+[2026-03-05 20:45:30] INFO: Logger initialized at log/log145481.log
+[2026-03-05 20:45:31] INFO: Test 187th graph in data/list_660_graphs.g6: Hbiz~v~
+[2026-03-05 20:45:31] INFO: meta data: 
+minimum degree >= 4
+independent number <= 2
+connected
+[2026-03-05 20:45:31] INFO: Orientation of Hbiz~v~ with min semidegree 2:
+[0 0 0 0 0 0 0 1 1]
+[1 0 0 0 0 0 0 0 1]
+[0 0 0 0 0 1 1 0 0]
+[0 1 1 0 0 0 0 0 0]
+[1 0 1 0 0 0 0 0 0]
+[1 0 0 1 1 0 0 0 0]
+[0 1 0 1 1 1 0 0 0]
+[0 1 1 1 1 0 1 0 0]
+[0 0 1 1 1 1 1 1 0]
+[2026-03-05 20:45:31] INFO: op ←←←, 189
+[2026-03-05 20:45:31] INFO: op →←←, 152
+[2026-03-05 20:45:31] INFO: op →→←, 152
+[2026-03-05 20:45:31] INFO: op ←→←, 160
+[2026-03-05 20:45:31] INFO: [END]

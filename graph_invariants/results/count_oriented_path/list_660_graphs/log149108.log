@@ -1,0 +1,23 @@
+[2026-03-05 20:45:56] INFO: Logger initialized at log/log149108.log
+[2026-03-05 20:45:56] INFO: Test 283th graph in data/list_660_graphs.g6: J`rN`w|mzn?
+[2026-03-05 20:45:56] INFO: meta data: 
+minimum degree >= 4
+independent number <= 2
+connected
+[2026-03-05 20:45:56] INFO: Orientation of J`rN`w|mzn? with min semidegree 2:
+[0 0 0 0 0 1 0 0 0 1 0]
+[1 0 0 0 0 0 0 0 0 0 1]
+[0 0 0 0 0 0 0 0 0 1 1]
+[0 0 1 0 0 0 1 0 0 0 0]
+[1 1 0 0 0 0 0 0 0 0 0]
+[0 1 0 0 1 0 0 0 0 0 0]
+[1 1 1 0 0 0 0 0 0 0 0]
+[0 0 1 1 1 1 0 0 0 0 0]
+[0 0 1 1 1 1 0 1 0 0 0]
+[0 0 0 1 1 0 1 1 1 0 0]
+[0 0 0 1 0 1 1 1 1 0 0]
+[2026-03-05 20:45:56] INFO: op ←←←, 222
+[2026-03-05 20:45:56] INFO: op →←←, 190
+[2026-03-05 20:45:56] INFO: op →→←, 190
+[2026-03-05 20:45:56] INFO: op ←→←, 193
+[2026-03-05 20:45:56] INFO: [END]

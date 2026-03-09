@@ -1,0 +1,21 @@
+[2026-03-05 20:45:19] INFO: Logger initialized at log/log142435.log
+[2026-03-05 20:45:19] INFO: Test 108th graph in data/list_660_graphs.g6: H~`HW~~
+[2026-03-05 20:45:19] INFO: meta data: 
+minimum degree >= 4
+independent number <= 2
+connected
+[2026-03-05 20:45:19] INFO: Orientation of H~`HW~~ with min semidegree 2:
+[0 0 0 1 0 0 0 0 1]
+[1 0 0 0 0 0 0 0 1]
+[1 1 0 0 0 0 0 0 0]
+[0 1 1 0 0 0 0 0 0]
+[1 0 0 0 0 0 0 1 0]
+[0 1 0 0 1 0 0 0 0]
+[0 0 1 0 1 1 0 0 0]
+[0 0 0 1 0 1 1 0 0]
+[0 0 1 1 1 1 1 1 0]
+[2026-03-05 20:45:19] INFO: op ←←←, 126
+[2026-03-05 20:45:19] INFO: op →←←, 90
+[2026-03-05 20:45:19] INFO: op →→←, 90
+[2026-03-05 20:45:19] INFO: op ←→←, 78
+[2026-03-05 20:45:19] INFO: [END]

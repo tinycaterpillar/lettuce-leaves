@@ -1,0 +1,21 @@
+[2026-03-05 20:45:17] INFO: Logger initialized at log/log141986.log
+[2026-03-05 20:45:17] INFO: Test 96th graph in data/list_660_graphs.g6: HbK~]~~
+[2026-03-05 20:45:17] INFO: meta data: 
+minimum degree >= 4
+independent number <= 2
+connected
+[2026-03-05 20:45:17] INFO: Orientation of HbK~]~~ with min semidegree 2:
+[0 0 0 0 0 0 0 1 1]
+[1 0 0 0 0 0 0 0 1]
+[0 0 0 0 0 1 1 0 0]
+[0 1 1 0 0 0 0 0 0]
+[0 0 1 1 0 0 0 0 0]
+[0 0 0 1 1 0 0 0 0]
+[1 1 0 0 1 1 0 0 0]
+[0 1 0 1 1 1 1 0 0]
+[0 0 1 1 1 1 1 1 0]
+[2026-03-05 20:45:17] INFO: op ←←←, 167
+[2026-03-05 20:45:17] INFO: op →←←, 139
+[2026-03-05 20:45:17] INFO: op →→←, 139
+[2026-03-05 20:45:17] INFO: op ←→←, 146
+[2026-03-05 20:45:17] INFO: [END]

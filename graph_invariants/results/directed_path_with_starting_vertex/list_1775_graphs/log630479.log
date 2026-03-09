@@ -1,0 +1,22 @@
+[2026-03-08 16:34:31] INFO: Logger initialized at log3/log630479.log
+[2026-03-08 16:34:31] INFO: Test 866th graph in data/list_1775_graphs.g6: L`K}UK~u~N^Q|R
+[2026-03-08 16:34:31] INFO: meta data: 
+minimum degree >= 6
+independent number >= 2
+connected
+Not regular
+[2026-03-08 16:34:31] INFO: Orientation of L`K}UK~u~N^Q|R with min semidegree 3:
+[0 0 0 0 0 0 0 0 0 1 1 1 1]
+[1 0 0 0 0 0 0 0 0 1 1 0 0]
+[0 0 0 0 0 0 0 0 1 0 0 1 1]
+[0 0 1 0 0 0 0 0 1 0 0 0 1]
+[0 0 1 1 0 0 0 0 1 0 0 0 0]
+[0 0 1 1 1 0 0 0 0 0 0 0 0]
+[1 1 0 0 1 0 0 0 0 0 0 0 0]
+[1 1 0 0 0 1 1 0 0 0 0 0 0]
+[0 0 0 0 0 1 1 1 0 0 0 0 0]
+[0 0 0 1 1 0 1 1 1 0 0 0 0]
+[0 0 1 0 0 1 1 1 1 0 0 0 0]
+[0 1 0 1 1 0 1 0 0 1 0 0 0]
+[0 1 0 0 0 1 0 1 0 0 1 1 0]
+[2026-03-08 16:34:31] INFO: Any vertex can be a start vertex of a directed path of length 2k-1

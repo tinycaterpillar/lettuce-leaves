@@ -1,0 +1,22 @@
+[2026-03-05 20:45:34] INFO: Logger initialized at log/log146312.log
+[2026-03-05 20:45:34] INFO: Test 210th graph in data/list_660_graphs.g6: I~}AHKVBw
+[2026-03-05 20:45:34] INFO: meta data: 
+minimum degree >= 4
+independent number <= 2
+connected
+[2026-03-05 20:45:34] INFO: Orientation of I~}AHKVBw with min semidegree 2:
+[0 0 0 1 1 0 0 0 0 0]
+[1 0 0 0 1 0 0 0 0 0]
+[1 1 0 0 0 0 0 0 0 0]
+[0 1 1 0 0 0 0 0 0 0]
+[0 0 1 1 0 0 0 0 0 1]
+[1 0 0 0 0 0 0 0 1 1]
+[0 1 0 0 0 1 0 0 0 0]
+[0 0 1 0 0 1 1 0 0 0]
+[0 0 0 1 0 0 1 1 0 0]
+[0 0 0 0 0 0 1 1 1 0]
+[2026-03-05 20:45:34] INFO: op ←←←, 116
+[2026-03-05 20:45:34] INFO: op →←←, 86
+[2026-03-05 20:45:34] INFO: op →→←, 86
+[2026-03-05 20:45:34] INFO: op ←→←, 52
+[2026-03-05 20:45:34] INFO: [END]

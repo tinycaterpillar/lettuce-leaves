@@ -1,0 +1,21 @@
+[2026-03-05 20:45:25] INFO: Logger initialized at log/log144143.log
+[2026-03-05 20:45:26] INFO: Test 152th graph in data/list_660_graphs.g6: H}Ky~^~
+[2026-03-05 20:45:26] INFO: meta data: 
+minimum degree >= 4
+independent number <= 2
+connected
+[2026-03-05 20:45:26] INFO: Orientation of H}Ky~^~ with min semidegree 2:
+[0 0 0 0 0 0 0 1 1]
+[1 0 0 0 0 0 0 0 1]
+[1 1 0 0 0 0 0 0 0]
+[1 1 0 0 0 0 0 0 0]
+[0 0 1 1 0 0 0 0 0]
+[0 0 1 1 1 0 0 0 0]
+[0 1 0 1 1 1 0 0 0]
+[0 1 1 0 1 1 1 0 0]
+[0 0 1 1 1 1 1 1 0]
+[2026-03-05 20:45:26] INFO: op ←←←, 187
+[2026-03-05 20:45:26] INFO: op →←←, 152
+[2026-03-05 20:45:26] INFO: op →→←, 152
+[2026-03-05 20:45:26] INFO: op ←→←, 156
+[2026-03-05 20:45:26] INFO: [END]

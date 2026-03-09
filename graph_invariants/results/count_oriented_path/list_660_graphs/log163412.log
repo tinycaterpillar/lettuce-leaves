@@ -1,0 +1,22 @@
+[2026-03-05 20:48:57] INFO: Logger initialized at log/log163412.log
+[2026-03-05 20:48:57] INFO: Test 634th graph in data/list_660_graphs.g6: IrrH`enVo
+[2026-03-05 20:48:57] INFO: meta data: 
+minimum degree >= 4
+independent number <= 2
+connected
+[2026-03-05 20:48:57] INFO: Orientation of IrrH`enVo with min semidegree 2:
+[0 0 0 0 1 0 0 0 1 0]
+[1 0 0 0 0 0 0 0 0 1]
+[1 0 0 0 0 0 0 0 1 0]
+[0 1 1 0 0 0 0 0 0 0]
+[0 1 0 0 0 0 0 0 0 1]
+[1 1 0 0 1 0 0 0 0 0]
+[0 0 1 1 0 0 0 0 0 0]
+[0 0 1 1 0 0 1 0 0 0]
+[0 0 0 0 1 1 1 1 0 0]
+[0 0 0 1 0 1 1 1 0 0]
+[2026-03-05 20:48:57] INFO: op ←←←, 139
+[2026-03-05 20:48:57] INFO: op →←←, 93
+[2026-03-05 20:48:57] INFO: op →→←, 93
+[2026-03-05 20:48:57] INFO: op ←→←, 65
+[2026-03-05 20:48:57] INFO: [END]

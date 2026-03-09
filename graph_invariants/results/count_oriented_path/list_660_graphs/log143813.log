@@ -1,0 +1,21 @@
+[2026-03-05 20:45:24] INFO: Logger initialized at log/log143813.log
+[2026-03-05 20:45:25] INFO: Test 146th graph in data/list_660_graphs.g6: HKur~z~
+[2026-03-05 20:45:25] INFO: meta data: 
+minimum degree >= 4
+independent number <= 2
+connected
+[2026-03-05 20:45:25] INFO: Orientation of HKur~z~ with min semidegree 2:
+[0 0 0 0 0 0 0 1 1]
+[0 0 0 0 0 0 1 0 1]
+[0 1 0 0 0 1 0 0 0]
+[1 0 0 0 1 0 0 0 0]
+[1 1 0 0 0 0 0 0 0]
+[1 0 0 1 0 0 0 0 0]
+[0 0 1 1 1 1 0 0 0]
+[0 1 1 1 1 1 0 0 0]
+[0 0 1 1 1 1 1 1 0]
+[2026-03-05 20:45:25] INFO: op ←←←, 160
+[2026-03-05 20:45:25] INFO: op →←←, 134
+[2026-03-05 20:45:25] INFO: op →→←, 134
+[2026-03-05 20:45:25] INFO: op ←→←, 150
+[2026-03-05 20:45:25] INFO: [END]

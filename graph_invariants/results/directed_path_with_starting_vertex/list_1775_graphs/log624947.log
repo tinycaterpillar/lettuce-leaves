@@ -1,0 +1,22 @@
+[2026-03-08 16:33:18] INFO: Logger initialized at log3/log624947.log
+[2026-03-08 16:33:18] INFO: Test 708th graph in data/list_1775_graphs.g6: L~?L\\[VM^f}N|
+[2026-03-08 16:33:18] INFO: meta data: 
+minimum degree >= 6
+independent number >= 2
+connected
+Not regular
+[2026-03-08 16:33:18] INFO: Orientation of L~?L\\[VM^f}N| with min semidegree 3:
+[0 0 1 0 0 0 1 0 0 0 1 0 0]
+[1 0 0 0 0 0 0 0 1 0 1 0 0]
+[0 1 0 0 0 0 0 0 0 0 0 1 1]
+[1 1 1 0 0 0 0 0 0 0 0 0 0]
+[0 0 0 0 0 0 0 0 0 0 1 1 1]
+[0 0 0 0 1 0 0 1 0 0 0 0 1]
+[0 0 1 0 1 1 0 0 0 0 0 0 0]
+[1 0 1 0 1 0 1 0 0 0 0 0 0]
+[0 0 0 1 1 1 0 0 0 0 0 0 0]
+[0 1 0 1 1 1 0 0 1 0 0 0 0]
+[0 0 0 0 0 1 1 1 1 1 0 0 0]
+[0 0 0 1 0 1 1 1 1 1 0 0 0]
+[0 0 0 1 0 0 1 1 1 1 0 1 0]
+[2026-03-08 16:33:18] INFO: Any vertex can be a start vertex of a directed path of length 2k-1

@@ -1,0 +1,21 @@
+[2026-03-05 20:45:12] INFO: Logger initialized at log/log140898.log
+[2026-03-05 20:45:12] INFO: Test 66th graph in data/list_660_graphs.g6: H{CZZ~~
+[2026-03-05 20:45:12] INFO: meta data: 
+minimum degree >= 4
+independent number <= 2
+connected
+[2026-03-05 20:45:12] INFO: Orientation of H{CZZ~~ with min semidegree 2:
+[0 1 0 0 0 0 0 0 1]
+[0 0 0 0 0 0 1 1 0]
+[1 1 0 0 0 0 0 0 0]
+[1 0 0 0 0 0 0 0 1]
+[0 0 0 1 0 0 1 0 0]
+[0 0 0 1 1 0 0 0 0]
+[0 0 1 0 0 1 0 0 0]
+[0 0 1 1 1 1 1 0 0]
+[0 1 1 0 1 1 1 1 0]
+[2026-03-05 20:45:12] INFO: op ←←←, 142
+[2026-03-05 20:45:12] INFO: op →←←, 100
+[2026-03-05 20:45:12] INFO: op →→←, 100
+[2026-03-05 20:45:12] INFO: op ←→←, 107
+[2026-03-05 20:45:12] INFO: [END]

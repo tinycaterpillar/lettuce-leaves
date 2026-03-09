@@ -1,0 +1,23 @@
+[2026-03-05 20:45:53] INFO: Logger initialized at log/log148682.log
+[2026-03-05 20:45:53] INFO: Test 271th graph in data/list_660_graphs.g6: J~?GW^oB~}?
+[2026-03-05 20:45:53] INFO: meta data: 
+minimum degree >= 4
+independent number <= 2
+connected
+[2026-03-05 20:45:53] INFO: Orientation of J~?GW^oB~}? with min semidegree 2:
+[0 0 0 0 0 0 0 0 1 0 1]
+[1 0 0 0 0 0 0 0 0 0 1]
+[1 1 0 0 0 0 0 0 0 0 0]
+[1 1 1 0 0 0 0 0 0 0 0]
+[0 0 0 0 0 0 0 1 0 1 0]
+[0 0 0 0 1 0 0 0 0 1 0]
+[0 0 0 0 1 1 0 0 0 0 0]
+[0 0 0 0 0 1 1 0 0 0 0]
+[0 1 1 1 0 0 0 0 0 0 0]
+[0 0 0 0 0 0 1 1 1 0 0]
+[0 0 1 1 1 1 1 1 0 0 0]
+[2026-03-05 20:45:53] INFO: op ←←←, 147
+[2026-03-05 20:45:53] INFO: op →←←, 103
+[2026-03-05 20:45:53] INFO: op →→←, 103
+[2026-03-05 20:45:53] INFO: op ←→←, 90
+[2026-03-05 20:45:53] INFO: [END]

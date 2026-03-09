@@ -1,0 +1,21 @@
+[2026-03-05 20:45:33] INFO: Logger initialized at log/log146023.log
+[2026-03-05 20:45:33] INFO: Test 203th graph in data/list_660_graphs.g6: HMn~r~~
+[2026-03-05 20:45:33] INFO: meta data: 
+minimum degree >= 4
+independent number <= 2
+connected
+[2026-03-05 20:45:33] INFO: Orientation of HMn~r~~ with min semidegree 2:
+[0 0 0 0 1 0 0 0 1]
+[0 0 0 0 0 0 0 1 1]
+[0 1 0 0 0 1 0 0 0]
+[1 1 0 0 0 0 0 0 0]
+[0 0 1 1 0 0 0 0 0]
+[1 1 0 1 1 0 0 0 0]
+[1 1 1 1 1 0 0 0 0]
+[0 0 1 1 1 1 1 0 0]
+[0 0 1 1 1 1 1 1 0]
+[2026-03-05 20:45:33] INFO: op ←←←, 207
+[2026-03-05 20:45:33] INFO: op →←←, 198
+[2026-03-05 20:45:33] INFO: op →→←, 198
+[2026-03-05 20:45:33] INFO: op ←→←, 224
+[2026-03-05 20:45:33] INFO: [END]

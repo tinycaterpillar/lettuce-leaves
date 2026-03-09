@@ -1,0 +1,22 @@
+[2026-03-08 16:33:44] INFO: Logger initialized at log3/log626629.log
+[2026-03-08 16:33:45] INFO: Test 757th graph in data/list_1775_graphs.g6: L~?G[\NF~^Vy^l
+[2026-03-08 16:33:45] INFO: meta data: 
+minimum degree >= 6
+independent number >= 2
+connected
+Not regular
+[2026-03-08 16:33:45] INFO: Orientation of L~?G[\NF~^Vy^l with min semidegree 3:
+[0 0 0 0 0 0 0 1 0 0 1 1 0]
+[1 0 0 0 0 0 0 0 0 0 1 0 1]
+[1 1 0 0 0 0 0 0 0 0 1 0 0]
+[1 1 1 0 0 0 0 0 0 0 0 0 0]
+[0 0 0 0 0 0 0 0 0 1 0 1 1]
+[0 0 0 0 1 0 0 0 1 0 0 0 1]
+[0 0 0 0 1 1 0 0 1 0 0 0 0]
+[0 0 0 0 1 1 1 0 0 0 0 0 0]
+[0 1 0 0 1 0 0 1 0 0 0 0 0]
+[0 0 0 1 0 1 1 1 1 0 0 0 0]
+[0 0 0 0 1 1 1 1 1 0 0 0 0]
+[0 0 1 1 0 1 1 1 0 1 0 0 0]
+[0 0 1 1 0 0 1 0 1 1 0 1 0]
+[2026-03-08 16:33:45] INFO: Any vertex can be a start vertex of a directed path of length 2k-1

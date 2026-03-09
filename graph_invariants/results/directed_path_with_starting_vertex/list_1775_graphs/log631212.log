@@ -1,0 +1,22 @@
+[2026-03-08 16:34:40] INFO: Logger initialized at log3/log631212.log
+[2026-03-08 16:34:40] INFO: Test 887th graph in data/list_1775_graphs.g6: L}n_s|VTx^d~]n
+[2026-03-08 16:34:40] INFO: meta data: 
+minimum degree >= 6
+independent number >= 2
+connected
+Not regular
+[2026-03-08 16:34:40] INFO: Orientation of L}n_s|VTx^d~]n with min semidegree 3:
+[0 1 1 0 0 0 0 1 0 0 0 0 0]
+[0 0 1 0 0 0 0 0 1 0 0 0 1]
+[0 0 0 0 0 0 0 0 0 0 1 1 1]
+[1 1 0 0 0 0 0 0 0 0 0 0 1]
+[1 0 1 1 0 0 0 0 0 0 0 0 0]
+[1 1 1 0 0 0 0 0 0 0 0 0 0]
+[0 0 0 1 1 0 0 0 0 0 0 1 0]
+[0 0 0 1 1 1 1 0 0 0 0 0 0]
+[0 0 0 1 0 1 1 1 0 0 0 0 0]
+[0 1 0 1 0 1 1 1 1 0 0 0 0]
+[0 0 0 0 1 1 1 1 1 1 0 0 0]
+[0 0 0 0 1 1 0 1 1 1 1 0 0]
+[0 0 0 0 1 0 1 0 1 1 1 1 0]
+[2026-03-08 16:34:40] INFO: Any vertex can be a start vertex of a directed path of length 2k-1

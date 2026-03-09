@@ -1,0 +1,21 @@
+[2026-03-05 20:45:14] INFO: Logger initialized at log/log141269.log
+[2026-03-05 20:45:14] INFO: Test 75th graph in data/list_660_graphs.g6: HwC}~z~
+[2026-03-05 20:45:14] INFO: meta data: 
+minimum degree >= 4
+independent number <= 2
+connected
+[2026-03-05 20:45:14] INFO: Orientation of HwC}~z~ with min semidegree 2:
+[0 0 0 0 0 0 1 1 0]
+[1 0 0 0 0 0 0 0 1]
+[1 1 0 0 0 0 0 0 0]
+[0 0 0 0 0 1 0 0 1]
+[0 0 0 1 0 0 1 0 0]
+[0 0 1 0 1 0 0 0 0]
+[0 1 0 1 0 1 0 0 0]
+[0 1 1 1 1 1 0 0 0]
+[1 0 1 0 1 1 1 1 0]
+[2026-03-05 20:45:14] INFO: op ←←←, 152
+[2026-03-05 20:45:14] INFO: op →←←, 117
+[2026-03-05 20:45:14] INFO: op →→←, 117
+[2026-03-05 20:45:14] INFO: op ←→←, 120
+[2026-03-05 20:45:14] INFO: [END]

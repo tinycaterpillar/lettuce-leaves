@@ -1,0 +1,24 @@
+[2026-03-06 14:53:37] INFO: Logger initialized at log2/log477762.log
+[2026-03-06 14:53:37] INFO: Test 258th graph in data/list_660_graphs.g6: O~zmumyl[^nS\TRrdfwf~
+[2026-03-06 14:53:37] INFO: meta data: 
+minimum degree >= 4
+independent number <= 2
+connected
+[2026-03-06 14:53:37] INFO: Orientation of O~zmumyl[^nS\TRrdfwf~ with min semidegree 5:
+[0 0 0 0 1 1 0 1 0 1 1 0 0 0 0 0]
+[1 0 1 0 0 0 0 0 0 0 0 1 1 1 0 0]
+[1 0 0 0 0 0 0 0 1 1 0 0 1 0 1 0]
+[1 1 1 0 0 0 0 0 1 0 0 0 0 0 0 1]
+[0 1 1 0 0 0 0 0 0 0 1 0 0 1 1 0]
+[0 1 1 0 1 0 0 0 0 0 0 0 0 1 1 0]
+[1 1 0 1 1 0 0 0 0 0 0 0 0 0 0 1]
+[0 1 0 1 0 1 1 0 0 0 0 0 0 0 0 1]
+[1 0 0 0 1 0 1 0 0 0 0 0 0 0 1 1]
+[0 0 0 1 0 1 0 1 1 0 0 0 0 0 0 1]
+[0 0 0 0 0 1 1 1 1 1 0 0 0 0 0 0]
+[0 0 1 1 1 0 1 0 1 0 0 0 0 0 0 0]
+[0 0 0 1 0 1 0 1 0 1 0 1 0 0 0 0]
+[0 0 0 0 0 0 1 1 0 0 1 1 1 0 0 0]
+[0 0 0 0 0 0 0 0 0 1 1 1 1 1 0 0]
+[0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 0]
+[2026-03-06 14:53:48] INFO: Any vertex can be a start vertex of a directed path of length 2k-1

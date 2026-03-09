@@ -1,0 +1,22 @@
+[2026-03-08 16:33:10] INFO: Logger initialized at log3/log624422.log
+[2026-03-08 16:33:10] INFO: Test 693th graph in data/list_1775_graphs.g6: L~rH`crBw^t~V}
+[2026-03-08 16:33:10] INFO: meta data: 
+minimum degree >= 6
+independent number >= 2
+connected
+Not regular
+[2026-03-08 16:33:10] INFO: Orientation of L~rH`crBw^t~V} with min semidegree 3:
+[0 0 0 1 1 0 0 0 0 0 0 1 0]
+[1 0 1 0 0 0 0 0 0 0 0 0 1]
+[1 0 0 0 0 0 0 0 1 0 0 1 0]
+[0 1 1 0 0 0 0 0 0 0 0 0 1]
+[0 1 0 0 0 0 0 0 0 0 1 0 1]
+[1 1 0 0 1 0 0 0 0 0 0 0 0]
+[0 0 1 1 0 0 0 0 0 0 0 1 0]
+[0 0 1 1 0 0 1 0 0 0 0 0 0]
+[0 0 0 1 0 0 1 1 0 0 0 0 0]
+[0 0 0 0 1 1 1 1 1 0 0 0 0]
+[0 0 0 0 0 1 1 1 1 1 0 0 0]
+[0 0 0 0 1 1 0 1 1 1 1 0 0]
+[0 0 0 0 0 1 1 1 1 1 1 0 0]
+[2026-03-08 16:33:10] INFO: Any vertex can be a start vertex of a directed path of length 2k-1

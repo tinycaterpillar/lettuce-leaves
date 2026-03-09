@@ -1,0 +1,21 @@
+[2026-03-05 20:45:12] INFO: Logger initialized at log/log140883.log
+[2026-03-05 20:45:12] INFO: Test 64th graph in data/list_660_graphs.g6: H`NH~f~
+[2026-03-05 20:45:12] INFO: meta data: 
+minimum degree >= 4
+independent number <= 2
+connected
+[2026-03-05 20:45:12] INFO: Orientation of H`NH~f~ with min semidegree 2:
+[0 0 0 0 0 0 0 1 1]
+[1 0 0 0 0 0 0 0 1]
+[0 0 0 0 0 0 1 1 0]
+[0 0 1 0 0 0 1 0 0]
+[0 0 1 1 0 0 0 0 0]
+[1 1 0 0 1 0 0 0 0]
+[0 0 0 0 1 1 0 0 0]
+[0 1 0 1 0 0 1 0 0]
+[0 0 1 1 1 1 1 1 0]
+[2026-03-05 20:45:12] INFO: op ←←←, 130
+[2026-03-05 20:45:12] INFO: op →←←, 95
+[2026-03-05 20:45:12] INFO: op →→←, 95
+[2026-03-05 20:45:12] INFO: op ←→←, 83
+[2026-03-05 20:45:12] INFO: [END]

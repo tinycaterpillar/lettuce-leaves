@@ -1,0 +1,21 @@
+[2026-03-05 20:45:11] INFO: Logger initialized at log/log140559.log
+[2026-03-05 20:45:11] INFO: Test 57th graph in data/list_660_graphs.g6: HwDX~r~
+[2026-03-05 20:45:11] INFO: meta data: 
+minimum degree >= 4
+independent number <= 2
+connected
+[2026-03-05 20:45:11] INFO: Orientation of HwDX~r~ with min semidegree 2:
+[0 0 0 0 0 0 0 1 1]
+[1 0 0 0 0 0 0 0 1]
+[1 1 0 0 0 0 0 0 0]
+[0 0 0 0 0 1 1 0 0]
+[0 0 0 1 0 0 1 0 0]
+[0 1 0 0 1 0 0 0 0]
+[0 0 1 0 0 1 0 0 0]
+[0 1 1 1 1 0 0 0 0]
+[0 0 1 1 1 1 1 1 0]
+[2026-03-05 20:45:11] INFO: op ←←←, 124
+[2026-03-05 20:45:11] INFO: op →←←, 88
+[2026-03-05 20:45:11] INFO: op →→←, 88
+[2026-03-05 20:45:11] INFO: op ←→←, 85
+[2026-03-05 20:45:11] INFO: [END]

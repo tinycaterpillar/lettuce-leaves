@@ -1,0 +1,21 @@
+[2026-03-05 20:45:24] INFO: Logger initialized at log/log143765.log
+[2026-03-05 20:45:24] INFO: Test 142th graph in data/list_660_graphs.g6: Hdthzn~
+[2026-03-05 20:45:24] INFO: meta data: 
+minimum degree >= 4
+independent number <= 2
+connected
+[2026-03-05 20:45:24] INFO: Orientation of Hdthzn~ with min semidegree 2:
+[0 0 0 0 1 0 0 0 1]
+[1 0 0 0 0 0 0 1 0]
+[0 0 0 0 0 1 0 0 1]
+[1 0 1 0 0 0 0 0 0]
+[0 1 0 1 0 0 0 0 0]
+[0 1 0 0 1 0 0 0 0]
+[0 0 1 1 1 1 0 0 0]
+[0 0 1 1 0 1 1 0 0]
+[0 1 0 1 1 1 1 1 0]
+[2026-03-05 20:45:24] INFO: op ←←←, 150
+[2026-03-05 20:45:24] INFO: op →←←, 121
+[2026-03-05 20:45:24] INFO: op →→←, 121
+[2026-03-05 20:45:24] INFO: op ←→←, 125
+[2026-03-05 20:45:24] INFO: [END]

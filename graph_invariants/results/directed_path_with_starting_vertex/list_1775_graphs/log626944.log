@@ -1,0 +1,22 @@
+[2026-03-08 16:33:48] INFO: Logger initialized at log3/log626944.log
+[2026-03-08 16:33:49] INFO: Test 765th graph in data/list_1775_graphs.g6: L~}?GNftzuD|Fv
+[2026-03-08 16:33:49] INFO: meta data: 
+minimum degree >= 6
+independent number >= 2
+connected
+Not regular
+[2026-03-08 16:33:49] INFO: Orientation of L~}?GNftzuD|Fv with min semidegree 3:
+[0 0 0 0 1 0 0 0 1 1 0 0 0]
+[1 0 0 0 0 0 0 0 0 1 1 0 0]
+[1 1 0 0 0 0 0 0 0 0 0 1 0]
+[1 1 1 0 0 0 0 0 0 0 0 0 0]
+[0 1 1 1 0 0 0 0 0 0 0 0 0]
+[1 0 0 0 0 0 0 0 0 0 0 1 1]
+[0 0 0 0 0 1 0 0 1 0 0 0 1]
+[0 0 0 0 0 1 1 0 0 0 0 0 1]
+[0 1 1 0 0 1 0 1 0 0 0 0 0]
+[0 0 0 1 0 1 1 1 1 0 0 0 0]
+[0 0 1 1 1 0 1 1 0 0 0 0 0]
+[0 0 0 0 1 0 1 1 1 0 1 0 0]
+[0 0 0 1 1 0 0 0 0 1 1 1 0]
+[2026-03-08 16:33:49] INFO: Any vertex can be a start vertex of a directed path of length 2k-1

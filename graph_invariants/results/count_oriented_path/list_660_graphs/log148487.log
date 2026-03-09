@@ -1,0 +1,22 @@
+[2026-03-05 20:45:52] INFO: Logger initialized at log/log148487.log
+[2026-03-05 20:45:52] INFO: Test 266th graph in data/list_660_graphs.g6: IwDX}yy~w
+[2026-03-05 20:45:52] INFO: meta data: 
+minimum degree >= 4
+independent number <= 2
+connected
+[2026-03-05 20:45:52] INFO: Orientation of IwDX}yy~w with min semidegree 2:
+[0 0 0 0 0 0 0 1 1 0]
+[1 0 0 0 0 0 0 0 0 1]
+[1 1 0 0 0 0 0 0 0 0]
+[0 0 0 0 0 1 0 0 0 1]
+[0 0 0 1 0 0 1 0 0 0]
+[0 1 0 0 1 0 0 0 0 0]
+[0 0 1 1 0 1 0 0 0 0]
+[0 1 0 1 1 1 0 0 0 0]
+[0 0 1 1 1 0 1 0 0 0]
+[1 0 1 0 1 1 1 1 1 0]
+[2026-03-05 20:45:52] INFO: op ←←←, 192
+[2026-03-05 20:45:52] INFO: op →←←, 152
+[2026-03-05 20:45:52] INFO: op →→←, 152
+[2026-03-05 20:45:52] INFO: op ←→←, 161
+[2026-03-05 20:45:52] INFO: [END]

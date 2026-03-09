@@ -1,0 +1,21 @@
+[2026-03-05 20:45:10] INFO: Logger initialized at log/log140292.log
+[2026-03-05 20:45:10] INFO: Test 50th graph in data/list_660_graphs.g6: HTPLzz~
+[2026-03-05 20:45:10] INFO: meta data: 
+minimum degree >= 4
+independent number <= 2
+connected
+[2026-03-05 20:45:10] INFO: Orientation of HTPLzz~ with min semidegree 2:
+[0 0 0 0 0 0 1 0 1]
+[0 0 0 0 0 0 0 1 1]
+[1 0 0 0 0 0 1 0 0]
+[1 0 1 0 0 0 0 0 0]
+[0 1 0 0 0 0 1 0 0]
+[0 1 0 0 1 0 0 0 0]
+[0 0 0 1 0 1 0 0 0]
+[0 0 1 1 1 1 0 0 0]
+[0 0 1 1 1 1 1 1 0]
+[2026-03-05 20:45:10] INFO: op ←←←, 117
+[2026-03-05 20:45:10] INFO: op →←←, 93
+[2026-03-05 20:45:10] INFO: op →→←, 93
+[2026-03-05 20:45:10] INFO: op ←→←, 91
+[2026-03-05 20:45:10] INFO: [END]

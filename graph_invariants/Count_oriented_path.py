@@ -13,7 +13,7 @@ args = parser.parse_args()
 if __name__ == "__main__":
     logger = setup_logger(folder="log", filename=f"log{os.getpid()}.log")
 
-    path = "data/list_1775_graphs.g6"
+    path = "data/list_1295_graphs.g6"
     graphs = load_graphs(path)
 
     G = graphs[args.i]

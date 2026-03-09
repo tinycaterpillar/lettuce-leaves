@@ -6,6 +6,9 @@ grep -r "COUNTER" log
 grep -l "MEMORY_ERROR" log/* | xargs rm
 grep -rL "\[END\]" log/* | xargs rm
 
+git config --global user.name "Jinik Hwang"
+git config --global user.email "jinik990305@gmail.com"
+
 # Note
 log45155.log
 n = 12, k = 3, length of longest ad = 2k+3 = 9

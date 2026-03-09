@@ -1,0 +1,3 @@
+number of vertices <= 9
+minimum semi degree >= 3
+tournaments

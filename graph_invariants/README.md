@@ -1,13 +1,12 @@
 # command
 nohup python main.py data/71toinf &
 nohup ./run_all.sh > nohup.out 2>&1 &
+python -m generators.tournament
 
 grep -r "COUNTER" log
 grep -l "MEMORY_ERROR" log/* | xargs rm
 grep -rL "\[END\]" log/* | xargs rm
 
-git config --global user.name "Jinik Hwang"
-git config --global user.email "jinik990305@gmail.com"
 
 # Note
 log45155.log

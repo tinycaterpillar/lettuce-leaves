@@ -5,7 +5,7 @@ import random
 import os
 import argparse
 
-from utils import draw, setup_logger, load_graphs, get_meta_data
+from utils import draw, setup_logger, load_graphs, get_meta_data, encode
 from generators import orientation_with_min_semidegree, bitmask_to_sage_graph, bitmask_to_direction_string, get_antidirected_path
 from solvers import find_subgraph_isomorphism
 
@@ -21,19 +21,21 @@ parser.add_argument("-i", type=int, required=True)   # graph index
 args = parser.parse_args()
 
 if __name__ == "__main__":
-    logger = setup_logger(folder="log3", filename=f"log{os.getpid()}.log")
+    logger = setup_logger(folder="log", filename=f"log{os.getpid()}.log")
 
-    path = "data/list_1775_graphs.g6"
+    path = "data/list_10340_graphs.dig6"
     graphs = load_graphs(path)
 
     G = graphs[args.i]
-    logger.info(f"Test {args.i}th graph in {path}: {G.graph6_string()}")
+    logger.info(f"Test {args.i}th graph in {path}: {encode(G)}")
     logger.info(f"meta data: \n{get_meta_data(path)}")
     min_degree = min(G.degree())
     n = G.order()
-    D = orientation_with_min_semidegree(G, min_degree//2)
+    D = G
+    # D = orientation_with_min_semidegree(G, min_degree//2)
     k = min(min(D.in_degree()), min(D.out_degree()))
-    logger.info(f"Orientation of {G.graph6_string()} with min semidegree {k}:\n{D.adjacency_matrix().str()}")
+    # logger.info(f"Orientation of {G.graph6_string()} with min semidegree {k}:\n{D.adjacency_matrix().str()}")
+    logger.info(f"Tournament of order {n} with min semidegree {k}:\n{D.adjacency_matrix().str()}")
     
     length = 2*k-1
     flag = True

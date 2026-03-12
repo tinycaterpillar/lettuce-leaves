@@ -1,0 +1,9 @@
+[2026-03-12 16:55:48] INFO: Logger initialized at log/log21630.log
+[2026-03-12 16:55:49] INFO: Test 65th graph in data/list_488_graphs.g6: HJ]CKN~
+[2026-03-12 16:55:49] INFO: meta data: 
+minimum degree >= 2
+connected
+|V(G)| = 2δ+1
+
+[2026-03-12 16:55:49] INFO: graph of order 9 with mindegree 4
+[2026-03-12 16:55:49] INFO: [COUNTER] There is no directed path which has a start vertex in {8}, total 1

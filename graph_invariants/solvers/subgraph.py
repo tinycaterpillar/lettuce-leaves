@@ -1,7 +1,7 @@
 from sage.all import *
 
 def find_subgraph_isomorphism(G_sage, P_sage):
-    assert G_sage.is_directed() and P_sage.is_directed(), "Only directed graphs are supported"
+    assert G_sage.is_directed() == P_sage.is_directed(), "Both graphs must have the same directed type"
 
     it = G_sage.subgraph_search_iterator(P_sage, induced=False)
     return it

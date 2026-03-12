@@ -1,0 +1,9 @@
+[2026-03-12 17:28:25] INFO: Logger initialized at log/log52470.log
+[2026-03-12 17:28:25] INFO: Test 445th graph in data/list_488_graphs.g6: L???F~}~f{^o~_
+[2026-03-12 17:28:25] INFO: meta data: 
+minimum degree >= 2
+connected
+|V(G)| = 2δ+1
+
+[2026-03-12 17:28:25] INFO: graph of order 13 with mindegree 6
+[2026-03-12 17:32:56] INFO: [COUNTER] There is no directed path which has a start vertex in {7, 8, 9, 10, 11, 12}, total 6

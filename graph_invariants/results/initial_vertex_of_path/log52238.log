@@ -1,0 +1,9 @@
+[2026-03-12 17:28:13] INFO: Logger initialized at log/log52238.log
+[2026-03-12 17:28:13] INFO: Test 441th graph in data/list_488_graphs.g6: J??F~z{~Fw?
+[2026-03-12 17:28:13] INFO: meta data: 
+minimum degree >= 2
+connected
+|V(G)| = 2δ+1
+
+[2026-03-12 17:28:13] INFO: graph of order 11 with mindegree 5
+[2026-03-12 17:28:19] INFO: [COUNTER] There is no directed path which has a start vertex in {6, 7, 8, 9, 10}, total 5

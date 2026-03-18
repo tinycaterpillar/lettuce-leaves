@@ -5,9 +5,8 @@ def reachable_at_least_k(G_sage, initial, k):
     assert 0 <= initial < G_sage.order(), "initial must be a vertex of G_sage."
     assert k > 0, "k must be positive."
 
-
     n = G_sage.order()
-    if n <= k+1: return [] 
+    if n < k+1: return [] 
     reachable = [False] * n
     visited = [False] * n
     remain = n - 1

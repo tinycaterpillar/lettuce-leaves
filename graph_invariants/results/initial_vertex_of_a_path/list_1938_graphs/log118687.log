@@ -1,0 +1,10 @@
+[2026-03-12 19:48:31] INFO: Logger initialized at log/log118687.log
+[2026-03-12 19:48:31] INFO: Test 45th graph in data/list_1938_graphs.g6: EK`w
+[2026-03-12 19:48:31] INFO: meta data: 
+minimum degree >= 2
+|V(G) <= 13
+connected
+|V(G)| > 2δ+1
+
+[2026-03-12 19:48:31] INFO: graph of order 6 with mindegree 2
+[2026-03-12 19:48:31] INFO: [COUNTER] There is no directed path which has a start vertex in {5}, total 1

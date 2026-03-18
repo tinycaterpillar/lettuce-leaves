@@ -1,0 +1,10 @@
+[2026-03-12 23:53:24] INFO: Logger initialized at log/log318171.log
+[2026-03-12 23:53:24] INFO: Test 1652th graph in data/list_1734_graphs.g6: Q???????????????^~~~}~~r~~?
+[2026-03-12 23:53:24] INFO: meta data: 
+minimum degree >= 2
+|V(G)| between 14 and 19
+connected
+|V(G)| > 2δ+1
+
+[2026-03-12 23:53:24] INFO: graph of order 18 with mindegree 4
+[2026-03-12 23:59:20] INFO: [COUNTER] There is no directed path which has a start vertex in {16, 17, 14, 15}, total 4

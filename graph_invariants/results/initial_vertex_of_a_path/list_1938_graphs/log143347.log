@@ -1,0 +1,10 @@
+[2026-03-12 19:50:28] INFO: Logger initialized at log/log143347.log
+[2026-03-12 19:50:29] INFO: Test 718th graph in data/list_1938_graphs.g6: K??G`@?_F~~}
+[2026-03-12 19:50:29] INFO: meta data: 
+minimum degree >= 2
+|V(G) <= 13
+connected
+|V(G)| > 2δ+1
+
+[2026-03-12 19:50:29] INFO: graph of order 12 with mindegree 3
+[2026-03-12 19:50:29] INFO: [COUNTER] There is no directed path which has a start vertex in {10, 11}, total 2

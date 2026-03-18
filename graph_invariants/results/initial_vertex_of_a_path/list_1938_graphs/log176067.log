@@ -1,0 +1,10 @@
+[2026-03-12 19:53:18] INFO: Logger initialized at log/log176067.log
+[2026-03-12 19:53:18] INFO: Test 1611th graph in data/list_1938_graphs.g6: G??F~w
+[2026-03-12 19:53:18] INFO: meta data: 
+minimum degree >= 2
+|V(G) <= 13
+connected
+|V(G)| > 2δ+1
+
+[2026-03-12 19:53:18] INFO: graph of order 8 with mindegree 2
+[2026-03-12 19:53:18] INFO: [COUNTER] There is no directed path which has a start vertex in {6, 7}, total 2

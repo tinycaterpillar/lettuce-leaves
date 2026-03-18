@@ -9,7 +9,7 @@ pastels = [
     (0.75, 0.85, 0.95),  # pastel blue
 ]
 
-def draw(G, H=None, name=None, folder=None, layout="circular"):
+def draw(G, H=None, S=None, name=None, folder=None, layout="circular"):
     """A layout algorithm – one of : “acyclic”, “circular” (plots the graph with vertices evenly distributed on a circle), “ranked”, “graphviz”, “planar”, “spring” (traditional spring layout, using the graph’s current positions as initial positions), or “tree” (the tree will be plotted in levels, depending on minimum distance for the root)."""
 
     # assert G.is_directed()
@@ -28,7 +28,13 @@ def draw(G, H=None, name=None, folder=None, layout="circular"):
                                 vertex_size=0,
                                 edge_thickness=14 - 7*(i % len(pastels)))
 
-    P += G.plot(pos=pos, edge_color="black")
+    S = list(S) if S is not None else set()
+    vertex_colors = {
+        "orange": list(S),
+        "lightgray": [v for v in G.vertices() if v not in S]
+    }
+
+    P += G.plot(pos=pos, edge_color="black", vertex_colors=vertex_colors)
 
     if name: plt.title(name, fontsize=20)
 
@@ -44,6 +50,7 @@ def draw(G, H=None, name=None, folder=None, layout="circular"):
         filename = f"{folder}/{name}.png"
         plt.savefig(filename, dpi=300, bbox_inches='tight')
     else: plt.show(block=True)
+    plt.close(fig)
 
 if __name__ == "__main__":
     G = graphs.CycleGraph(6)

@@ -1,0 +1,5 @@
+2-connected
+minimum degree δ = 4
+|V(G)| <= 26
+|V(G)| > 2δ+1
+δ != vertex cover number

@@ -1,0 +1,10 @@
+[2026-03-14 14:08:49] INFO: Logger initialized at log1/log275220.log
+[2026-03-14 14:08:49] INFO: Test 28th graph in data/list_1855_graphs.g6: OGC?KA?_B?kBEGEG_w?M@
+[2026-03-14 14:08:49] INFO: meta data: 
+minimum degree = 3
+|V(G) <= 22
+connected
+|V(G)| > 2δ+1
+
+[2026-03-14 14:08:49] INFO: graph of order 16 with mindegree 3
+[2026-03-14 14:08:49] INFO: [COUNTER] There is no directed path which has a start vertex in {0}, total 1

@@ -3,13 +3,14 @@ nohup python main.py data/71toinf &
 nohup ./run_all.sh > nohup.out 2>&1 &
 python -m generators.tournament
 
-grep -r "COUNTER" log
 grep -l "MEMORY_ERROR" log/* | xargs rm
 grep -rL "\[END\]" log/* | xargs rm
-grep -rL "\[COUNTER]" log/* | xargs rm
+grep -rL "\[COUNTER]" log_ex/* | xargs rm
 
 
 # Note
+LwCW?CB?F?ba?{
+
 log45155.log
 n = 12, k = 3, length of longest ad = 2k+3 = 9
 [0 0 1 1 0 1 0 0 0 0 0 0]

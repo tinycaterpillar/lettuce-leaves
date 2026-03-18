@@ -1,0 +1,10 @@
+[2026-03-12 19:51:19] INFO: Logger initialized at log/log151717.log
+[2026-03-12 19:51:19] INFO: Test 943th graph in data/list_1938_graphs.g6: HBWCKJ~
+[2026-03-12 19:51:19] INFO: meta data: 
+minimum degree >= 2
+|V(G) <= 13
+connected
+|V(G)| > 2δ+1
+
+[2026-03-12 19:51:19] INFO: graph of order 9 with mindegree 3
+[2026-03-12 19:51:19] INFO: [COUNTER] There is no directed path which has a start vertex in {8}, total 1

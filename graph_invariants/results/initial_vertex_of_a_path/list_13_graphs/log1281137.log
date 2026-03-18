@@ -1,0 +1,9 @@
+[2026-03-15 21:01:21] INFO: Logger initialized at log_ex/log1281137.log
+[2026-03-15 21:01:21] INFO: Test 1th graph in data/list_13_graphs.g6: H???F~~
+[2026-03-15 21:01:21] INFO: meta data: 
+connected
+Not Bipartite
+|V(G)| > 2δ+1
+δ = vertex cover number
+[2026-03-15 21:01:21] INFO: graph of order 9 with mindegree 2
+[2026-03-15 21:01:21] INFO: [COUNTER] There is no directed path which has a start vertex in {8, 7}, total 2

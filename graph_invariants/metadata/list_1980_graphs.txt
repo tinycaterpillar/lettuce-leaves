@@ -1,0 +1,4 @@
+minimum degree = 3
+|V(G)| between 34 and 42
+connected
+|V(G)| > 2δ+1

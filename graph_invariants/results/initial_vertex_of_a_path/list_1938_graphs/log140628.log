@@ -1,0 +1,10 @@
+[2026-03-12 19:50:15] INFO: Logger initialized at log/log140628.log
+[2026-03-12 19:50:15] INFO: Test 642th graph in data/list_1938_graphs.g6: JJ[?CME`f~_
+[2026-03-12 19:50:15] INFO: meta data: 
+minimum degree >= 2
+|V(G) <= 13
+connected
+|V(G)| > 2δ+1
+
+[2026-03-12 19:50:15] INFO: graph of order 11 with mindegree 4
+[2026-03-12 19:50:15] INFO: [COUNTER] There is no directed path which has a start vertex in {10}, total 1

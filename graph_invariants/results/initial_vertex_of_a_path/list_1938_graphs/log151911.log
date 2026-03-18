@@ -1,0 +1,10 @@
+[2026-03-12 19:51:20] INFO: Logger initialized at log/log151911.log
+[2026-03-12 19:51:20] INFO: Test 951th graph in data/list_1938_graphs.g6: LJWyo?@`kBOK_R
+[2026-03-12 19:51:20] INFO: meta data: 
+minimum degree >= 2
+|V(G) <= 13
+connected
+|V(G)| > 2δ+1
+
+[2026-03-12 19:51:20] INFO: graph of order 13 with mindegree 4
+[2026-03-12 19:51:21] INFO: [COUNTER] There is no directed path which has a start vertex in {0}, total 1

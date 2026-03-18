@@ -1,0 +1,10 @@
+[2026-03-12 19:49:38] INFO: Logger initialized at log/log133139.log
+[2026-03-12 19:49:38] INFO: Test 439th graph in data/list_1938_graphs.g6: Gw?W~{
+[2026-03-12 19:49:38] INFO: meta data: 
+minimum degree >= 2
+|V(G) <= 13
+connected
+|V(G)| > 2δ+1
+
+[2026-03-12 19:49:38] INFO: graph of order 8 with mindegree 3
+[2026-03-12 19:49:39] INFO: [COUNTER] There is no directed path which has a start vertex in {7}, total 1

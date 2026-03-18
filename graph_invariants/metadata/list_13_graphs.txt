@@ -1,0 +1,4 @@
+connected
+Not Bipartite
+|V(G)| > 2δ+1
+δ = vertex cover number

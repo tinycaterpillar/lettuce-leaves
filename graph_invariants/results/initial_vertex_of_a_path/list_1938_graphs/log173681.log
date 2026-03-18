@@ -1,0 +1,10 @@
+[2026-03-12 19:53:06] INFO: Logger initialized at log/log173681.log
+[2026-03-12 19:53:06] INFO: Test 1544th graph in data/list_1938_graphs.g6: I@HACA?Fw
+[2026-03-12 19:53:06] INFO: meta data: 
+minimum degree >= 2
+|V(G) <= 13
+connected
+|V(G)| > 2δ+1
+
+[2026-03-12 19:53:06] INFO: graph of order 10 with mindegree 2
+[2026-03-12 19:53:06] INFO: [COUNTER] There is no directed path which has a start vertex in {9}, total 1

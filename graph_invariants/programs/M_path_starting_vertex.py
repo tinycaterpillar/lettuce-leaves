@@ -3,6 +3,7 @@ from itertools import product
 from tqdm import tqdm
 import random
 import os
+import sys
 import argparse
 
 from utils import draw, setup_logger, load_graphs, get_meta_data, encode
@@ -21,12 +22,16 @@ parser.add_argument("-i", type=int, required=True)   # graph index
 args = parser.parse_args()
 
 if __name__ == "__main__":
-    logger = setup_logger(folder="log", filename=f"log{os.getpid()}.log")
+    logger = setup_logger(folder="log_ex", filename=f"log{os.getpid()}.log")
 
-    path = "data/list_488_graphs.g6"
+    path = "data/list_356_graphs.g6"
     graphs_lis = load_graphs(path)
 
     G = graphs_lis[args.i]
+    if G.is_vertex_transitive():
+        logger.info(f"[END] Vertex transitive graph. Any vertex can be a initial vertex of a path of length 2δ")
+        sys.exit()
+
     logger.info(f"Test {args.i}th graph in {path}: {encode(G)}")
     logger.info(f"meta data: \n{get_meta_data(path)}")
     min_degree = min(G.degree())
@@ -50,5 +55,5 @@ if __name__ == "__main__":
         logger.info(f"[COUNTER] There is no directed path which has a start vertex in {tmp}, total {len(tmp)}")
         draw(G)
     else:
-        logger.info(f"Any vertex can be a start vertex of a directed path of length 2k-1")
+        logger.info(f"[END] Any vertex can be a initial vertex of a path of length 2δ")
     

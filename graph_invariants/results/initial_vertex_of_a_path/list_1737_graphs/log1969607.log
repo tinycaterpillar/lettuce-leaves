@@ -1,0 +1,7 @@
+[2026-03-18 22:04:58] INFO: Logger initialized at log_ex/log1969607.log
+[2026-03-18 22:04:58] INFO: Test 334th graph in data/list_1737_graphs.g6: KJ\o?EL_sEOR
+[2026-03-18 22:04:58] INFO: meta data: 
+vertex connectivity κ = 1
+|V(G)| > 2δ + 1
+[2026-03-18 22:04:58] INFO: graph of order 12 with mindegree 4
+[2026-03-18 22:04:58] INFO: [COUNTER] There is no directed path which has a start vertex in [10], total 1

@@ -1,0 +1,45 @@
+[2026-03-18 16:09:09] INFO: Logger initialized at log_ex/log1852302.log
+[2026-03-18 16:09:09] INFO: Test 475th graph in data/list_589_graphs.g6: I?CaC?N{?
+[2026-03-18 16:09:09] INFO: meta data: 
+2-connected
+minimum degree δ = 2
+maximum degree Δ = 4
+|V(G)| <= 30
+[2026-03-18 16:09:09] INFO: graph of order 10 s.t.
+mindegree 2
+maxdegree 4
+# 2-vertices 8
+# 3-vertices 0
+[2026-03-18 16:09:09] INFO: 
+============================================================
+[MAX-DEGREE COUNTER] init=8, deg=4, reachable_size=8
+reachable   :
+  - v=0, deg=2
+  - v=1, deg=2
+  - v=2, deg=2
+  - v=3, deg=2
+  - v=4, deg=2
+  - v=5, deg=2
+  - v=6, deg=2
+  - v=7, deg=2
+unreachable :
+  - v=8, deg=4
+  - v=9, deg=4
+============================================================
+[2026-03-18 16:09:09] INFO: 
+============================================================
+[MAX-DEGREE COUNTER] init=9, deg=4, reachable_size=8
+reachable   :
+  - v=0, deg=2
+  - v=1, deg=2
+  - v=2, deg=2
+  - v=3, deg=2
+  - v=4, deg=2
+  - v=5, deg=2
+  - v=6, deg=2
+  - v=7, deg=2
+unreachable :
+  - v=8, deg=4
+  - v=9, deg=4
+============================================================
+[2026-03-18 16:09:09] INFO: [COUNTER] 2/10

@@ -1,0 +1,7 @@
+[2026-03-18 22:05:43] INFO: Logger initialized at log_ex/log1983786.log
+[2026-03-18 22:05:43] INFO: Test 723th graph in data/list_1737_graphs.g6: LJWyo?@`kBOK_R
+[2026-03-18 22:05:43] INFO: meta data: 
+vertex connectivity κ = 1
+|V(G)| > 2δ + 1
+[2026-03-18 22:05:43] INFO: graph of order 13 with mindegree 4
+[2026-03-18 22:05:43] INFO: [COUNTER] There is no directed path which has a start vertex in [0], total 1

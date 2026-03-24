@@ -1,0 +1,61 @@
+[2026-03-18 16:10:33] INFO: Logger initialized at log_ex/log1866101.log
+[2026-03-18 16:10:33] INFO: Test 249th graph in data/list_304_graphs.g6: EBnw
+[2026-03-18 16:10:33] INFO: meta data: 
+2-connected
+minimum degree δ = 2
+maximum degree Δ = 5
+|V(G)| <= 30
+[2026-03-18 16:10:33] INFO: graph of order 6 s.t.
+mindegree 2
+maxdegree 5
+# 2-vertices 2
+# 3-vertices 1
+[2026-03-18 16:10:33] INFO: 
+----------------------------------------
+(counter) init=2, deg=3, reachable_size=4
+reachable   :
+  - v=0, deg=2
+  - v=1, deg=2
+  - v=3, deg=4
+  - v=4, deg=4
+unreachable :
+  - v=2, deg=3
+  - v=5, deg=5
+----------------------------------------
+[2026-03-18 16:10:33] INFO: 
+----------------------------------------
+(counter) init=3, deg=4, reachable_size=3
+reachable   :
+  - v=0, deg=2
+  - v=1, deg=2
+  - v=2, deg=3
+unreachable :
+  - v=3, deg=4
+  - v=4, deg=4
+  - v=5, deg=5
+----------------------------------------
+[2026-03-18 16:10:33] INFO: 
+----------------------------------------
+(counter) init=4, deg=4, reachable_size=3
+reachable   :
+  - v=0, deg=2
+  - v=1, deg=2
+  - v=2, deg=3
+unreachable :
+  - v=3, deg=4
+  - v=4, deg=4
+  - v=5, deg=5
+----------------------------------------
+[2026-03-18 16:10:33] INFO: 
+============================================================
+[MAX-DEGREE COUNTER] init=5, deg=5, reachable_size=2
+reachable   :
+  - v=0, deg=2
+  - v=1, deg=2
+unreachable :
+  - v=2, deg=3
+  - v=3, deg=4
+  - v=4, deg=4
+  - v=5, deg=5
+============================================================
+[2026-03-18 16:10:33] INFO: [COUNTER] 4/6

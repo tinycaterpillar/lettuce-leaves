@@ -1,0 +1,45 @@
+[2026-03-18 16:10:38] INFO: Logger initialized at log_ex/log1868028.log
+[2026-03-18 16:10:39] INFO: Test 303th graph in data/list_304_graphs.g6: I??BZ][fG
+[2026-03-18 16:10:39] INFO: meta data: 
+2-connected
+minimum degree δ = 2
+maximum degree Δ = 5
+|V(G)| <= 30
+[2026-03-18 16:10:39] INFO: graph of order 10 s.t.
+mindegree 2
+maxdegree 5
+# 2-vertices 4
+# 3-vertices 0
+[2026-03-18 16:10:39] INFO: 
+----------------------------------------
+(counter) init=4, deg=4, reachable_size=8
+reachable   :
+  - v=0, deg=2
+  - v=1, deg=2
+  - v=2, deg=2
+  - v=3, deg=2
+  - v=6, deg=5
+  - v=7, deg=5
+  - v=8, deg=5
+  - v=9, deg=5
+unreachable :
+  - v=4, deg=4
+  - v=5, deg=4
+----------------------------------------
+[2026-03-18 16:10:39] INFO: 
+----------------------------------------
+(counter) init=5, deg=4, reachable_size=8
+reachable   :
+  - v=0, deg=2
+  - v=1, deg=2
+  - v=2, deg=2
+  - v=3, deg=2
+  - v=6, deg=5
+  - v=7, deg=5
+  - v=8, deg=5
+  - v=9, deg=5
+unreachable :
+  - v=4, deg=4
+  - v=5, deg=4
+----------------------------------------
+[2026-03-18 16:10:39] INFO: [COUNTER] 2/10

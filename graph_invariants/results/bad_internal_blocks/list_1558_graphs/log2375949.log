@@ -1,0 +1,8 @@
+[2026-03-22 12:32:55] INFO: Logger initialized at log_ex/log2375949.log
+[2026-03-22 12:32:55] INFO: Test 1223th graph in data/list_1558_graphs.g6: H???F~}
+[2026-03-22 12:32:55] INFO: meta data: 
+2-connected
+minimum degree δ != maximum degree Δ
+|V(G)| <= 10
+[2026-03-22 12:32:55] INFO: graph of order 9 with mindegree 2, max_degree 7
+[2026-03-22 12:32:55] INFO: [COUNTER] Not 6-bad n=9 X_size=7

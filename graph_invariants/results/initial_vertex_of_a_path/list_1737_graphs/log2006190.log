@@ -1,0 +1,7 @@
+[2026-03-18 22:06:55] INFO: Logger initialized at log_ex/log2006190.log
+[2026-03-18 22:06:56] INFO: Test 1342th graph in data/list_1737_graphs.g6: H]?GW^~
+[2026-03-18 22:06:56] INFO: meta data: 
+vertex connectivity κ = 1
+|V(G)| > 2δ + 1
+[2026-03-18 22:06:56] INFO: graph of order 9 with mindegree 3
+[2026-03-18 22:06:56] INFO: [COUNTER] There is no directed path which has a start vertex in [8], total 1

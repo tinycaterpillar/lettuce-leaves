@@ -1,0 +1,3 @@
+2-connected
+minimum degree δ = 2
+maximum degree Δ = 4

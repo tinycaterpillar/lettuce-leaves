@@ -1,0 +1,7 @@
+[2026-03-18 22:07:30] INFO: Logger initialized at log_ex/log2016825.log
+[2026-03-18 22:07:30] INFO: Test 1634th graph in data/list_1737_graphs.g6: H?CaCB~
+[2026-03-18 22:07:30] INFO: meta data: 
+vertex connectivity κ = 1
+|V(G)| > 2δ + 1
+[2026-03-18 22:07:30] INFO: graph of order 9 with mindegree 2
+[2026-03-18 22:07:30] INFO: [COUNTER] There is no directed path which has a start vertex in [8], total 1

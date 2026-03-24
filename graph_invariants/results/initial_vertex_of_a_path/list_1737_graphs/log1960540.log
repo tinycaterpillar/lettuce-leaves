@@ -1,0 +1,7 @@
+[2026-03-18 22:04:29] INFO: Logger initialized at log_ex/log1960540.log
+[2026-03-18 22:04:30] INFO: Test 87th graph in data/list_1737_graphs.g6: HwCW~?^
+[2026-03-18 22:04:30] INFO: meta data: 
+vertex connectivity κ = 1
+|V(G)| > 2δ + 1
+[2026-03-18 22:04:30] INFO: graph of order 9 with mindegree 3
+[2026-03-18 22:04:30] INFO: [COUNTER] There is no directed path which has a start vertex in [7, 8], total 2

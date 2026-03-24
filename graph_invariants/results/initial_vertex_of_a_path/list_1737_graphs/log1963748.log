@@ -1,0 +1,7 @@
+[2026-03-18 22:04:39] INFO: Logger initialized at log_ex/log1963748.log
+[2026-03-18 22:04:39] INFO: Test 172th graph in data/list_1737_graphs.g6: G???F{
+[2026-03-18 22:04:39] INFO: meta data: 
+vertex connectivity κ = 1
+|V(G)| > 2δ + 1
+[2026-03-18 22:04:39] INFO: graph of order 8 with mindegree 1
+[2026-03-18 22:04:39] INFO: [COUNTER] There is no directed path which has a start vertex in [7], total 1

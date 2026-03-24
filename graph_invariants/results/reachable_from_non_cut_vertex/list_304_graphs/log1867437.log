@@ -1,0 +1,59 @@
+[2026-03-18 16:10:37] INFO: Logger initialized at log_ex/log1867437.log
+[2026-03-18 16:10:37] INFO: Test 284th graph in data/list_304_graphs.g6: P??G`@?_?OA?G?O?O???^@{?
+[2026-03-18 16:10:37] INFO: meta data: 
+2-connected
+minimum degree δ = 2
+maximum degree Δ = 5
+|V(G)| <= 30
+[2026-03-18 16:10:37] INFO: graph of order 17 s.t.
+mindegree 2
+maxdegree 5
+# 2-vertices 15
+# 3-vertices 0
+[2026-03-18 16:10:37] INFO: 
+============================================================
+[MAX-DEGREE COUNTER] init=15, deg=5, reachable_size=15
+reachable   :
+  - v=0, deg=2
+  - v=1, deg=2
+  - v=2, deg=2
+  - v=3, deg=2
+  - v=4, deg=2
+  - v=5, deg=2
+  - v=6, deg=2
+  - v=7, deg=2
+  - v=8, deg=2
+  - v=9, deg=2
+  - v=10, deg=2
+  - v=11, deg=2
+  - v=12, deg=2
+  - v=13, deg=2
+  - v=14, deg=2
+unreachable :
+  - v=15, deg=5
+  - v=16, deg=5
+============================================================
+[2026-03-18 16:10:37] INFO: 
+============================================================
+[MAX-DEGREE COUNTER] init=16, deg=5, reachable_size=15
+reachable   :
+  - v=0, deg=2
+  - v=1, deg=2
+  - v=2, deg=2
+  - v=3, deg=2
+  - v=4, deg=2
+  - v=5, deg=2
+  - v=6, deg=2
+  - v=7, deg=2
+  - v=8, deg=2
+  - v=9, deg=2
+  - v=10, deg=2
+  - v=11, deg=2
+  - v=12, deg=2
+  - v=13, deg=2
+  - v=14, deg=2
+unreachable :
+  - v=15, deg=5
+  - v=16, deg=5
+============================================================
+[2026-03-18 16:10:37] INFO: [COUNTER] 2/17

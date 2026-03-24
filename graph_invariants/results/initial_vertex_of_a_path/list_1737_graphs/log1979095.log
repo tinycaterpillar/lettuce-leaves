@@ -1,0 +1,7 @@
+[2026-03-18 22:05:29] INFO: Logger initialized at log_ex/log1979095.log
+[2026-03-18 22:05:29] INFO: Test 598th graph in data/list_1737_graphs.g6: JJ[?CME`f~_
+[2026-03-18 22:05:29] INFO: meta data: 
+vertex connectivity κ = 1
+|V(G)| > 2δ + 1
+[2026-03-18 22:05:29] INFO: graph of order 11 with mindegree 4
+[2026-03-18 22:05:29] INFO: [COUNTER] There is no directed path which has a start vertex in [10], total 1

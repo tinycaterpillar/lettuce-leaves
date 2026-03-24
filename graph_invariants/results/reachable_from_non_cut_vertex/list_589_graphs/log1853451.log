@@ -1,0 +1,49 @@
+[2026-03-18 16:09:14] INFO: Logger initialized at log_ex/log1853451.log
+[2026-03-18 16:09:14] INFO: Test 509th graph in data/list_589_graphs.g6: EENg
+[2026-03-18 16:09:14] INFO: meta data: 
+2-connected
+minimum degree δ = 2
+maximum degree Δ = 4
+|V(G)| <= 30
+[2026-03-18 16:09:14] INFO: graph of order 6 s.t.
+mindegree 2
+maxdegree 4
+# 2-vertices 3
+# 3-vertices 2
+[2026-03-18 16:09:14] INFO: 
+----------------------------------------
+(counter) init=3, deg=3, reachable_size=4
+reachable   :
+  - v=0, deg=2
+  - v=1, deg=2
+  - v=2, deg=2
+  - v=4, deg=3
+unreachable :
+  - v=3, deg=3
+  - v=5, deg=4
+----------------------------------------
+[2026-03-18 16:09:14] INFO: 
+----------------------------------------
+(counter) init=4, deg=3, reachable_size=4
+reachable   :
+  - v=0, deg=2
+  - v=1, deg=2
+  - v=2, deg=2
+  - v=3, deg=3
+unreachable :
+  - v=4, deg=3
+  - v=5, deg=4
+----------------------------------------
+[2026-03-18 16:09:14] INFO: 
+============================================================
+[MAX-DEGREE COUNTER] init=5, deg=4, reachable_size=3
+reachable   :
+  - v=0, deg=2
+  - v=1, deg=2
+  - v=2, deg=2
+unreachable :
+  - v=3, deg=3
+  - v=4, deg=3
+  - v=5, deg=4
+============================================================
+[2026-03-18 16:09:14] INFO: [COUNTER] 3/6

@@ -1,0 +1,8 @@
+[2026-03-22 12:30:45] INFO: Logger initialized at log_ex/log2333133.log
+[2026-03-22 12:30:45] INFO: Test 50th graph in data/list_1558_graphs.g6: G??F~{
+[2026-03-22 12:30:45] INFO: meta data: 
+2-connected
+minimum degree δ != maximum degree Δ
+|V(G)| <= 10
+[2026-03-22 12:30:45] INFO: graph of order 8 with mindegree 2, max_degree 7
+[2026-03-22 12:30:45] INFO: [COUNTER] Not 6-bad n=8 X_size=6

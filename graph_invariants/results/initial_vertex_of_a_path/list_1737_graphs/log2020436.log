@@ -1,0 +1,7 @@
+[2026-03-18 22:07:41] INFO: Logger initialized at log_ex/log2020436.log
+[2026-03-18 22:07:41] INFO: Test 1731th graph in data/list_1737_graphs.g6: LwCW?CB??FbawC
+[2026-03-18 22:07:41] INFO: meta data: 
+vertex connectivity κ = 1
+|V(G)| > 2δ + 1
+[2026-03-18 22:07:41] INFO: graph of order 13 with mindegree 3
+[2026-03-18 22:07:41] INFO: [COUNTER] There is no directed path which has a start vertex in [9, 10, 11, 12], total 4

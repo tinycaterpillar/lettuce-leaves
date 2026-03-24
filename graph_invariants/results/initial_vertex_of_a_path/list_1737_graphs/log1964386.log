@@ -1,0 +1,7 @@
+[2026-03-18 22:04:42] INFO: Logger initialized at log_ex/log1964386.log
+[2026-03-18 22:04:42] INFO: Test 191th graph in data/list_1737_graphs.g6: E`NW
+[2026-03-18 22:04:42] INFO: meta data: 
+vertex connectivity κ = 1
+|V(G)| > 2δ + 1
+[2026-03-18 22:04:42] INFO: graph of order 6 with mindegree 2
+[2026-03-18 22:04:42] INFO: [COUNTER] There is no directed path which has a start vertex in [5], total 1

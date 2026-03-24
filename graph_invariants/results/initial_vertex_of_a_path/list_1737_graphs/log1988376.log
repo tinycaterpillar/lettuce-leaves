@@ -1,0 +1,7 @@
+[2026-03-18 22:05:59] INFO: Logger initialized at log_ex/log1988376.log
+[2026-03-18 22:05:59] INFO: Test 852th graph in data/list_1737_graphs.g6: OGDb?oW?WK?B??_@o?S?D
+[2026-03-18 22:05:59] INFO: meta data: 
+vertex connectivity κ = 1
+|V(G)| > 2δ + 1
+[2026-03-18 22:05:59] INFO: graph of order 16 with mindegree 3
+[2026-03-18 22:05:59] INFO: [COUNTER] There is no directed path which has a start vertex in [0], total 1

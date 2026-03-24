@@ -1,0 +1,70 @@
+[2026-03-18 16:08:16] INFO: Logger initialized at log_ex/log1835097.log
+[2026-03-18 16:08:16] INFO: Test 0th graph in data/list_589_graphs.g6: DF{
+[2026-03-18 16:08:16] INFO: meta data: 
+2-connected
+minimum degree δ = 2
+maximum degree Δ = 4
+|V(G)| <= 30
+[2026-03-18 16:08:16] INFO: graph of order 5 s.t.
+mindegree 2
+maxdegree 4
+# 2-vertices 3
+# 3-vertices 0
+[2026-03-18 16:08:16] INFO: 
+----------------------------------------
+(counter) init=0, deg=2, reachable_size=2
+reachable   :
+  - v=1, deg=2
+  - v=2, deg=2
+unreachable :
+  - v=0, deg=2
+  - v=3, deg=4
+  - v=4, deg=4
+----------------------------------------
+[2026-03-18 16:08:16] INFO: 
+----------------------------------------
+(counter) init=1, deg=2, reachable_size=2
+reachable   :
+  - v=0, deg=2
+  - v=2, deg=2
+unreachable :
+  - v=1, deg=2
+  - v=3, deg=4
+  - v=4, deg=4
+----------------------------------------
+[2026-03-18 16:08:16] INFO: 
+----------------------------------------
+(counter) init=2, deg=2, reachable_size=2
+reachable   :
+  - v=0, deg=2
+  - v=1, deg=2
+unreachable :
+  - v=2, deg=2
+  - v=3, deg=4
+  - v=4, deg=4
+----------------------------------------
+[2026-03-18 16:08:16] INFO: 
+============================================================
+[MAX-DEGREE COUNTER] init=3, deg=4, reachable_size=0
+reachable   :
+
+unreachable :
+  - v=0, deg=2
+  - v=1, deg=2
+  - v=2, deg=2
+  - v=3, deg=4
+  - v=4, deg=4
+============================================================
+[2026-03-18 16:08:16] INFO: 
+============================================================
+[MAX-DEGREE COUNTER] init=4, deg=4, reachable_size=0
+reachable   :
+
+unreachable :
+  - v=0, deg=2
+  - v=1, deg=2
+  - v=2, deg=2
+  - v=3, deg=4
+  - v=4, deg=4
+============================================================
+[2026-03-18 16:08:16] INFO: [COUNTER] 5/5

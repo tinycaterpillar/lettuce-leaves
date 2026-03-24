@@ -1,0 +1,35 @@
+[2026-03-18 16:07:11] INFO: Logger initialized at log_ex/log1827876.log
+[2026-03-18 16:07:11] INFO: Test 2th graph in data/list_179_graphs.g6: DFw
+[2026-03-18 16:07:11] INFO: meta data: 
+2-connected
+minimum degree δ = 2
+maximum degree Δ = 3
+|V(G)| <= 30
+[2026-03-18 16:07:11] INFO: graph of order 5 s.t.
+mindegree 2
+maxdegree 3
+# 2-vertices 3
+# 3-vertices 2
+[2026-03-18 16:07:11] INFO: 
+============================================================
+[MAX-DEGREE COUNTER] init=3, deg=3, reachable_size=3
+reachable   :
+  - v=0, deg=2
+  - v=1, deg=2
+  - v=2, deg=2
+unreachable :
+  - v=3, deg=3
+  - v=4, deg=3
+============================================================
+[2026-03-18 16:07:11] INFO: 
+============================================================
+[MAX-DEGREE COUNTER] init=4, deg=3, reachable_size=3
+reachable   :
+  - v=0, deg=2
+  - v=1, deg=2
+  - v=2, deg=2
+unreachable :
+  - v=3, deg=3
+  - v=4, deg=3
+============================================================
+[2026-03-18 16:07:11] INFO: [COUNTER] 2/5

@@ -6,6 +6,7 @@ python -m generators.tournament
 grep -l "MEMORY_ERROR" log/* | xargs rm
 grep -rL "\[END\]" log/* | xargs rm
 grep -rL "\[COUNTER]" log_ex/* | xargs rm
+grep -rn 'Test' list_
 
 
 # Note

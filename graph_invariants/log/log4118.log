@@ -1,9 +1,0 @@
-[2026-03-18 12:32:06] INFO: Logger initialized at log/log4118.log
-[2026-03-18 12:32:06] INFO: graph of order 4 s.t.
-g6 C^
-mindegree 2
-maxdegree 3
-# 2-vertices 2
-# 3-vertices 2
-[2026-03-18 12:32:06] INFO: [COUNTER] init=2, reachable_size=2, reachable=[0, 1]
-[2026-03-18 12:32:22] INFO: [COUNTER] init=3, reachable_size=2, reachable=[0, 1]

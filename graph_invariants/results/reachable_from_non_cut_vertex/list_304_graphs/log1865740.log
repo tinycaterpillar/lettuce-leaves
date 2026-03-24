@@ -1,0 +1,41 @@
+[2026-03-18 16:10:32] INFO: Logger initialized at log_ex/log1865740.log
+[2026-03-18 16:10:32] INFO: Test 238th graph in data/list_304_graphs.g6: GB_kZk
+[2026-03-18 16:10:32] INFO: meta data: 
+2-connected
+minimum degree δ = 2
+maximum degree Δ = 5
+|V(G)| <= 30
+[2026-03-18 16:10:32] INFO: graph of order 8 s.t.
+mindegree 2
+maxdegree 5
+# 2-vertices 2
+# 3-vertices 3
+[2026-03-18 16:10:32] INFO: 
+----------------------------------------
+(counter) init=5, deg=4, reachable_size=6
+reachable   :
+  - v=0, deg=2
+  - v=1, deg=2
+  - v=2, deg=3
+  - v=3, deg=3
+  - v=4, deg=3
+  - v=6, deg=4
+unreachable :
+  - v=5, deg=4
+  - v=7, deg=5
+----------------------------------------
+[2026-03-18 16:10:32] INFO: 
+============================================================
+[MAX-DEGREE COUNTER] init=7, deg=5, reachable_size=6
+reachable   :
+  - v=0, deg=2
+  - v=1, deg=2
+  - v=2, deg=3
+  - v=3, deg=3
+  - v=4, deg=3
+  - v=6, deg=4
+unreachable :
+  - v=5, deg=4
+  - v=7, deg=5
+============================================================
+[2026-03-18 16:10:32] INFO: [COUNTER] 2/8

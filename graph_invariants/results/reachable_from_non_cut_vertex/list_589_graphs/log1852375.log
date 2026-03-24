@@ -1,0 +1,41 @@
+[2026-03-18 16:09:10] INFO: Logger initialized at log_ex/log1852375.log
+[2026-03-18 16:09:10] INFO: Test 476th graph in data/list_589_graphs.g6: GK?@}W
+[2026-03-18 16:09:10] INFO: meta data: 
+2-connected
+minimum degree δ = 2
+maximum degree Δ = 4
+|V(G)| <= 30
+[2026-03-18 16:09:10] INFO: graph of order 8 s.t.
+mindegree 2
+maxdegree 4
+# 2-vertices 6
+# 3-vertices 0
+[2026-03-18 16:09:10] INFO: 
+============================================================
+[MAX-DEGREE COUNTER] init=6, deg=4, reachable_size=6
+reachable   :
+  - v=0, deg=2
+  - v=1, deg=2
+  - v=2, deg=2
+  - v=3, deg=2
+  - v=4, deg=2
+  - v=5, deg=2
+unreachable :
+  - v=6, deg=4
+  - v=7, deg=4
+============================================================
+[2026-03-18 16:09:10] INFO: 
+============================================================
+[MAX-DEGREE COUNTER] init=7, deg=4, reachable_size=6
+reachable   :
+  - v=0, deg=2
+  - v=1, deg=2
+  - v=2, deg=2
+  - v=3, deg=2
+  - v=4, deg=2
+  - v=5, deg=2
+unreachable :
+  - v=6, deg=4
+  - v=7, deg=4
+============================================================
+[2026-03-18 16:09:10] INFO: [COUNTER] 2/8

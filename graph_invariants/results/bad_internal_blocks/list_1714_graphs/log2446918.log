@@ -1,0 +1,8 @@
+[2026-03-22 12:37:43] INFO: Logger initialized at log_ex/log2446918.log
+[2026-03-22 12:37:43] INFO: Test 1579th graph in data/list_1714_graphs.g6: P???????????~~~~^~f~w~~?
+[2026-03-22 12:37:43] INFO: meta data: 
+2-connected
+minimum degree δ != maximum degree Δ
+|V(G)| between 11 and 18
+[2026-03-22 12:37:43] INFO: graph of order 17 with mindegree 5, max_degree 12
+[2026-03-22 12:39:57] INFO: [COUNTER] Not 11-bad n=17 X_size=12

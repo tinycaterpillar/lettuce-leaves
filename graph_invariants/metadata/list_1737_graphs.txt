@@ -1,0 +1,2 @@
+vertex connectivity κ = 1
+|V(G)| > 2δ + 1

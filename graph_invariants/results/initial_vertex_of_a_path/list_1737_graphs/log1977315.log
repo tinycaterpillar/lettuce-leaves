@@ -1,0 +1,7 @@
+[2026-03-18 22:05:23] INFO: Logger initialized at log_ex/log1977315.log
+[2026-03-18 22:05:23] INFO: Test 545th graph in data/list_1737_graphs.g6: IJWWCMA_g
+[2026-03-18 22:05:23] INFO: meta data: 
+vertex connectivity κ = 1
+|V(G)| > 2δ + 1
+[2026-03-18 22:05:23] INFO: graph of order 10 with mindegree 3
+[2026-03-18 22:05:23] INFO: [COUNTER] There is no directed path which has a start vertex in [4, 9], total 2

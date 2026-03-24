@@ -1,0 +1,7 @@
+[2026-03-18 22:07:31] INFO: Logger initialized at log_ex/log2017231.log
+[2026-03-18 22:07:31] INFO: Test 1644th graph in data/list_1737_graphs.g6: O?????????????????F~~
+[2026-03-18 22:07:31] INFO: meta data: 
+vertex connectivity κ = 1
+|V(G)| > 2δ + 1
+[2026-03-18 22:07:31] INFO: graph of order 16 with mindegree 1
+[2026-03-18 22:07:31] INFO: [COUNTER] There is no directed path which has a start vertex in [15], total 1

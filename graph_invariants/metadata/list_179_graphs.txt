@@ -1,4 +1,4 @@
 2-connected
-minimum degree δ = 3
-maximum degree Δ = 4
+minimum degree δ = 2
+maximum degree Δ = 3
 |V(G)| <= 30

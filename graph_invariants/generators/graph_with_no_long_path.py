@@ -9,7 +9,7 @@ import subprocess
 from sortedcontainers import SortedSet
 from collections import deque
 
-from utils import draw
+from utils import draw, encode
 # from utils import parse_kissat_output
 
 class GraphSATBuilder:
@@ -201,12 +201,12 @@ class GraphSATBuilder:
 
 
 if __name__ == "__main__":
-    min_degree = 5
-    number_of_exits = 4
-    number_of_non_exits = 2
+    min_degree = 25
+    number_of_non_exits = 12
+    number_of_exits = 14
     builder = GraphSATBuilder(number_of_exits=number_of_exits, min_degree=min_degree)
     sat, G = builder.solve(number_of_non_exits=number_of_non_exits, external=False)
 
     print("SAT:", sat)
     if sat:
-        draw(G, V=list(range(number_of_exits)))
+        draw(G, V=list(range(number_of_exits)), name=encode(G), folder="pictures")

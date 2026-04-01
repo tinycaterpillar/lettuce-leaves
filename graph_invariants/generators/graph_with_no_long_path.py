@@ -201,12 +201,12 @@ class GraphSATBuilder:
 
 
 if __name__ == "__main__":
-    min_degree = 25
-    number_of_non_exits = 12
-    number_of_exits = 14
+    min_degree = 5
+    number_of_non_exits = 3
+    number_of_exits = 10
     builder = GraphSATBuilder(number_of_exits=number_of_exits, min_degree=min_degree)
     sat, G = builder.solve(number_of_non_exits=number_of_non_exits, external=False)
 
     print("SAT:", sat)
     if sat:
-        draw(G, V=list(range(number_of_exits)), name=encode(G), folder="pictures")
+        draw(G, layout="circular", V=list(range(number_of_exits)), name=encode(G), folder="pictures")

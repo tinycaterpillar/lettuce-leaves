@@ -14,47 +14,46 @@ from utils import draw, encode
 
 class GraphSATBuilder:
     """
-    Input: size_of_A, size_of_B, k where A:={v∈V(G): d(v) ≥ k}, B:=V(G)-A.
-    Output: A connected graph without path of length ≥ k.
+    Input: size of exits, non-exits and minimum degree δ
+    Output: A 2-connected graph without a path of length ≥ δ starting from any exits.
     """
-    def __init__(self, size_of_A, k, solver=Cadical195):
-        self.size_of_A = size_of_A
-        self.k = k
+    def __init__(self, number_of_exits, number_of_non_exits, min_degree, solver=Cadical195):
+        self.number_of_exits = number_of_exits
+        self.number_of_non_exits = number_of_non_exits
+        self.min_degree = min_degree
         self.pool = IDPool()
         self.solver = solver
         self.solver_path = "./external_program/kissat"
         self.V = None
 
     def edge(self, e):
+        u, v = e
+        assert u != v, "loop occurs"
+        e = (u, v) if u < v else (v, u)
         return self.pool.id(("chosen", e))
 
     def reachable(self, rm, v, t):
         return self.pool.id(("reachable", rm, v, t))
     
-    def canon_edge(self, e):
-        u, v = e
-        return (u, v) if u <= v else (v, u)
-
     def aux(self, a, b):
         return self.pool.id(("aux_and", a, b))
 
-    def build_cnf(self, number_of_non_exits) -> CNF:
+    def build_cnf(self) -> CNF:
         self.pool = IDPool()
         cnf = CNF()
 
-        A = list(range(self.number_of_exits))
-        non_exits = list(range(self.number_of_exits, self.number_of_exits+number_of_non_exits))
+        exits = list(range(self.number_of_exits))
+        non_exits = list(range(self.number_of_exits, self.number_of_exits+self.number_of_non_exits))
         self.V = exits+non_exits
-
-        for u in self.V:
-            for v in self.V:
-                if u == v: continue
-                self.edge(self.canon_edge((u, v)))
+        n = len(self.V)
+        for u in range(n):
+            for v in range(u + 1, n):
+                self.edge((u, v))
 
         # (1) degree_condition
         # d(exit) >= 2 and d(non_exit) >= min_degree
         for v in self.V:
-            inc_v = [self.edge(self.canon_edge((u, v))) for u in self.V if u != v]
+            inc_v = [self.edge((u, v)) for u in self.V if u != v]
             lb = 2 if v < self.number_of_exits else self.min_degree
             enc = CardEnc.atleast(lits=inc_v, bound=lb, encoding=1, top_id=self.pool.top)
             self.pool.top = enc.nv
@@ -75,7 +74,6 @@ class GraphSATBuilder:
                 for t in range(len(W)-1):
                     cnf.append([-self.reachable(rm, v, t), self.reachable(rm, v, t + 1)])
 
-
             # propagation:
             # reachable(rm, v, t+1) -> reachable(rm, v, t) or exists neighbor u with reachable(rm, u, t) and edge(u, v)
             for v in W:
@@ -83,8 +81,8 @@ class GraphSATBuilder:
                     clause = [-self.reachable(rm, v, t + 1), self.reachable(rm, v, t)]
                     
                     for u in W:
-                        e = self.canon_edge((u, v))
-                        x = self.edge(e)
+                        if u == v: continue
+                        x = self.edge((u, v))
 
                         # y <-> (reachable(rm, u, t) and x)
                         y = self.aux(self.reachable(rm, u, t), x)
@@ -152,15 +150,15 @@ class GraphSATBuilder:
                 (u, v)
                 for u in self.V
                 for v in self.V
-                if u < v and self.edge(self.canon_edge((u, v))) in model
+                if u < v and self.edge((u, v)) in model
             ]
             G = Graph()
             G.add_vertices(self.V)
             G.add_edges(E)
             return True, G
 
-    def solve(self, number_of_non_exits, external=True):
-        cnf = self.build_cnf(number_of_non_exits)
+    def solve(self, external=True):
+        cnf = self.build_cnf()
 
         if external: return self.external_solver(cnf)
         
@@ -178,7 +176,7 @@ class GraphSATBuilder:
                 Edges = [[] for _ in range(len(self.V))]
                 for u in range(len(self.V)):
                     for v in range(u+1, len(self.V)):
-                        if self.edge(self.canon_edge((u, v))) not in model: continue
+                        if self.edge((u, v)) not in model: continue
                         Edges[u].append(v)
                         Edges[v].append(u)
 
@@ -187,7 +185,7 @@ class GraphSATBuilder:
                     path = self.find_bad_path(exit, Edges)
                     if path:
                         flag = False
-                        s.add_clause([-self.edge(self.canon_edge((u, v))) for (u, v) in path])
+                        s.add_clause([-self.edge((u, v)) for (u, v) in path])
                         break
 
                 if flag:
@@ -202,10 +200,11 @@ class GraphSATBuilder:
 
 if __name__ == "__main__":
     min_degree = 5
-    number_of_non_exits = 3
-    number_of_exits = 10
-    builder = GraphSATBuilder(number_of_exits=number_of_exits, min_degree=min_degree)
-    sat, G = builder.solve(number_of_non_exits=number_of_non_exits, external=False)
+    number_of_non_exits = 2
+    number_of_exits = 4
+    builder = GraphSATBuilder(number_of_exits=number_of_exits, number_of_non_exits=number_of_non_exits, min_degree=min_degree)
+    builder.edge((1, 1))
+    sat, G = builder.solve(external=False)
 
     print("SAT:", sat)
     if sat:
